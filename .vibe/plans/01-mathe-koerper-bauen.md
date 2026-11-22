@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -133,8 +133,9 @@ Strang `mathematik/geometrie` (Raum und Form). Drei Kapitel, sechs Bausteine (Ka
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Plan bestätigt, beide Fragen ja (Orchestrator in Vertretung)
 
 ### Content method
 Strang-App `mathematik/geometrie`, Format 2, nur Deutsch. Ids: Kapitel `koerper-quader`, `koerper-prisma`, `koerper-pyramide`.
