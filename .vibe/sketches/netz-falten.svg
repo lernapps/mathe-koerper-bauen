@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-label="Skizze: links ein Würfelnetz als Kreuz aus sechs Quadraten, rechts der halb gefaltete Würfel, darunter ein Regler Aufklappen">
+<g fill="none" stroke="#333" stroke-width="2"><rect x="60" y="10" width="40" height="40"/><rect x="20" y="50" width="40" height="40"/><rect x="60" y="50" width="40" height="40"/><rect x="100" y="50" width="40" height="40"/><rect x="60" y="90" width="40" height="40"/><rect x="60" y="130" width="40" height="40"/>
+<path d="M320 40 l60 -20 l60 20 l-60 20 z M320 40 v60 l60 20 v-60 M440 40 v60 l-60 20"/></g>
+<text x="160" y="195" font-size="14">Regler: Aufklappen 40 %</text>
+<text x="20" y="210" font-size="12">Pfeiltasten drehen, Tab erreicht Regler</text></svg>
