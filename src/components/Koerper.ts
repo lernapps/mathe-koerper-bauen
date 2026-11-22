@@ -62,9 +62,17 @@ export function fold(net: Net): { faces: number[]; ok: boolean; collision?: [num
     }
   }
   if (faces.includes(-1)) return { faces, ok: false };
+  // a pair that shares an edge only collides because four squares meet at a corner: name a pair far apart first
+  let found: [number, number] | undefined;
   for (let i = 0; i < faces.length; i++)
-    for (let j = i + 1; j < faces.length; j++)
-      if (faces[i] === faces[j]) return { faces, ok: false, collision: [i, j] };
+    for (let j = i + 1; j < faces.length; j++) {
+      if (faces[i] !== faces[j]) continue;
+      const [a, b] = [cells[i] as Cell, cells[j] as Cell];
+      const apart = Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]) > 1;
+      if (found === undefined || apart) found = [i, j];
+      if (apart) return { faces, ok: false, collision: found };
+    }
+  if (found !== undefined) return { faces, ok: false, collision: found };
   return { faces, ok: true };
 }
 

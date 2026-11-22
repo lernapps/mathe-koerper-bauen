@@ -9,8 +9,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Auf dieser Seite lernst du, ein Netz im Kopf zu falten und zu prüfen, ob daraus ein Würfel wird. Du kennst
-          Würfel und Quader schon. Schiebe den Regler nach links: Der Würfel klappt auf, bis er flach auf dem Tisch liegt.
+          Schneidest du eine Schachtel an den Kanten auf und legst sie flach hin, hast du ein Netz. Auf dieser Seite
+          lernst du, ein Netz im Kopf zu falten und zu prüfen, ob daraus ein Würfel wird. Schiebe den Regler nach links:
+          Der Würfel klappt auf. Mit den Knöpfen drehst du ihn und siehst auch seine Unterseite.
       - type: vue-component
         id: baukasten-wuerfel
         component: KoerperBaukasten
@@ -28,8 +29,8 @@ blocks:
           reset: Zurücksetzen
         nojs: |
           Ein Würfel, der sich aufklappen lässt. Geschlossen hat er sechs Quadrate: Boden (1), vorn (2), rechts (3),
-          hinten (4), links (5) und Deckel (6). Aufgeklappt liegen alle sechs als Kreuz flach: Der Boden liegt in der
-          Mitte, vorn, rechts, hinten und links hängen an seinen Kanten, der Deckel hängt am hinteren Quadrat.
+          hinten (4), links (5) und Deckel (6). Aufgeklappt liegen alle sechs flach: Der Boden liegt in der Mitte,
+          vorn, rechts, hinten und links hängen an seinen Kanten, der Deckel hängt am hinteren Quadrat.
       - type: single-choice
         id: flaechen-zaehlen
         text: Wie viele Quadrate siehst du, wenn der Würfel ganz aufgeklappt ist?
@@ -54,20 +55,25 @@ blocks:
       - type: definition
         term: Netz
         explanation: Ein Netz zeigt alle Flächen eines Körpers flach in einem Stück. Die Flächen hängen an Kanten zusammen.
+      - type: definition
+        term: Mantel
+        explanation: Der Mantel sind die vier Flächen, die beim Würfel rund um Boden und Deckel stehen.
       - type: text
         text: |
           Nicht jede Anordnung von sechs Quadraten ist ein Würfelnetz. Beim Falten bekommt jedes Quadrat eine eigene
-          Seite des Würfels. Landen zwei Quadrate auf derselben Seite, fehlt eine andere Seite: Das Netz geht nicht.
+          Seite des Würfels. Würden zwei Quadrate dieselbe Seite bekommen, bliebe eine andere leer: Das Netz geht nicht.
+          Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines oben und eines unten an
+          der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
       - type: figure
         image: images/netz-kreuz.svg
-        alt: "Ein Netz aus sechs Quadraten: vier Quadrate in einer Reihe (2, 3, 4, 5), Quadrat 1 über Quadrat 4 und Quadrat 6 darunter."
-        caption: Ein Würfelnetz. Beim Falten liegen 2 und 4, 3 und 5 sowie 1 und 6 gegenüber.
+        alt: "Das Netz aus dem Baukasten: eine Spalte aus vier Quadraten (6, 4, 1, 2 von oben nach unten), Quadrat 5 links und Quadrat 3 rechts von Quadrat 1."
+        caption: Das Netz aus dem Baukasten. Beim Falten liegen 1 und 6, 2 und 4 sowie 3 und 5 gegenüber.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: figure
         image: images/netz-block.svg
         alt: "Sechs Quadrate in drei Reihen zu je zwei Quadraten, ohne Lücke."
-        caption: Kein Würfelnetz. Beim Falten landen Quadrat 3 und Quadrat 4 auf derselben Seite.
+        caption: Kein Würfelnetz. Die Quadrate 1, 2, 3 und 4 stoßen an einer Ecke zusammen, aber an der Ecke eines Würfels treffen sich nur drei Flächen.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: example
@@ -75,9 +81,9 @@ blocks:
         blocks:
           - type: text
             text: |
-              Nimm im ersten Netz Quadrat 4 als Boden. Quadrat 3 und Quadrat 5 klappen links und rechts nach oben,
-              Quadrat 1 und Quadrat 6 vorn und hinten. Quadrat 2 hängt an Quadrat 3 und wird zum Deckel. Jedes Quadrat
-              hat jetzt eine eigene Seite, das Netz geht. Gegenüber liegen Quadrat 4 und Quadrat 2.
+              Nimm im ersten Netz Quadrat 1 als Boden. Quadrat 5 und Quadrat 3 klappen links und rechts nach oben,
+              Quadrat 2 vorn und Quadrat 4 hinten. Quadrat 6 hängt an Quadrat 4 und wird zum Deckel. Jedes Quadrat
+              hat jetzt eine eigene Seite, das Netz geht.
   - type: section
     id: uebung
     title: Übung
@@ -94,7 +100,7 @@ blocks:
           face: "Fläche {n}"
           group: Deine Antwort
           mistakes:
-            - "Du hast „ja“ gewählt. Falte im Kopf: Quadrat {a} und Quadrat {b} landen auf derselben Seite des Würfels, eine andere Seite bleibt leer."
+            - "Du hast „ja“ gewählt. Falte im Kopf: Quadrat {a} und Quadrat {b} würden dieselbe Seite des Würfels bekommen, eine andere Seite bliebe leer."
             - "Du hast „nein“ gewählt. Falte noch einmal: Jedes Quadrat bekommt eine eigene Seite, nichts fällt übereinander."
             - "Das passt nicht zu dieser Aufgabe."
         examples:
@@ -128,7 +134,7 @@ blocks:
             - "Das passt nicht zu dieser Aufgabe."
             - "Das passt nicht zu dieser Aufgabe."
             - "Fläche {n} grenzt im Netz an Fläche {k}. Nachbarn im Netz bleiben im Würfel Nachbarn. Gegenüberliegende Flächen berühren sich nie."
-            - "Fläche {n} liegt nicht gegenüber von Fläche {k}. Falte im Kopf: Gegenüber liegt die Fläche, die Fläche {k} beim Zuklappen nie berührt."
+            - "Fläche {n} liegt nicht gegenüber von Fläche {k}. Gegenüber liegt die Fläche, die nach dem Zuklappen keine Kante mit Fläche {k} gemeinsam hat."
         examples:
           accepted:
             - { answer: 1, seed: 1 }
@@ -147,16 +153,12 @@ blocks:
           text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Im Netz hat eine Fläche die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen im Netz haben genau diese Maße?"
         answer: { value: "2", compare: number }
         mistakes:
-          - {
-              value: "1",
-              message: "Zu jeder Fläche eines Quaders gibt es eine gegenüberliegende Fläche mit denselben Maßen. Also sind es zwei.",
-            }
-          - {
-              value: "4",
-              message: "Vier Flächen sind es nur beim Mantel eines Würfels. Hier sind alle drei Maße verschieden, also haben nur Boden und Deckel diese Maße.",
-            }
-          - {
-              value: "6",
-              message: "Ein Quader hat zwar sechs Flächen, aber nur Boden und Deckel haben die Maße {{a}} cm mal {{b}} cm.",
-            }
+          - value: "1"
+            message: "Zu jeder Fläche eines Quaders gibt es eine gegenüberliegende Fläche mit denselben Maßen. Also sind es zwei."
+          - value: "3"
+            message: "Ein Quader hat drei Paare gleicher Flächen, aber zu {{a}} cm mal {{b}} cm gehört nur ein Paar."
+          - value: "4"
+            message: "Vier gleiche Flächen gäbe es nur, wenn zwei der drei Maße gleich wären. Hier sind alle drei verschieden, also haben nur zwei Flächen diese Maße."
+          - value: "6"
+            message: "Ein Quader hat zwar sechs Flächen, aber nur zwei davon haben die Maße {{a}} cm mal {{b}} cm."
         hint: "Welche Fläche liegt im Quader gegenüber? Sie sieht genau so aus."

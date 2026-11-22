@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 124" width="164" role="img" aria-label="Ein Netz aus sechs Quadraten: vier Quadrate in einer Reihe, je eines darüber und darunter an derselben Stelle der Reihe."><title>Würfelnetz</title>
-<rect x="82" y="2" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="102.0" y="28.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">1</text>
-<rect x="2" y="42" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="22.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">2</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 164" width="124" role="img" aria-label="Das Netz aus dem Baukasten"><title>Würfelnetz</title>
+<rect x="42" y="2" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="62.0" y="28.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">6</text>
 <rect x="42" y="42" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="62.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">3</text>
-<rect x="82" y="42" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="102.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">4</text>
-<rect x="122" y="42" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="142.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">5</text>
+<text x="62.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">4</text>
+<rect x="2" y="82" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="22.0" y="108.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">5</text>
+<rect x="42" y="82" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="62.0" y="108.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">1</text>
 <rect x="82" y="82" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
-<text x="102.0" y="108.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">6</text>
+<text x="102.0" y="108.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">3</text>
+<rect x="42" y="122" width="40" height="40" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="62.0" y="148.0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">2</text>
 </svg>

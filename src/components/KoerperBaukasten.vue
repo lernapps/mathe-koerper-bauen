@@ -30,8 +30,13 @@ const azimuth = ref(25);
 const elevation = ref(30);
 const unit = 36;
 
+// flat, the net is seen from straight above and upright, so that it looks like a net; closed, it is seen as turned
+const view = computed(() => {
+  const t = percent.value / 100;
+  return { az: azimuth.value * t, el: elevation.value + (90 - elevation.value) * (1 - t) ** 2 };
+});
 const shapes = computed(() =>
-  project(folding(props.w, props.d, props.h, percent.value / 100), azimuth.value, elevation.value),
+  project(folding(props.w, props.d, props.h, percent.value / 100), view.value.az, view.value.el),
 );
 const bounds = computed(() => {
   // the frame for every fold: the flat net is the widest picture, so the frame stays the same while the slider moves
@@ -52,7 +57,7 @@ const bounds = computed(() => {
 
 function turn(da: number, de: number): void {
   azimuth.value = (azimuth.value + da + 360) % 360;
-  elevation.value = Math.min(80, Math.max(5, elevation.value + de));
+  elevation.value = Math.min(80, Math.max(-80, elevation.value + de));
 }
 function back(): void {
   percent.value = props.start;
@@ -61,10 +66,10 @@ function back(): void {
 }
 function key(e: KeyboardEvent): void {
   const moves: Record<string, [number, number]> = {
-    ArrowLeft: [-15, 0],
-    ArrowRight: [15, 0],
-    ArrowUp: [0, 10],
-    ArrowDown: [0, -10],
+    ArrowLeft: [-45, 0],
+    ArrowRight: [45, 0],
+    ArrowUp: [0, 40],
+    ArrowDown: [0, -40],
   };
   const m = moves[e.key];
   if (m === undefined || e.target instanceof HTMLInputElement) return;
@@ -83,7 +88,7 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
       :style="{ width: `${Math.min(100, bounds.w * unit)}%`, maxWidth: `${bounds.w * unit * 1.4}px` }"
     >
       <g v-for="f in shapes" :key="f.number">
-        <polygon :points="polygon(f.points)" :class="`koerper-baukasten-face koerper-baukasten-face-${f.number % 2}`" />
+        <polygon :points="polygon(f.points)" class="koerper-baukasten-face" />
         <text :x="f.middle[0]" :y="f.middle[1] + 0.12" text-anchor="middle" class="koerper-baukasten-number">
           {{ f.number }}
         </text>
@@ -95,10 +100,10 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
         <input v-model.number="percent" type="range" min="0" max="100" step="1" :aria-valuetext="`${percent} %`" />
       </label>
       <div class="koerper-baukasten-buttons">
-        <button type="button" @click="turn(-15, 0)">{{ left }}</button>
-        <button type="button" @click="turn(15, 0)">{{ right }}</button>
-        <button type="button" @click="turn(0, 10)">{{ up }}</button>
-        <button type="button" @click="turn(0, -10)">{{ down }}</button>
+        <button type="button" @click="turn(-45, 0)">{{ left }}</button>
+        <button type="button" @click="turn(45, 0)">{{ right }}</button>
+        <button type="button" @click="turn(0, 40)">{{ up }}</button>
+        <button type="button" @click="turn(0, -40)">{{ down }}</button>
         <button type="button" @click="back">{{ reset }}</button>
       </div>
     </div>
@@ -119,14 +124,7 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
   stroke: var(--page-text);
   stroke-width: 0.04;
   stroke-linejoin: round;
-}
-
-.koerper-baukasten-face-0 {
   fill: var(--page-surface);
-}
-
-.koerper-baukasten-face-1 {
-  fill: var(--page-background);
 }
 
 .koerper-baukasten-number {
