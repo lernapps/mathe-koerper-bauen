@@ -1,0 +1,162 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Netze von Quader und Würfel
+description: Eine Schachtel aufschneiden, das Netz erkennen und im Kopf falten.
+competencies: [netze-schraegbilder-modelle]
+blocks:
+  - type: section
+    id: einstieg
+    title: Eine Schachtel aufschneiden
+    blocks:
+      - type: text
+        text: |
+          Auf dieser Seite lernst du, ein Netz im Kopf zu falten und zu prüfen, ob daraus ein Würfel wird. Du kennst
+          Würfel und Quader schon. Schiebe den Regler nach links: Der Würfel klappt auf, bis er flach auf dem Tisch liegt.
+      - type: vue-component
+        id: baukasten-wuerfel
+        component: KoerperBaukasten
+        props:
+          w: 3
+          d: 3
+          h: 3
+          start: 100
+          alt: "Ein Würfel aus sechs Quadraten, die von 1 bis 6 nummeriert sind. Der Würfel ist zu {p} % zugeklappt: bei 100 % steht er geschlossen da, bei 0 % liegen alle Flächen als Kreuz flach nebeneinander."
+          slider: Zugeklappt
+          left: Nach links drehen
+          right: Nach rechts drehen
+          up: Von oben ansehen
+          down: Von vorn ansehen
+          reset: Zurücksetzen
+        nojs: |
+          Ein Würfel, der sich aufklappen lässt. Geschlossen hat er sechs Quadrate: Boden (1), vorn (2), rechts (3),
+          hinten (4), links (5) und Deckel (6). Aufgeklappt liegen alle sechs als Kreuz flach: Der Boden liegt in der
+          Mitte, vorn, rechts, hinten und links hängen an seinen Kanten, der Deckel hängt am hinteren Quadrat.
+      - type: single-choice
+        id: flaechen-zaehlen
+        text: Wie viele Quadrate siehst du, wenn der Würfel ganz aufgeklappt ist?
+        options:
+          - text: Vier
+            correct: false
+            info: Vier Quadrate wären nur der Mantel um den Würfel. Boden und Deckel fehlen dann.
+          - text: Sechs
+            correct: true
+            info: Ein Würfel hat sechs gleich große Quadrate als Flächen. Beim Aufklappen verschwindet keine.
+          - text: Acht
+            correct: false
+            info: Ein Würfel hat acht Ecken, aber nur sechs Flächen. Zähle Flächen, nicht Ecken.
+        explanation: Aufklappen ändert die Flächen nicht. Aus den sechs Quadraten des Würfels wird ein flaches Bild mit sechs Quadraten.
+        links:
+          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
+  - type: section
+    id: erklaerung
+    title: Was ein Netz ist
+    blocks:
+      - type: definition
+        term: Netz
+        explanation: Ein Netz zeigt alle Flächen eines Körpers flach in einem Stück. Die Flächen hängen an Kanten zusammen.
+      - type: text
+        text: |
+          Nicht jede Anordnung von sechs Quadraten ist ein Würfelnetz. Beim Falten bekommt jedes Quadrat eine eigene
+          Seite des Würfels. Landen zwei Quadrate auf derselben Seite, fehlt eine andere Seite: Das Netz geht nicht.
+      - type: figure
+        image: images/netz-kreuz.svg
+        alt: "Ein Netz aus sechs Quadraten: vier Quadrate in einer Reihe (2, 3, 4, 5), Quadrat 1 über Quadrat 4 und Quadrat 6 darunter."
+        caption: Ein Würfelnetz. Beim Falten liegen 2 und 4, 3 und 5 sowie 1 und 6 gegenüber.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: figure
+        image: images/netz-block.svg
+        alt: "Sechs Quadrate in drei Reihen zu je zwei Quadraten, ohne Lücke."
+        caption: Kein Würfelnetz. Beim Falten landen Quadrat 3 und Quadrat 4 auf derselben Seite.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: example
+        title: Im Kopf falten
+        blocks:
+          - type: text
+            text: |
+              Nimm im ersten Netz Quadrat 4 als Boden. Quadrat 3 und Quadrat 5 klappen links und rechts nach oben,
+              Quadrat 1 und Quadrat 6 vorn und hinten. Quadrat 2 hängt an Quadrat 3 und wird zum Deckel. Jedes Quadrat
+              hat jetzt eine eigene Seite, das Netz geht. Gegenüber liegen Quadrat 4 und Quadrat 2.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: vue-component
+        id: netz-faltbar
+        component: NetzFalten
+        props:
+          mode: faltbar
+          task: Du faltest das Netz im Kopf. Wird daraus ein Würfel?
+          alt: "Ein Netz aus sechs nummerierten Quadraten."
+          yes: Ja, ein Würfel
+          no: Nein, kein Würfel
+          face: "Fläche {n}"
+          group: Deine Antwort
+          mistakes:
+            - "Du hast „ja“ gewählt. Falte im Kopf: Quadrat {a} und Quadrat {b} landen auf derselben Seite des Würfels, eine andere Seite bleibt leer."
+            - "Du hast „nein“ gewählt. Falte noch einmal: Jedes Quadrat bekommt eine eigene Seite, nichts fällt übereinander."
+            - "Das passt nicht zu dieser Aufgabe."
+        examples:
+          accepted:
+            - { answer: 1, seed: 1 }
+            - { answer: 0, seed: 2 }
+          rejected:
+            - { answer: 0, seed: 1 }
+            - { answer: 1, seed: 2 }
+            - { answer: 7 }
+      - type: true-false
+        id: vier-in-reihe
+        text: "Ein Netz hat vier Quadrate in einer Reihe. Die anderen zwei Quadrate hängen beide oberhalb der Reihe. Daraus wird immer ein Würfel."
+        answer: false
+        explanation: Die vier Quadrate in der Reihe bilden den Mantel des Würfels. Die beiden anderen müssen Deckel und Boden werden, also eines oberhalb und eines unterhalb der Reihe hängen. Hängen beide oben, landen sie auf derselben Seite.
+        links:
+          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
+      - type: vue-component
+        id: netz-gegenueber
+        component: NetzFalten
+        props:
+          mode: gegenueber
+          task: Du faltest das Netz zu einem Würfel. Welche Fläche liegt gegenüber von Fläche {k}?
+          alt: "Ein Netz aus sechs nummerierten Quadraten, ein Quadrat ist hervorgehoben."
+          yes: Ja
+          no: Nein
+          face: "Fläche {n}"
+          group: Deine Antwort
+          mistakes:
+            - "Das passt nicht zu dieser Aufgabe."
+            - "Das passt nicht zu dieser Aufgabe."
+            - "Fläche {n} grenzt im Netz an Fläche {k}. Nachbarn im Netz bleiben im Würfel Nachbarn. Gegenüberliegende Flächen berühren sich nie."
+            - "Fläche {n} liegt nicht gegenüber von Fläche {k}. Falte im Kopf: Gegenüber liegt die Fläche, die Fläche {k} beim Zuklappen nie berührt."
+        examples:
+          accepted:
+            - { answer: 1, seed: 1 }
+            - { answer: 4, seed: 2 }
+          rejected:
+            - { answer: 2, seed: 1 }
+            - { answer: 3, seed: 2 }
+            - { answer: 0 }
+      - type: generated
+        id: quader-netz
+        given:
+          a: { int: [2, 6] }
+          b: { int: [7, 11] }
+          c: { int: [12, 16] }
+        task:
+          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Im Netz hat eine Fläche die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen im Netz haben genau diese Maße?"
+        answer: { value: "2", compare: number }
+        mistakes:
+          - {
+              value: "1",
+              message: "Zu jeder Fläche eines Quaders gibt es eine gegenüberliegende Fläche mit denselben Maßen. Also sind es zwei.",
+            }
+          - {
+              value: "4",
+              message: "Vier Flächen sind es nur beim Mantel eines Würfels. Hier sind alle drei Maße verschieden, also haben nur Boden und Deckel diese Maße.",
+            }
+          - {
+              value: "6",
+              message: "Ein Quader hat zwar sechs Flächen, aber nur Boden und Deckel haben die Maße {{a}} cm mal {{b}} cm.",
+            }
+        hint: "Welche Fläche liegt im Quader gegenüber? Sie sieht genau so aus."

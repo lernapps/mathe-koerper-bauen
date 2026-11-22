@@ -32,7 +32,8 @@ Lernende bauen, drehen, klappen auf und zeichnen Körper in einem 3D-Baukasten u
 
 - Archetyp `explainer`, Format 2, `strand: mathematik/geometrie`: Lernende brauchen Erklärung, Bild und Übung je Seite; der Baukasten (drehen, aufklappen, Schrägbild) ist eine Vue-Komponente mit statischer Form und Text für Lesende ohne JavaScript. `interactive` passt nicht (kein Spiel, kein Zeitdruck); `quiz` passt nicht (es muss erst erklärt werden).
 - Rückfragen laut Auftrag: Interview-Antworten (Ziel, Lernende, Umfang, Sprache, Begriffe) kommen aus Issue #432 und den Regeln; der Orchestrator bestätigt am Checkpoint. (guess) Nur Deutsch.
-
+- Kein `scope` (guess): kein `open-task`, kein eigenes Material des Erstellers.
+- Links je Frage (guess): Seite des Bausteins auf der Lernlandkarte (`https://lernapps.net/apps/map/mathematik/c/<id>/`), nicht Wikipedia (Orchestrator: Wikipedia weder in Quellen noch als Weiterlesen). Das Skill empfiehlt Wikipedia; Abweichung ist begründet.
 
 ## Notes
 
@@ -203,14 +204,14 @@ page, which a link. -->
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite koerper-quader/netze-quader-wuerfel: Komponenten KoerperBaukasten und NetzFalten mit Koerper.ts, Tests, nojs, Tastatur, vollständige Seite mit Aufgaben; als Lernender durchspielen
+- [x] Musterseite koerper-quader/netze-quader-wuerfel: Komponenten KoerperBaukasten und NetzFalten mit Koerper.ts, Tests, nojs, Tastatur, vollständige Seite mit Aufgaben; als Lernender durchspielen
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
