@@ -1,0 +1,136 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Quader und Würfel beschreiben
+description: Flächen, Kanten und Ecken von Quader und Würfel erkennen und zählen.
+competencies: [grundkoerper-quader-wuerfel]
+blocks:
+  - type: section
+    id: einstieg
+    title: Eine Schachtel genau ansehen
+    blocks:
+      - type: text
+        text: |
+          Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
+          Kanten und Ecken. Drehe den Körper unten mit den Knöpfen und schau ihn dir von allen Seiten an.
+      - type: vue-component
+        id: baukasten-quader
+        component: KoerperBaukasten
+        props:
+          w: 4
+          d: 2
+          h: 3
+          start: 100
+          alt: "Ein Quader aus sechs Rechtecken, die von 1 bis 6 nummeriert sind. Er ist zu {p} % zugeklappt."
+          slider: Zugeklappt
+          left: Nach links drehen
+          right: Nach rechts drehen
+          up: Von oben ansehen
+          down: Von unten ansehen
+          reset: Zurücksetzen
+        nojs: |
+          Ein Quader, 4 Kästchen lang, 2 breit und 3 hoch. Er hat sechs Rechtecke als Flächen: je zwei gegenüberliegende
+          sind gleich groß. Er hat zwölf Kanten und acht Ecken.
+      - type: single-choice
+        id: form-der-flaechen
+        text: Welche Form haben die Flächen des Quaders, den du siehst?
+        options:
+          - text: Rechtecke
+            correct: true
+            info: Alle sechs Flächen des Quaders sind Rechtecke. Je zwei gegenüberliegende sind gleich groß.
+          - text: Dreiecke
+            correct: false
+            info: Dreiecke haben nur drei Ecken. Die Flächen des Quaders haben vier Ecken und vier rechte Winkel.
+          - text: Kreise
+            correct: false
+            info: Ein Kreis hat keine Ecken. An einer Schachtel sind alle Flächen eben und haben gerade Kanten.
+        explanation: Jede Fläche des Quaders hat vier Ecken und vier rechte Winkel. Das ist ein Rechteck.
+        links:
+          - title: Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/
+  - type: section
+    id: erklaerung
+    title: Flächen, Kanten, Ecken
+    blocks:
+      - type: definition
+        term: Fläche
+        explanation: Eine Fläche ist ein ebenes Stück der Oberfläche eines Körpers. Beim Quader ist sie ein Rechteck.
+      - type: definition
+        term: Kante
+        explanation: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen.
+      - type: definition
+        term: Ecke
+        explanation: Eine Ecke ist der Punkt, an dem Kanten zusammenstoßen.
+      - type: text
+        text: |
+          Der Quader hat sechs Rechtecke als Flächen. Je zwei gegenüberliegende Flächen sind gleich groß. Der Würfel ist
+          ein besonderer Quader: Alle seine Flächen sind gleich große Quadrate und alle Kanten gleich lang.
+      - type: table
+        caption: Quader und Würfel im Vergleich
+        header: [Körper, Flächen, Kanten, Ecken]
+        rows:
+          - [Quader, "6 Rechtecke", "12", "8"]
+          - [Würfel, "6 Quadrate", "12", "8"]
+      - type: example
+        title: Körper aus Würfeln
+        blocks:
+          - type: text
+            text: |
+              Stellst du drei Würfel in einer Reihe nebeneinander, entsteht ein langer Körper. Seine Flächen sind
+              Quadrate an den beiden Enden und Rechtecke an den Seiten. Es ist wieder ein Quader mit sechs Flächen.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: multiple-choice
+        id: quader-im-alltag
+        text: Welche Dinge haben die Form eines Quaders?
+        options:
+          - text: Ein Schuhkarton
+            correct: true
+            info: Ein Schuhkarton hat sechs Rechtecke als Flächen. Das ist ein Quader.
+          - text: Ein Backstein
+            correct: true
+            info: Ein Backstein hat sechs Rechtecke als Flächen und ist ein Quader.
+          - text: Ein Quadrat im Heft
+            correct: false
+            info: Ein Quadrat im Heft ist eine ebene Figur. Ein Körper hat Platz in drei Richtungen, ein Quadrat nur in zwei.
+          - text: Ein Spielwürfel
+            correct: true
+            info: Ein Spielwürfel ist ein Würfel, und jeder Würfel ist ein besonderer Quader.
+        explanation: Quader sind alle Körper mit sechs Rechtecken als Flächen. Der Würfel gehört dazu. Eine ebene Figur ist kein Körper.
+        links:
+          - title: Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/
+      - type: generated
+        id: kanten-gleicher-laenge
+        given:
+          a: { int: [2, 6] }
+          b: { int: [7, 11] }
+          c: { int: [12, 16] }
+        task:
+          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Wie viele seiner Kanten sind {{a}} cm lang?"
+        answer: { value: "4", compare: number }
+        mistakes:
+          - {
+              value: "12",
+              message: "Zwölf Kanten hat der Quader insgesamt. Gefragt sind nur die Kanten, die {{a}} cm lang sind.",
+            }
+          - {
+              value: "2",
+              message: "Zwei Kanten wären es, wenn du nur die Kanten einer Fläche zählst. Der Quader hat vier gleich lange Kanten in jeder Richtung: oben zwei und unten zwei.",
+            }
+          - { value: "6", message: "Sechs ist die Zahl der Flächen. Gezählt werden Kanten." }
+        hint: "Der Quader hat drei Richtungen: lang, breit, hoch. Wie viele Kanten laufen in jeder Richtung?"
+      - type: number
+        id: drei-wuerfel
+        text: Du stellst drei gleich große Würfel in einer Reihe nebeneinander und klebst sie aneinander. Wie viele Flächen hat der neue Körper?
+        answer: 6
+        tolerance: 0
+        explanation: Der neue Körper ist ein Quader. Jeder Quader hat sechs Flächen, auch wenn er aus Würfeln zusammengesetzt ist. Die kleinen Flächen, an denen die Würfel kleben, zählen nicht mehr.
+        mistakes:
+          - answer: 18
+            message: "18 ist dreimal sechs. Die Flächen, an denen die Würfel zusammenkleben, liegen innen und zählen nicht mehr."
+          - answer: 14
+            message: "Du hast die Quadrate an den Enden und alle Seitenquadrate einzeln gezählt. Die Seiten bestehen aber aus je einer langen Fläche."
+        links:
+          - title: Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/

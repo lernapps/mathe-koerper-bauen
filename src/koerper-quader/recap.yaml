@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: Was du über ebene Figuren wissen solltest, bevor du Körper baust.
+recap: [mathematik/grundfiguren-eben]
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? „Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“
+      Ein Quadrat hat vier gleich lange Seiten und vier rechte Winkel. Ein Rechteck hat vier rechte Winkel, und
+      gegenüberliegende Seiten sind gleich lang. Ein Dreieck hat drei Seiten, ein Kreis ist rund. Frage dich: Welche dieser
+      Figuren findest du an einer Schachtel wieder?

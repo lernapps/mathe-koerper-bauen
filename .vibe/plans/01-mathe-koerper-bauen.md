@@ -213,10 +213,11 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite koerper-quader/netze-quader-wuerfel: Komponenten KoerperBaukasten und NetzFalten mit Koerper.ts, Tests, nojs, Tastatur, vollständige Seite mit Aufgaben; als Lernender durchspielen
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Daten src/data/koerper.yaml, app.yaml, Kapitel koerper-quader: recap und quader-wuerfel mit Aufgaben
+      Creator: Musterseite angenommen, übrige Seiten nach Muster (Orchestrator in Vertretung)
+- [x] Daten src/data/koerper.yaml, app.yaml, Kapitel koerper-quader: recap und quader-wuerfel mit Aufgaben
 - [ ] koerper-quader/schraegbild-quader mit Komponente Schraegbild
 - [ ] Kapitel koerper-prisma: drei Seiten (prisma-zylinder, netze, schraegbild)
 - [ ] Kapitel koerper-pyramide: drei Seiten inkl. Kugel (Weltkarte) und Kegelmantel
