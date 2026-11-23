@@ -85,7 +85,7 @@ senkrecht über dem Mittelpunkt der Ellipse. Dann verbindest du die Spitze mit d
 
 ### Aufgabe hoehe-in-kaestchen
 
-- Aufgabe: „Die Pyramide ist {h} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Die Pyramide ist {h} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Die Höhe verläuft senkrecht, also in wahrer Länge. Ein Kästchen ist 0,5 cm lang.“
 - Typische Fehler und was die App sagt:
@@ -107,7 +107,7 @@ Nr. | h | Lösung | F1 | F2
 ### Aufgabe schraegbild-kegel
 
 - Was zu tun ist: Auf Kästchenpapier (ein Kästchen ist 0,5 cm) ist ein Körper im Schrägbild zu zeichnen. Das Kind stellt mit zwei Zählern (Plus und Minus) ein, wie viele Kästchen nach rechts und nach oben die hintere Fläche, der Mittelpunkt der oberen Kreisfläche oder die Spitze liegt, und sieht den Körper danach gezeichnet. Danach „Prüfen“. Breite und Höhe werden in wahrer Länge gezeichnet, 1 cm sind 2 Kästchen. Eine Tiefenkante läuft schräg unter 45° und wird auf halbe Länge verkürzt: so viele Kästchen, wie sie cm lang ist.
-- Aufgabe: „Zeichne das Schrägbild eines Kegels mit dem Radius {w} cm und der Höhe {h} cm. Die Ellipse der Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb des Mittelpunkts der Ellipse?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Zeichne das Schrägbild eines Kegels mit dem Radius {w} cm und der Höhe {h} cm. Die Ellipse der Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb des Mittelpunkts der Ellipse?“
 - Antwortformat: Zwei Zahlen: Kästchen nach rechts und Kästchen nach oben.
 - Was als richtig zählt: Richtig, wenn die Verschiebung genau zum Körper passt (Quader und Prisma: so viele Kästchen nach rechts und oben wie die Tiefe in cm; Zylinder und Kegel: Höhe in cm mal 2 nach oben; Pyramide: Mitte der Grundfläche plus Höhe).
 - Typische Fehler (die Meldung der App passt zu einem davon):
@@ -134,7 +134,7 @@ Nr. | w | h | d (verdeckt) | W (verdeckt) | H (verdeckt) | Lösung | F1 | F2 | F
 ### Aufgabe schraegbild-pyramide
 
 - Was zu tun ist: Auf Kästchenpapier (ein Kästchen ist 0,5 cm) ist ein Körper im Schrägbild zu zeichnen. Das Kind stellt mit zwei Zählern (Plus und Minus) ein, wie viele Kästchen nach rechts und nach oben die hintere Fläche, der Mittelpunkt der oberen Kreisfläche oder die Spitze liegt, und sieht den Körper danach gezeichnet. Danach „Prüfen“. Breite und Höhe werden in wahrer Länge gezeichnet, 1 cm sind 2 Kästchen. Eine Tiefenkante läuft schräg unter 45° und wird auf halbe Länge verkürzt: so viele Kästchen, wie sie cm lang ist.
-- Aufgabe: „Zeichne das Schrägbild einer Pyramide. Die Grundfläche ist ein Rechteck, vorn {w} cm breit ({W} Kästchen) und {d} cm tief. Die Pyramide ist {h} cm hoch. Die Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb der vorderen linken Ecke?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild einer Pyramide. Die Grundfläche ist ein Rechteck, vorn {w} cm breit ({W} Kästchen) und {d} cm tief. Die Pyramide ist {h} cm hoch. Die Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb der vorderen linken Ecke?“
 - Antwortformat: Zwei Zahlen: Kästchen nach rechts und Kästchen nach oben.
 - Was als richtig zählt: Richtig, wenn die Verschiebung genau zum Körper passt (Quader und Prisma: so viele Kästchen nach rechts und oben wie die Tiefe in cm; Zylinder und Kegel: Höhe in cm mal 2 nach oben; Pyramide: Mitte der Grundfläche plus Höhe).
 - Typische Fehler (die Meldung der App passt zu einem davon):

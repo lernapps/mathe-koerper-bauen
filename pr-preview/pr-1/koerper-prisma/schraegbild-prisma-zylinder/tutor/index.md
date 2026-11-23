@@ -87,7 +87,7 @@ Die obere Ellipse liegt 3 cm hoch, das sind 6 Kästchen, über der unteren.
 
 ### Aufgabe ellipse-breite
 
-- Aufgabe: „Ein Kreis hat den Radius {r} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Ein Kreis hat den Radius {r} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Durchmesser ist doppelt so lang wie der Radius. 1 cm sind 2 Kästchen.“
 - Typische Fehler und was die App sagt:
@@ -107,7 +107,7 @@ Nr. | r | Lösung | F1 | F2
 ### Aufgabe schraegbild-prisma
 
 - Was zu tun ist: Auf Kästchenpapier (ein Kästchen ist 0,5 cm) ist ein Körper im Schrägbild zu zeichnen. Das Kind stellt mit zwei Zählern (Plus und Minus) ein, wie viele Kästchen nach rechts und nach oben die hintere Fläche, der Mittelpunkt der oberen Kreisfläche oder die Spitze liegt, und sieht den Körper danach gezeichnet. Danach „Prüfen“. Breite und Höhe werden in wahrer Länge gezeichnet, 1 cm sind 2 Kästchen. Eine Tiefenkante läuft schräg unter 45° und wird auf halbe Länge verkürzt: so viele Kästchen, wie sie cm lang ist.
-- Aufgabe: „Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma liegt auf der Seite und ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma liegt auf der Seite und ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?“
 - Antwortformat: Zwei Zahlen: Kästchen nach rechts und Kästchen nach oben.
 - Was als richtig zählt: Richtig, wenn die Verschiebung genau zum Körper passt (Quader und Prisma: so viele Kästchen nach rechts und oben wie die Tiefe in cm; Zylinder und Kegel: Höhe in cm mal 2 nach oben; Pyramide: Mitte der Grundfläche plus Höhe).
 - Typische Fehler (die Meldung der App passt zu einem davon):
@@ -173,7 +173,7 @@ Nr. | w | h | d | W (verdeckt) | H (verdeckt) | Lösung | F1 | F2 | F3 | F4
 ### Aufgabe schraegbild-zylinder
 
 - Was zu tun ist: Auf Kästchenpapier (ein Kästchen ist 0,5 cm) ist ein Körper im Schrägbild zu zeichnen. Das Kind stellt mit zwei Zählern (Plus und Minus) ein, wie viele Kästchen nach rechts und nach oben die hintere Fläche, der Mittelpunkt der oberen Kreisfläche oder die Spitze liegt, und sieht den Körper danach gezeichnet. Danach „Prüfen“. Breite und Höhe werden in wahrer Länge gezeichnet, 1 cm sind 2 Kästchen. Eine Tiefenkante läuft schräg unter 45° und wird auf halbe Länge verkürzt: so viele Kästchen, wie sie cm lang ist.
-- Aufgabe: „Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?“
 - Antwortformat: Zwei Zahlen: Kästchen nach rechts und Kästchen nach oben.
 - Was als richtig zählt: Richtig, wenn die Verschiebung genau zum Körper passt (Quader und Prisma: so viele Kästchen nach rechts und oben wie die Tiefe in cm; Zylinder und Kegel: Höhe in cm mal 2 nach oben; Pyramide: Mitte der Grundfläche plus Höhe).
 - Typische Fehler (die Meldung der App passt zu einem davon):

@@ -59,8 +59,7 @@ Interaktiv: Ein Würfel, der sich aufklappen lässt. Geschlossen hat er sechs Qu
 
 Nicht jede Anordnung von sechs Quadraten ist ein Würfelnetz. Beim Falten bekommt jedes Quadrat eine eigene
 Seite des Würfels. Würden zwei Quadrate dieselbe Seite bekommen, bliebe eine andere leer: Das Netz geht nicht.
-Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines oben und eines unten an
-der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
+Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines auf jeder Seite der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
 Gegenüber liegen zwei Flächen des Würfels, wenn sie im Netz in einer geraden Reihe mit genau einem Quadrat dazwischen liegen. Sonst lege im Kopf die gesuchte Fläche als Boden und klappe die anderen nach oben: Die Fläche, die oben als Deckel ankommt, liegt gegenüber.
 
 Bild: Das Netz aus dem Baukasten: eine Spalte aus vier Quadraten (6, 4, 1, 2 von oben nach unten), Quadrat 5 links und Quadrat 3 rechts von Quadrat 1. Bildunterschrift: Das Netz aus dem Baukasten. Beim Falten dieses Netzes liegen 1 und 6, 2 und 4 sowie 3 und 5 gegenüber.

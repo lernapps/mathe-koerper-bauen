@@ -65,7 +65,7 @@ Bild: Ein Quader auf Kästchenpapier gezeichnet: vorn ein Rechteck, dahinter ein
 
 - **Kante**: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen.
 
-- **Ecke**: Eine Ecke ist der Punkt, an dem Kanten zusammenstoßen.
+- **Ecke**: Eine Ecke ist ein Punkt, an dem Kanten oder Flächen zusammenstoßen.
 
 Quader und Würfel im Vergleich:
 - Körper | Flächen | Kanten | Ecken

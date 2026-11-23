@@ -52,7 +52,7 @@ Bild: Drei Körper im Schrägbild, nummeriert: 1 eine Pyramide mit einem Rechtec
 
 ### Spitze, Grundfläche, Mantel
 
-- **Spitze**: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen zusammenlaufen.
+- **Spitze**: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen oder der Mantel zusammenlaufen.
 
 - **Pyramide**: Eine Pyramide hat ein Vieleck als Grundfläche. Die Seitenflächen sind Dreiecke, die in einer Spitze zusammenlaufen.
 

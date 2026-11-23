@@ -52,7 +52,7 @@ Bild: Vier Körper, nummeriert von 1 bis 4: 1 ein Quader, 2 ein Körper mit eine
 
 ### Grundfläche entscheidet
 
-- **Grundfläche und Deckfläche**: Grundfläche und Deckfläche sind die beiden gleichen Flächen, die ein Prisma oder Zylinder oben und unten abschließen.
+- **Grundfläche und Deckfläche**: Grundfläche und Deckfläche sind die beiden gleichen Flächen an den Enden eines Prismas oder Zylinders, beim stehenden Körper oben und unten.
 
 - **Vieleck**: Ein Vieleck ist eine ebene Figur mit geraden Seiten, zum Beispiel ein Dreieck, ein Viereck oder ein Fünfeck.
 

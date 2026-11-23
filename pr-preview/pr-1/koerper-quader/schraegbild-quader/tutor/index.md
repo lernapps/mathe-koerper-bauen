@@ -92,7 +92,7 @@ oben verschoben.
 
 ### Aufgabe breite-in-kaestchen
 
-- Aufgabe: „Eine Kante des Quaders ist {b} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Eine Kante des Quaders ist {b} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?“
 - Typische Fehler und was die App sagt:
@@ -115,7 +115,7 @@ Nr. | b | Lösung | F1 | F2
 ### Aufgabe schraegbild-quader-zeichnen
 
 - Was zu tun ist: Auf Kästchenpapier (ein Kästchen ist 0,5 cm) ist ein Körper im Schrägbild zu zeichnen. Das Kind stellt mit zwei Zählern (Plus und Minus) ein, wie viele Kästchen nach rechts und nach oben die hintere Fläche, der Mittelpunkt der oberen Kreisfläche oder die Spitze liegt, und sieht den Körper danach gezeichnet. Danach „Prüfen“. Breite und Höhe werden in wahrer Länge gezeichnet, 1 cm sind 2 Kästchen. Eine Tiefenkante läuft schräg unter 45° und wird auf halbe Länge verkürzt: so viele Kästchen, wie sie cm lang ist.
-- Aufgabe: „Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?“
 - Antwortformat: Zwei Zahlen: Kästchen nach rechts und Kästchen nach oben.
 - Was als richtig zählt: Richtig, wenn die Verschiebung genau zum Körper passt (Quader und Prisma: so viele Kästchen nach rechts und oben wie die Tiefe in cm; Zylinder und Kegel: Höhe in cm mal 2 nach oben; Pyramide: Mitte der Grundfläche plus Höhe).
 - Typische Fehler (die Meldung der App passt zu einem davon):
@@ -199,7 +199,7 @@ Nr. | w | h | d | W (verdeckt) | H (verdeckt) | Lösung | F1 | F2 | F3 | F4
 
 ### Aufgabe tiefe-in-kaestchen
 
-- Aufgabe: „Der Quader ist {t} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?“
+- Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Tiefenkanten zeichnest du schräg und zählst nur halb so viele Kästchen wie in wahrer Länge. Der Quader ist {t} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Eine Kante nach hinten wird auf die halbe Länge verkürzt.“
 - Typische Fehler und was die App sagt:
