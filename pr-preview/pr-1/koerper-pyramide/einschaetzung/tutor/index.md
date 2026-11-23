@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 ### Kapitel „Quader und Würfel“
 
 - Selbsteinschätzung des Kapitels
-- „Das brauchst du hier“
+- „Das brauchst du für dieses Kapitel“
 - „Quader und Würfel beschreiben“
 - „Netze von Quader und Würfel“
 - „Das Schrägbild eines Quaders“

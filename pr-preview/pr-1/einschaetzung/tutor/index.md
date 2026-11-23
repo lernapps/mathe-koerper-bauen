@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 ### Kapitel „Quader und Würfel“
 
 - Selbsteinschätzung des Kapitels
-- „Das brauchst du hier“
+- „Das brauchst du für dieses Kapitel“ · nicht abgefragt
 - „Quader und Würfel beschreiben“ · Aufgaben A1, A2
 - „Netze von Quader und Würfel“ · Aufgaben A3, A4, A5
 - „Das Schrägbild eines Quaders“ · Aufgaben A6, A7, A8

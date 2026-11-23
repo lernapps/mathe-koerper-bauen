@@ -4,8 +4,10 @@
   "pages": [
     {
       "path": "koerper-quader/recap/",
-      "title": "Das brauchst du hier",
-      "recap": "mathematik/grundfiguren-eben"
+      "title": "Das brauchst du für dieses Kapitel",
+      "competencies": [
+        "grundfiguren-eben"
+      ]
     },
     {
       "path": "koerper-quader/quader-wuerfel/",
