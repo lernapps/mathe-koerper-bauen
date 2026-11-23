@@ -64,26 +64,14 @@ function back(): void {
   azimuth.value = 25;
   elevation.value = 30;
 }
-function key(e: KeyboardEvent): void {
-  const moves: Record<string, [number, number]> = {
-    ArrowLeft: [-45, 0],
-    ArrowRight: [45, 0],
-    ArrowUp: [0, 40],
-    ArrowDown: [0, -40],
-  };
-  const m = moves[e.key];
-  if (m === undefined || e.target instanceof HTMLInputElement) return;
-  e.preventDefault();
-  turn(m[0], m[1]);
-}
 const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).join(" ");
 </script>
 
 <template>
-  <div class="koerper-baukasten" tabindex="0" @keydown="key">
+  <div class="koerper-baukasten">
     <svg
       role="img"
-      :aria-label="alt.replace('{p}', String(percent))"
+      :aria-label="`${alt.replace('{p}', String(percent))} Gedreht um ${azimuth} Grad, Blickwinkel ${elevation} Grad.`"
       :viewBox="`${bounds.x} ${bounds.y} ${bounds.w} ${bounds.h}`"
       :style="{ width: `${Math.min(100, bounds.w * unit)}%`, maxWidth: `${bounds.w * unit * 1.4}px` }"
     >

@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du kennst den Quader. Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
+          Du kennst Quader und Würfel. Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
           Schau dir zuerst die vier Körper an.
       - type: figure
         image: images/koerper-prisma-zylinder.svg
@@ -39,6 +39,12 @@ blocks:
     title: Grundfläche entscheidet
     blocks:
       - type: definition
+        term: Grundfläche und Deckfläche
+        explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen, die ein Prisma oder Zylinder oben und unten abschließen.
+      - type: definition
+        term: Vieleck
+        explanation: Ein Vieleck ist eine ebene Figur mit geraden Seiten, zum Beispiel ein Dreieck, ein Viereck oder ein Fünfeck.
+      - type: definition
         term: Prisma
         explanation: Ein Prisma hat zwei gleiche Vielecke als Grundfläche und Deckfläche. Dazwischen stehen Rechtecke als Seitenflächen.
       - type: definition
@@ -47,7 +53,7 @@ blocks:
       - type: text
         text: |
           Ein Prisma benennst du nach seiner Grundfläche: Hat sie drei Ecken, ist es ein Dreiecksprisma, bei fünf Ecken ein
-          Fünfeckprisma. Der Quader ist ein Prisma mit einem Rechteck als Grundfläche.
+          Fünfeckprisma. Der Quader ist ein Prisma mit einem Rechteck als Grundfläche. Boden und Deckel heißen bei Prisma und Zylinder Grundfläche und Deckfläche.
           Beim Zylinder ist die Grundfläche ein Kreis. Man kann sich den Zylinder als Prisma mit sehr vielen Ecken
           vorstellen. Er hat keine Ecken und keine geraden Seitenflächen.
       - type: table

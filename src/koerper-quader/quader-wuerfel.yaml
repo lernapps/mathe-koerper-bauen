@@ -10,7 +10,7 @@ blocks:
       - type: text
         text: |
           Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
-          Kanten und Ecken. Drehe den Körper unten mit den Knöpfen und schau ihn dir von allen Seiten an.
+          Kanten und Ecken. Mit dem Regler klappst du den Körper auf, mit den Knöpfen drehst du ihn. Seine Flächen sind von 1 bis 6 nummeriert.
       - type: vue-component
         id: baukasten-quader
         component: KoerperBaukasten
@@ -51,8 +51,14 @@ blocks:
     title: Flächen, Kanten, Ecken
     blocks:
       - type: definition
+        term: Quader
+        explanation: Ein Quader ist ein Körper mit sechs Rechtecken als Flächen. Gegenüberliegende Flächen sind gleich groß.
+      - type: definition
+        term: Würfel
+        explanation: Ein Würfel ist ein Quader, dessen sechs Flächen alle gleich große Quadrate sind.
+      - type: definition
         term: Fläche
-        explanation: Eine Fläche ist ein ebenes Stück der Oberfläche eines Körpers. Beim Quader ist sie ein Rechteck.
+        explanation: Eine Fläche ist ein Stück der Oberfläche eines Körpers, eben oder gekrümmt. Beim Quader ist jede Fläche ein Rechteck.
       - type: definition
         term: Kante
         explanation: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen.
@@ -75,7 +81,7 @@ blocks:
           - type: text
             text: |
               Stellst du drei Würfel in einer Reihe nebeneinander, entsteht ein langer Körper. Seine Flächen sind
-              Quadrate an den beiden Enden und Rechtecke an den Seiten. Es ist wieder ein Quader mit sechs Flächen.
+              Quadrate an den beiden Enden und Rechtecke an den Seiten.
   - type: section
     id: uebung
     title: Übung

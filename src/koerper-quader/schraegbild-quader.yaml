@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ein Körper ist räumlich, ein Heft ist flach. Ein Schrägbild zeigt den Körper trotzdem so, dass du ihn erkennst.
+          Im Netz liegen die Flächen flach nebeneinander. Ein Schrägbild zeigt den Körper dagegen räumlich auf dem Heft, sodass du ihn erkennst.
           Nach dieser Seite kannst du den Quader als Schrägbild auf Kästchenpapier zeichnen.
       - type: figure
         image: images/schraegbild-quader.svg
@@ -43,7 +43,7 @@ blocks:
           Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
           1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
-          2. Jede Kante nach hinten zeichnest du schräg, als Diagonale durch Kästchen.
+          2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
           3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
           4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
       - type: example

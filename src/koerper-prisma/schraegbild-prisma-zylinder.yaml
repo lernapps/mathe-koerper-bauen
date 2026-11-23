@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du zeichnest Quader schon im Schrägbild. Nach dieser Seite zeichnest du auch ein Prisma und einen Zylinder.
+          Du zeichnest Quader schon im Schrägbild, mit schrägen Tiefenkanten. Nach dieser Seite zeichnest du auch ein Prisma und einen Zylinder.
           Schau dir im Bild die Körper 2 und 4 an.
       - type: figure
         image: images/koerper-prisma-zylinder.svg
@@ -35,17 +35,20 @@ blocks:
     blocks:
       - type: text
         text: |
-          Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Die Tiefe zeichnest du wie beim Quader schräg und
+          Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Das Prisma liegt dabei auf der Seite: Seine Höhe ist im Bild die Tiefe. Die Tiefe zeichnest du wie beim Quader schräg und
           halbiert: so viele Kästchen diagonal, wie die Kante cm lang ist.
           Einen Kreis zeichnest du im Schrägbild als Ellipse. Sie ist so breit wie der Kreis, aber nur halb so hoch.
           Beim Zylinder verschiebst du die Ellipse um die Höhe nach oben. Dann verbindest du die beiden Ränder mit zwei
           senkrechten Linien.
+      - type: definition
+        term: Ellipse
+        explanation: Eine Ellipse ist ein langgezogener Kreis, wie ein Kreis, den du schräg von der Seite ansiehst.
       - type: example
         title: Ein Zylinder mit Radius 2 cm und Höhe 3 cm
         blocks:
           - type: text
             text: |
-              Der Durchmesser ist 4 cm, das sind 8 Kästchen. Die Ellipse ist 8 Kästchen breit und 4 Kästchen hoch.
+              Der Durchmesser ist doppelt so lang wie der Radius, also 4 cm. Das sind 8 Kästchen. Die Ellipse ist 8 Kästchen breit und 4 Kästchen hoch.
               Die obere Ellipse liegt 3 cm hoch, das sind 6 Kästchen, über der unteren.
   - type: section
     id: uebung
@@ -73,7 +76,7 @@ blocks:
         component: Schraegbild
         props:
           body: prisma
-          task: "Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
+          task: "Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma liegt auf der Seite und ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
           alt: "Ein Prisma mit einem Dreieck als Grundfläche auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben

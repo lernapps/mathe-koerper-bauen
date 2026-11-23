@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
+          Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
           Schau dir zuerst das Netz einer Pyramide an.
       - type: figure
         image: images/netz-pyramide.svg

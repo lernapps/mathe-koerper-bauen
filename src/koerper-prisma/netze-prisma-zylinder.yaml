@@ -9,8 +9,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Schneidest du ein Prisma auf, liegt ein Netz vor dir. Nach dieser Seite kannst du das Netz von Prisma und
-          Zylinder findest und prüfst. Das Bild zeigt ein Netz.
+          Beim Quader hast du Netze gefaltet. Schneidest du ein Prisma auf, liegt auch ein Netz vor dir. Nach dieser Seite findest und prüfst du das Netz von
+          Prisma und Zylinder. Das Bild zeigt ein Netz.
       - type: figure
         image: images/netz-dreiecksprisma.svg
         alt: "Ein Netz: drei Rechtecke nebeneinander, a, b und c genannt. Am mittleren Rechteck hängt oben ein rechtwinkliges Dreieck und unten ein zweites gleiches Dreieck."

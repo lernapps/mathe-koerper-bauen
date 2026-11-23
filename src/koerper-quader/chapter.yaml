@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Quader und Würfel
-summary: Du baust Quader und Würfel, findest ihre Netze und prüfst, ob ein Netz sich falten lässt.
+summary: Du baust Quader und Würfel, findest ihre Netze, prüfst, ob ein Netz sich falten lässt, und zeichnest sie als Schrägbild.
 pages: [recap, quader-wuerfel, netze-quader-wuerfel, schraegbild-quader]
