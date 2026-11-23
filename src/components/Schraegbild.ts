@@ -120,6 +120,8 @@ export interface Ellipse {
   cy: number;
   rx: number;
   ry: number;
+  /** The back half is hidden: drawn dashed. */
+  dashedBack: boolean;
 }
 
 export interface Drawing {
@@ -133,12 +135,19 @@ export interface Drawing {
 const line = (x1: number, y1: number, x2: number, y2: number, hidden = false): Line => ({ x1, y1, x2, y2, hidden });
 
 /** The body drawn for the answer (right, up), the front's lower left corner (or the middle of the lower circle) at (ox, oy). */
-export function drawing(task: Task, answer: Answer, ox = 1, oy = 1): Drawing {
+export function drawing(task: Task, answer: Answer, originX = 1, originY = 1): Drawing {
   const W = 2 * task.w;
   const H = 2 * task.h;
   const { right, up } = answer;
   const lines: Line[] = [];
   const ellipses: Ellipse[] = [];
+  let ox = originX;
+  let oy = originY;
+  // a circle is drawn around its middle: the paper starts one square left of and below the ellipse
+  if (task.body === "zylinder" || task.body === "kegel") {
+    ox += 2 * task.w;
+    oy += task.w;
+  }
   const at = (x: number, y: number): [number, number] => [ox + x, oy + y];
   const seg = (a: [number, number], b: [number, number], hidden = false) =>
     lines.push(line(a[0], a[1], b[0], b[1], hidden));
@@ -168,10 +177,10 @@ export function drawing(task: Task, answer: Answer, ox = 1, oy = 1): Drawing {
     for (let i = 0; i < 4; i++) seg(base[i] as [number, number], tip, i === 3);
   } else {
     const r = 2 * task.w;
-    ellipses.push({ cx: ox, cy: oy, rx: r, ry: r / 2 });
+    ellipses.push({ cx: ox, cy: oy, rx: r, ry: r / 2, dashedBack: true });
     const tip = at(right, up);
     if (task.body === "zylinder") {
-      ellipses.push({ cx: tip[0], cy: tip[1], rx: r, ry: r / 2 });
+      ellipses.push({ cx: tip[0], cy: tip[1], rx: r, ry: r / 2, dashedBack: false });
       seg(at(-r, 0), [tip[0] - r, tip[1]]);
       seg(at(r, 0), [tip[0] + r, tip[1]]);
     } else {

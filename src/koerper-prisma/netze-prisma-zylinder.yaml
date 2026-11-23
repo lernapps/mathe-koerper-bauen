@@ -1,0 +1,139 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Netze von Prisma und Zylinder
+description: Aus einer Dose oder einem Prisma das Netz finden.
+competencies: [netze-schraegbilder-prisma-zylinder]
+blocks:
+  - type: section
+    id: einstieg
+    title: Ein Prisma aufklappen
+    blocks:
+      - type: text
+        text: |
+          Schneidest du ein Prisma auf, liegt ein Netz vor dir. Nach dieser Seite kannst du das Netz von Prisma und
+          Zylinder zeichnen und prüfen. Das Bild zeigt ein Netz.
+      - type: figure
+        image: images/netz-dreiecksprisma.svg
+        alt: "Ein Netz: drei Rechtecke nebeneinander, a, b und c genannt. Am mittleren Rechteck hängt oben ein rechtwinkliges Dreieck und unten ein zweites gleiches Dreieck."
+        caption: Das Netz eines Prismas mit einem Dreieck als Grundfläche.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: rechtecke-zaehlen
+        text: Wie viele Rechtecke hat das Netz im Bild?
+        answer: 3
+        tolerance: 0
+        explanation: Die drei Rechtecke a, b und c sind die Seitenflächen des Prismas. Dazu kommen die zwei Dreiecke als Grundfläche und Deckfläche.
+        mistakes:
+          - answer: 5
+            message: "Fünf Flächen hat das Netz insgesamt, aber zwei davon sind Dreiecke. Gefragt sind die Rechtecke."
+        links:
+          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
+  - type: section
+    id: erklaerung
+    title: Mantel und Deckel
+    blocks:
+      - type: text
+        text: |
+          Beim Prisma bilden die Seitenflächen den Mantel: so viele Rechtecke nebeneinander, wie die Grundfläche Ecken
+          hat. Zusammen sind sie so lang wie der Rand der Grundfläche. Grundfläche und Deckfläche hängen an den langen
+          Seiten des Mantels.
+          Beim Zylinder ist der Mantel ein einziges Rechteck. Seine lange Seite ist so lang wie der Rand des Kreises, denn
+          der Mantel rollt sich um den Kreis. Die zwei Kreise hängen an den beiden langen Seiten.
+      - type: example
+        title: Eine Dose aufschneiden
+        blocks:
+          - type: text
+            text: |
+              Schneidest du eine Dose am Rand von Deckel und Boden ab und den Mantel einmal senkrecht auf, liegt das Netz
+              flach: ein langes Rechteck und zwei Kreise. Die Höhe des Rechtecks ist die Höhe der Dose.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: netz-zylinder-waehlen
+        text: Welches Netz gehört zu einem Zylinder?
+        material:
+          - type: figure
+            image: images/netz-zylinder-auswahl.svg
+            alt: "Drei Netze, A, B und C. A: ein langes Rechteck, an seiner oberen und an seiner unteren langen Seite je ein Kreis. B: ein langes, flaches Rechteck, an seiner linken und an seiner rechten kurzen Seite je ein Kreis. C: ein langes Rechteck, an dessen oberer langer Seite zwei Kreise nebeneinander hängen und an dessen unterer Seite keiner."
+            caption: Drei Netze zur Auswahl.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        options:
+          - text: Netz A
+            correct: true
+            info: Der Mantel ist ein langes Rechteck. An seinen langen Seiten hängen oben und unten die Kreise. So passt jeder Kreisrand an eine lange Seite.
+          - text: Netz B
+            correct: false
+            info: Hier hängen die Kreise an den kurzen Seiten des Rechtecks. Der Rand eines Kreises ist aber so lang wie die lange Seite, die kurze Seite passt nicht.
+          - text: Netz C
+            correct: false
+            info: Hier hängen beide Kreise an derselben Seite. Dann ist der Deckel doppelt da, und unten fehlt der Boden.
+        explanation: Beim Zylinder hängt an jeder langen Seite des Mantels ein Kreis, einer oben, einer unten.
+        links:
+          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
+      - type: generated
+        id: mantel-breite
+        given:
+          a: { int: [3, 6] }
+          b: { int: [7, 9] }
+          c: { int: [10, 12] }
+          k: { int: [2, 6] }
+        task:
+          text: "Ein Prisma ist {{k}} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {{a}} cm, {{b}} cm und {{c}} cm. Wie breit ist das Rechteck im Netz, das an die Dreiecksseite {{b}} cm grenzt?"
+        answer: { value: "b", compare: number }
+        mistakes:
+          - {
+              value: "k",
+              message: "{{k}} cm ist die Höhe des Prismas, also die Länge des Rechtecks. Die Breite ist die Seite des Dreiecks, an der es hängt.",
+            }
+          - {
+              value: "a + b + c",
+              message: "Das ist die Länge aller drei Rechtecke zusammen, wenn sie nebeneinander liegen. Gefragt ist ein einzelnes Rechteck.",
+            }
+        hint: "Das Rechteck hängt an einer Seite des Dreiecks. Wie lang ist diese Seite?"
+      - type: generated
+        id: mantel-laenge
+        given:
+          a: { int: [3, 6] }
+          b: { int: [7, 9] }
+          c: { int: [10, 12] }
+          k: { int: [2, 6] }
+        task:
+          text: "Die drei Rechtecke des Mantels liegen im Netz nebeneinander. Das Prisma ist {{k}} cm hoch, die Grundfläche ein Dreieck mit den Seiten {{a}} cm, {{b}} cm und {{c}} cm. Wie lang ist der ganze Mantel in der langen Richtung?"
+        answer: { value: "a + b + c", compare: number }
+        mistakes:
+          - {
+              value: "k",
+              message: "{{k}} cm ist die Höhe des Prismas, die kurze Seite des Mantels. Gefragt ist die lange Richtung.",
+            }
+          - {
+              value: "a + b",
+              message: "Dir fehlt das Rechteck an der dritten Seite. Alle drei Rechtecke liegen nebeneinander.",
+            }
+        hint: "Der Mantel ist so lang wie der Rand der Grundfläche."
+      - type: number
+        id: netz-fuenfeck
+        text: Wie viele Flächen hat das Netz eines Prismas mit einem Fünfeck als Grundfläche?
+        answer: 7
+        tolerance: 0
+        explanation: Fünf Rechtecke bilden den Mantel, dazu kommen die Grundfläche und die Deckfläche, beide Fünfecke.
+        mistakes:
+          - answer: 5
+            message: "Fünf Rechtecke sind es nur im Mantel. Grundfläche und Deckfläche fehlen noch."
+          - answer: 10
+            message: "10 ist die Zahl der Ecken. Gefragt sind Flächen: fünf Rechtecke und zwei Fünfecke."
+        links:
+          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
+      - type: true-false
+        id: zylinder-mantel-laenge
+        text: "Beim Netz eines Zylinders ist die lange Seite des Rechtecks so lang wie der Rand eines der beiden Kreise."
+        answer: true
+        explanation: Der Mantel rollt sich einmal um den Kreis. Darum passt der Rand des Kreises genau an die lange Seite des Rechtecks.
+        links:
+          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/

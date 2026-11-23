@@ -219,7 +219,7 @@ page, which a link. -->
       Creator: Musterseite angenommen, übrige Seiten nach Muster (Orchestrator in Vertretung)
 - [x] Daten src/data/koerper.yaml, app.yaml, Kapitel koerper-quader: recap und quader-wuerfel mit Aufgaben
 - [x] koerper-quader/schraegbild-quader mit Komponente Schraegbild
-- [ ] Kapitel koerper-prisma: drei Seiten (prisma-zylinder, netze, schraegbild)
+- [x] Kapitel koerper-prisma: drei Seiten (prisma-zylinder, netze, schraegbild)
 - [ ] Kapitel koerper-pyramide: drei Seiten inkl. Kugel (Weltkarte) und Kegelmantel
 - [ ] App-Content-Guide .agents/skills/app-content/SKILL.md vollständig, lernapps check ohne Fehler
 <!-- tasks: pages (5 added): the other pages or screens, after the pattern -->

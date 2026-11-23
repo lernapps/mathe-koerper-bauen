@@ -79,15 +79,16 @@ const description = computed(
           :y2="px(y - 1)"
         />
       </g>
-      <ellipse
-        v-for="(e, i) in picture.ellipses"
-        :key="`e${i}`"
-        :cx="px(e.cx)"
-        :cy="py(e.cy)"
-        :rx="px(e.rx)"
-        :ry="px(e.ry)"
-        class="schraegbild-edge"
-      />
+      <template v-for="(e, i) in picture.ellipses" :key="`e${i}`">
+        <path
+          :d="`M${px(e.cx - e.rx)},${py(e.cy)} A${px(e.rx)},${px(e.ry)} 0 0 0 ${px(e.cx + e.rx)},${py(e.cy)}`"
+          class="schraegbild-edge"
+        />
+        <path
+          :d="`M${px(e.cx - e.rx)},${py(e.cy)} A${px(e.rx)},${px(e.ry)} 0 0 1 ${px(e.cx + e.rx)},${py(e.cy)}`"
+          :class="['schraegbild-edge', { 'schraegbild-hidden': e.dashedBack }]"
+        />
+      </template>
       <line
         v-for="(l, i) in picture.lines"
         :key="`l${i}`"
