@@ -34,6 +34,7 @@ Lernende bauen, drehen, klappen auf und zeichnen Körper in einem 3D-Baukasten u
 - Rückfragen laut Auftrag: Interview-Antworten (Ziel, Lernende, Umfang, Sprache, Begriffe) kommen aus Issue #432 und den Regeln; der Orchestrator bestätigt am Checkpoint. (guess) Nur Deutsch.
 - Kein `scope` (guess): kein `open-task`, kein eigenes Material des Erstellers.
 - Links je Frage (guess): Seite des Bausteins auf der Lernlandkarte (`https://lernapps.net/apps/map/mathematik/c/<id>/`), nicht Wikipedia (Orchestrator: Wikipedia weder in Quellen noch als Weiterlesen). Das Skill empfiehlt Wikipedia; Abweichung ist begründet.
+- Keine Datendatei `src/data/koerper.yaml` (guess): Anzahlen folgen aus n und stehen als `generated`-Rechnung; eine Tabelle der Körper wäre ein zweites Mal dieselbe Aussage.
 
 ## Notes
 
@@ -220,7 +221,7 @@ page, which a link. -->
 - [x] Daten src/data/koerper.yaml, app.yaml, Kapitel koerper-quader: recap und quader-wuerfel mit Aufgaben
 - [x] koerper-quader/schraegbild-quader mit Komponente Schraegbild
 - [x] Kapitel koerper-prisma: drei Seiten (prisma-zylinder, netze, schraegbild)
-- [ ] Kapitel koerper-pyramide: drei Seiten inkl. Kugel (Weltkarte) und Kegelmantel
+- [x] Kapitel koerper-pyramide: drei Seiten inkl. Kugel (Weltkarte) und Kegelmantel
 - [ ] App-Content-Guide .agents/skills/app-content/SKILL.md vollständig, lernapps check ohne Fehler
 <!-- tasks: pages (5 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).

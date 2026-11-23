@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Pyramide, Kegel und Kugel
+summary: Spitze Körper werden aufgeklappt, und die Kugel zeigt, wo das Netz nicht geht.
+pages: [pyramide-kegel-kugel, netze-pyramide-kegel, schraegbild-pyramide-kegel]

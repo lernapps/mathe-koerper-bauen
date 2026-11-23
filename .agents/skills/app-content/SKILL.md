@@ -48,12 +48,12 @@ Schrägbild: Vorderseite in wahrer Größe, Tiefenkanten unter 45° auf halber L
 
 ## Exercise patterns
 
-Daten: `src/data/koerper.yaml` (Name, Flächen, Kanten, Ecken, Grundfläche je Körper; jedes Faktum einmal).
+Daten: keine Datendatei. Anzahlen (Flächen, Kanten, Ecken) folgen aus der Zahl n der Ecken der Grundfläche und stehen als Rechnung in `generated` (n-Eck), nicht als Tabelle. Tabellen der Seiten sind `table`-Blöcke.
 
-- Körper beschreiben: `matching`, `single-choice`, `true-false` mit Begründung, `generated` aus `koerper.yaml`.
-- Netz falten: Übungskomponente `NetzFalten` (Netz gegeben; Entscheidung faltbar oder nicht, Fläche zuordnen).
+- Körper beschreiben: `matching`, `single-choice`, `multiple-choice`, `true-false` mit Begründung, `number`, `generated` mit n-Eck (Prisma: Ecken 2n, Flächen n+2; Pyramide: Ecken n+1, Kanten 2n).
+- Netz falten: Übungskomponente `NetzFalten` (nur Würfelnetze; Modus `faltbar`: ja oder nein, Modus `gegenueber`: welche Fläche liegt gegenüber). Netze der anderen Körper: `single-choice` mit Netz-Bild in `material` (`images/netz-*.svg`).
 - Baukasten: Anzeigekomponente `KoerperBaukasten` (drehen, Regler „Aufklappen“).
-- Schrägbild zeichnen: Übungskomponente `Schraegbild` (Kästchenpapier, Kanten setzen, Prüfung der Kantenlängen und Richtungen).
+- Schrägbild zeichnen: Übungskomponente `Schraegbild` mit `body` quader, prisma, zylinder, pyramide oder kegel. Lernende stellen mit zwei Zählern (Nach rechts, Nach oben, in Kästchen) die Verschiebung der Rückseite, der oberen Ellipse oder der Spitze ein und sehen den Körper gezeichnet. Ein Kästchen ist 0,5 cm; Breite und Höhe in wahrer Länge (1 cm = 2 Kästchen), Tiefe diagonal mit so vielen Kästchen wie cm.
 - Wo das Netz nicht geht (Kugel): `single-choice` / `true-false` mit Begründung (Weltkarte).
 - Fehler, die die Rückmeldung nennt: vier Quadrate in Reihe plus Anbau falsch; Fläche doppelt; Tiefe in voller Länge;
   Tiefe waagerecht; Mantel des Zylinders als Kreis; Kegelmantel als Dreieck; Flächen- und Kantenzahl vertauscht.
@@ -61,7 +61,7 @@ Daten: `src/data/koerper.yaml` (Name, Flächen, Kanten, Ecken, Grundfläche je K
 
 ## Figures
 
-Eigene SVG-Bilder (kein Foto, nichts von Dritten). Flächen unterscheiden sich durch Beschriftung (1–6) und Muster, nie
+Eigene SVG-Bilder (kein Foto, nichts von Dritten), in `src/images/` aus einem Skript ausserhalb des Repos erzeugt: Quader-, Prisma-, Zylinder-, Pyramide-, Kegel-, Kugelbilder im Schrägbild (verdeckte Kanten gestrichelt) und Netze. Flächen unterscheiden sich durch Beschriftung (1–6) und Muster, nie
 nur durch Farbe. Jedes Bild mit `alt` und Bildunterschrift. Komponenten nutzen nur die Farbvariablen der Seite und haben
 `nojs`-Text; alle Aktionen per Tastatur (Tab, Pfeile, Enter), Ziele mindestens 44 px.
 

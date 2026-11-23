@@ -4,4 +4,4 @@ strand: mathematik/geometrie
 title: Körper bauen, aufklappen und zeichnen
 intro: Du baust Körper, klappst sie zu Netzen auf und zeichnest sie als Schrägbild.
 languages: [de]
-chapters: [koerper-quader, koerper-prisma]
+chapters: [koerper-quader, koerper-prisma, koerper-pyramide]
