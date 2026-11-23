@@ -46,7 +46,7 @@ Aus einer Dose oder einem Prisma das Netz finden.
 Beim Quader hast du Netze gefaltet. Schneidest du ein Prisma auf, liegt auch ein Netz vor dir. Nach dieser Seite findest und prüfst du das Netz von
 Prisma und Zylinder. Das Bild zeigt ein Netz.
 
-Bild: Ein Netz: drei Rechtecke nebeneinander, a, b und c genannt. Am mittleren Rechteck hängt oben ein rechtwinkliges Dreieck und unten ein zweites gleiches Dreieck. Bildunterschrift: Das Netz eines Prismas mit einem Dreieck als Grundfläche.
+Bild: Links ein Prisma mit einem rechtwinkligen Dreieck als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: drei Rechtecke nebeneinander, a, b und c genannt, am mittleren Rechteck oben und unten je ein Dreieck. Bildunterschrift: Das Prisma wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du sein Netz.
 
 - Aufgabe `rechtecke-zaehlen` (unten)
 
@@ -57,6 +57,8 @@ hat. Zusammen sind sie so lang wie der Rand der Grundfläche. Grundfläche und D
 Mantels, die so lang sind wie ihr Rand.
 Beim Zylinder ist der Mantel ein einziges Rechteck. Eine Seite ist so lang wie der Rand des Kreises, denn
 der Mantel rollt sich um den Kreis. Die zwei Kreise hängen an den beiden Seiten, die so lang sind wie ihr Rand.
+
+Bild: Links ein Zylinder, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: ein langes Rechteck, an dessen oberer und unterer langer Seite je ein Kreis hängt. Bildunterschrift: Der Zylinder wird aufgeschnitten: Der Mantel wird zum Rechteck, Boden und Deckel bleiben Kreise.
 
 **Beispiel: Eine Dose aufschneiden**
 
@@ -77,7 +79,7 @@ flach: ein langes Rechteck und zwei Kreise. Die Höhe des Rechtecks ist die Höh
 
 ### Aufgabe rechtecke-zaehlen
 
-- Aufgabe: Wie viele Rechtecke hat das Netz im Bild?
+- Aufgabe: Wie viele Rechtecke hat das Netz rechts im Bild?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 3
 - Erklärung: Die drei Rechtecke a, b und c sind die Seitenflächen des Prismas. Dazu kommen die zwei Dreiecke als Grundfläche und Deckfläche.

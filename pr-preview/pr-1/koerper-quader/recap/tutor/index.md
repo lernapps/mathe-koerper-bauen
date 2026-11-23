@@ -45,7 +45,7 @@ Parallel, senkrecht und ebene Figuren auffrischen und prüfen, ob du bereit bist
 
 Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du für dieses Kapitel zwei
 Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die Begriffe und prüfe dich mit den
-Kurztests „Kannst du das?“.
+Kurztests „Kannst du das?“. Du klickst eine Antwort an und siehst sofort, ob sie stimmt und warum.
 
 ### Parallelen, Senkrechten und Abstand
 
@@ -82,7 +82,7 @@ Bild: Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck,
 
 #### Kannst du das?
 
-Interaktiv: Kurztest: Welche Figur hat immer vier gleich lange Seiten? Quadrat, Rechteck oder Dreieck. Antwort: das Quadrat. Beim Rechteck müssen nur gegenüberliegende Seiten gleich lang sein, ein Dreieck hat nur drei Seiten.
+Interaktiv: Kurztest: Ein Rechteck hat vier rechte Winkel. Wann ist es ein Quadrat? Antwort: wenn alle vier Seiten gleich lang sind. Gegenüberliegende Seiten sind bei jedem Rechteck gleich lang.
 
 - **Dreieck**: Ein **Dreieck** hat drei Seiten und drei Ecken.
 
@@ -96,9 +96,9 @@ Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat e
 
 #### Kannst du das noch?
 
-Interaktiv: Kurztest: Ein Vieleck hat 6 Ecken. Wie viele Seiten hat es? Antwort: 6, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
+Interaktiv: Kurztest: Ein Vieleck hat 9 Ecken. Wie viele Seiten hat es? Antwort: 9, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
 
-Interaktiv: Kurztest: Ein Kreis hat den Radius 4 cm. Wie lang ist sein Durchmesser? Antwort: 8 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
+Interaktiv: Kurztest: Ein Kreis hat den Radius 12 cm. Wie lang ist sein Durchmesser? Antwort: 24 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
 
 Falsch? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/).
 

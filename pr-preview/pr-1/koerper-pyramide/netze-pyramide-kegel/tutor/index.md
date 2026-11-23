@@ -46,7 +46,7 @@ Pyramide und Kegel aufklappen und sehen, warum die Kugel kein Netz hat.
 Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
 Schau dir zuerst das Netz einer Pyramide an.
 
-Bild: Netz einer Pyramide: ein Quadrat in der Mitte, an jeder der vier Seiten ein gleichschenkliges Dreieck. Bildunterschrift: Das Netz einer Pyramide mit einem Quadrat als Grundfläche.
+Bild: Links eine Pyramide mit einem Quadrat als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts ihr Netz: ein Quadrat mit einem Dreieck an jeder der vier Seiten. Bildunterschrift: Die Pyramide wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du ihr Netz.
 
 - Aufgabe `dreiecke-zaehlen` (unten)
 
@@ -57,6 +57,8 @@ Dreiecke.
 Beim Kegel ist die Grundfläche ein Kreis. Der Mantel ist ein Kreisausschnitt, ein Stück aus einem großen Kreis
 wie ein Tortenstück. Der runde Rand des Ausschnitts ist so lang wie der Rand der Grundfläche.
 Bei der Kugel geht das nicht: Eine Kugel lässt sich nicht flach legen, ohne zu dehnen oder zu reißen.
+
+Bild: Links ein Kegel, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: ein Ausschnitt aus einem großen Kreis wie ein Stück Kuchen, an dessen rundem Rand ein kleiner Kreis hängt. Bildunterschrift: Der Kegel wird aufgeschnitten: Der Mantel wird zum Kreisausschnitt, der Boden bleibt ein Kreis.
 
 **Beispiel: Globus und Weltkarte**
 
@@ -78,7 +80,7 @@ Verzerrung gibt es nicht.
 
 ### Aufgabe dreiecke-zaehlen
 
-- Aufgabe: Wie viele Dreiecke hat das Netz im Bild?
+- Aufgabe: Wie viele Dreiecke hat das Netz rechts im Bild?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 4
 - Erklärung: An jeder der vier Seiten des Quadrats hängt ein Dreieck. Beim Falten laufen ihre Spitzen oben zusammen.

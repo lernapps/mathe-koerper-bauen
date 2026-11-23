@@ -61,6 +61,8 @@ Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
 4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
 
+In den Aufgaben zeichnest du mit zwei Zählern: „Nach rechts“ und „Nach oben“ legen fest, wie weit die Rückseite gegenüber der Vorderseite verschoben ist. Die Zeichnung in der Aufgabe zeichnet den Körper dazu.
+
 **Beispiel: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief**
 
 Vorderseite: 3 cm sind 6 Kästchen, 2 cm sind 4 Kästchen. Tiefe: 4 cm werden 4 Kästchen diagonal, also 4
