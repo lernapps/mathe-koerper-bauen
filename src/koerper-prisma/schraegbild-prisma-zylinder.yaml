@@ -59,7 +59,7 @@ blocks:
         given:
           r: { int: [2, 5] }
         task:
-          text: "Ein Kreis hat den Radius {{r}} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?"
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Ein Kreis hat den Radius {{r}} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?"
         answer: { value: "4 * r", compare: number }
         mistakes:
           - {
@@ -76,7 +76,7 @@ blocks:
         component: Schraegbild
         props:
           body: prisma
-          task: "Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma liegt auf der Seite und ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma liegt auf der Seite und ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
           alt: "Ein Prisma mit einem Dreieck als Grundfläche auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben
@@ -98,7 +98,7 @@ blocks:
         component: Schraegbild
         props:
           body: zylinder
-          task: "Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?"
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?"
           alt: "Ein Zylinder auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben

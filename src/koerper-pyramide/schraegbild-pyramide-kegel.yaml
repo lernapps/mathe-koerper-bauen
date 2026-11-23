@@ -56,7 +56,7 @@ blocks:
         given:
           h: { int: [2, 7] }
         task:
-          text: "Die Pyramide ist {{h}} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?"
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Die Pyramide ist {{h}} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?"
         answer: { value: "2 * h", compare: number }
         mistakes:
           - { value: "h", message: "Du hast die Zentimeter als Kästchen gezählt. 1 cm sind 2 Kästchen." }
@@ -70,7 +70,7 @@ blocks:
         component: Schraegbild
         props:
           body: kegel
-          task: "Zeichne das Schrägbild eines Kegels mit dem Radius {w} cm und der Höhe {h} cm. Die Ellipse der Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb des Mittelpunkts der Ellipse?"
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Zeichne das Schrägbild eines Kegels mit dem Radius {w} cm und der Höhe {h} cm. Die Ellipse der Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb des Mittelpunkts der Ellipse?"
           alt: "Ein Kegel auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben
@@ -92,7 +92,7 @@ blocks:
         component: Schraegbild
         props:
           body: pyramide
-          task: "Zeichne das Schrägbild einer Pyramide. Die Grundfläche ist ein Rechteck, vorn {w} cm breit ({W} Kästchen) und {d} cm tief. Die Pyramide ist {h} cm hoch. Die Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb der vorderen linken Ecke?"
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild einer Pyramide. Die Grundfläche ist ein Rechteck, vorn {w} cm breit ({W} Kästchen) und {d} cm tief. Die Pyramide ist {h} cm hoch. Die Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb der vorderen linken Ecke?"
           alt: "Eine Pyramide auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben

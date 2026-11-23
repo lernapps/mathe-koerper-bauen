@@ -74,7 +74,7 @@ blocks:
         explanation: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen.
       - type: definition
         term: Ecke
-        explanation: Eine Ecke ist der Punkt, an dem Kanten zusammenstoßen.
+        explanation: Eine Ecke ist ein Punkt, an dem Kanten oder Flächen zusammenstoßen.
       - type: table
         caption: Quader und Würfel im Vergleich
         header: [Körper, Flächen, Kanten, Ecken]

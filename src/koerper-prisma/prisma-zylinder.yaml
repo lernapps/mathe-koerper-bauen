@@ -40,7 +40,7 @@ blocks:
     blocks:
       - type: definition
         term: Grundfläche und Deckfläche
-        explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen, die ein Prisma oder Zylinder oben und unten abschließen.
+        explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen an den Enden eines Prismas oder Zylinders, beim stehenden Körper oben und unten.
       - type: definition
         term: Vieleck
         explanation: Ein Vieleck ist eine ebene Figur mit geraden Seiten, zum Beispiel ein Dreieck, ein Viereck oder ein Fünfeck.

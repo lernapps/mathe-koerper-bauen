@@ -63,7 +63,7 @@ blocks:
         given:
           b: { int: [2, 8] }
         task:
-          text: "Eine Kante des Quaders ist {{b}} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?"
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Eine Kante des Quaders ist {{b}} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?"
         answer: { value: "2 * b", compare: number }
         mistakes:
           - {
@@ -80,7 +80,7 @@ blocks:
         component: Schraegbild
         props:
           body: quader
-          task: "Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?"
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?"
           alt: "Ein Quader auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben
@@ -124,7 +124,7 @@ blocks:
         given:
           t: { int: [2, 9] }
         task:
-          text: "Der Quader ist {{t}} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?"
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Tiefenkanten zeichnest du schräg und zählst nur halb so viele Kästchen wie in wahrer Länge. Der Quader ist {{t}} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?"
         answer: { value: "t", compare: number }
         mistakes:
           - {

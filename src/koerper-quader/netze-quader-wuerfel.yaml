@@ -62,8 +62,7 @@ blocks:
         text: |
           Nicht jede Anordnung von sechs Quadraten ist ein Würfelnetz. Beim Falten bekommt jedes Quadrat eine eigene
           Seite des Würfels. Würden zwei Quadrate dieselbe Seite bekommen, bliebe eine andere leer: Das Netz geht nicht.
-          Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines oben und eines unten an
-          der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
+          Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines auf jeder Seite der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
           Gegenüber liegen zwei Flächen des Würfels, wenn sie im Netz in einer geraden Reihe mit genau einem Quadrat dazwischen liegen. Sonst lege im Kopf die gesuchte Fläche als Boden und klappe die anderen nach oben: Die Fläche, die oben als Deckel ankommt, liegt gegenüber.
       - type: figure
         image: images/netz-kreuz.svg

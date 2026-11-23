@@ -40,7 +40,7 @@ blocks:
     blocks:
       - type: definition
         term: Spitze
-        explanation: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen zusammenlaufen.
+        explanation: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen oder der Mantel zusammenlaufen.
       - type: definition
         term: Pyramide
         explanation: Eine Pyramide hat ein Vieleck als Grundfläche. Die Seitenflächen sind Dreiecke, die in einer Spitze zusammenlaufen.
