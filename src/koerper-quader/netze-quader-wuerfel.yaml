@@ -64,7 +64,7 @@ blocks:
       - type: figure
         image: images/netz-kreuz.svg
         alt: "Das Netz aus dem Baukasten: eine Spalte aus vier Quadraten (6, 4, 1, 2 von oben nach unten), Quadrat 5 links und Quadrat 3 rechts von Quadrat 1."
-        caption: Das Netz aus dem Baukasten. Beim Falten dieses Netzes liegen 1 und 6, 2 und 4 sowie 3 und 5 gegenüber.
+        caption: Das Netz des Würfels von oben, wenn der Regler ganz links steht. Beim Falten dieses Netzes liegen 1 und 6, 2 und 4 sowie 3 und 5 gegenüber.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: figure
@@ -78,7 +78,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Im ersten Netz bilden die vier Quadrate 6, 4, 1 und 2 in der Reihe den Mantel. Quadrat 5 und Quadrat 3
+              Im Netz mit den Zahlen 1 bis 6 (erstes Bild) bilden die vier Quadrate 6, 4, 1 und 2 in der Reihe den Mantel. Quadrat 5 und Quadrat 3
               hängen links und rechts an Quadrat 1. Sie klappen nach oben und unten und werden Boden und Deckel. Jedes
               Quadrat hat jetzt eine eigene Seite, das Netz geht.
   - type: section
@@ -144,7 +144,7 @@ blocks:
           b: { int: [7, 11] }
           c: { int: [12, 16] }
         task:
-          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Im Netz hat eine Fläche die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen im Netz haben genau diese Maße?"
+          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Eine Fläche des Quaders hat die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen des Quaders haben genau diese Maße?"
         answer: { value: "2", compare: number }
         mistakes:
           - value: "1"

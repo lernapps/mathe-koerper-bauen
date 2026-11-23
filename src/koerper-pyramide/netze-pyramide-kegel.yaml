@@ -74,7 +74,7 @@ blocks:
             info: Ein Dreieck hat gerade Seiten. Der Mantel eines Kegels ist gekrümmt, mit einem Dreieck würde der Rand des Kreises nicht passen.
           - text: Netz C
             correct: false
-            info: Ein Rechteck ergäbe einen Zylinder. Beim Kegel läuft der Mantel in einer Spitze zusammen, dafür braucht er einen Ausschnitt.
+            info: "Das Netz hat ein schmales Rechteck. Der Mantel des Kegels läuft aber in einer Spitze zusammen und ist darum kein Rechteck, sondern ein Kreisausschnitt."
         explanation: Der Kegelmantel ist ein Kreisausschnitt. Der runde Rand des Ausschnitts wird um den Grundkreis gebogen.
       - type: generated
         id: dreiecke-pyramide
@@ -107,6 +107,24 @@ blocks:
               message: "Das wäre das Netz eines Prismas mit Deckfläche. Die Pyramide hat nur eine Grundfläche.",
             }
         hint: "Zähle die Dreiecke und die Grundfläche."
+      - type: generated
+        id: rand-grundflaeche
+        given:
+          n: { int: [5, 9] }
+          a: { int: [3, 8] }
+        task:
+          text: "Die Grundfläche einer Pyramide hat {{n}} gleich lange Seiten von je {{a}} cm. Im Netz hängt an jeder dieser Seiten ein Dreieck. Wie lang ist der Rand der Grundfläche zusammen?"
+        answer: { value: "n * a", compare: number }
+        mistakes:
+          - {
+              value: "a",
+              message: "Das ist nur eine Seite. Der Rand besteht aus allen {{n}} Seiten, an jeder hängt ein Dreieck.",
+            }
+          - {
+              value: "n + a",
+              message: "Du hast die Zahl der Seiten und die Länge einer Seite addiert. Der Rand ist {{n}} Seiten von je {{a}} cm lang, also malnehmen.",
+            }
+        hint: "Wie viele Seiten hat der Rand, und wie lang ist jede?"
       - type: single-choice
         id: weltkarte-warum
         text: Warum sind Länder auf einer Weltkarte verzerrt?

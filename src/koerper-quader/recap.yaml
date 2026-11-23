@@ -189,12 +189,12 @@ blocks:
                 - {
                     text: "24 cm",
                     correct: true,
-                    info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 4cm = 8cm.",
+                    info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 12 cm = 24 cm.",
                   }
                 - {
-                    text: "2 cm",
+                    text: "6 cm",
                     correct: false,
-                    info: "Das wäre der halbe Radius. Der Durchmesser ist doppelt so lang wie der Radius.",
+                    info: "Das ist der halbe Radius. Der Durchmesser ist doppelt so lang wie der Radius.",
                   }
               right: Richtig.
               wrong: Nicht richtig.

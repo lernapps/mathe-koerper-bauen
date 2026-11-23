@@ -83,7 +83,7 @@ blocks:
           c: { int: [9, 11] }
           k: { int: [2, 6] }
         task:
-          text: "Ein Prisma ist {{k}} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {{a}} cm, {{b}} cm und {{c}} cm. Wie breit ist das Rechteck im Netz, das an die Dreiecksseite {{b}} cm grenzt?"
+          text: "Ein Prisma ist {{k}} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {{a}} cm, {{b}} cm und {{c}} cm. Wie lang ist die Seite des Rechtecks im Netz, die an der Dreiecksseite {{b}} cm liegt?"
         answer: { value: "b", compare: number }
         mistakes:
           - {

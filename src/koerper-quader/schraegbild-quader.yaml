@@ -41,7 +41,7 @@ blocks:
 
           1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
           2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
-          3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
+          3. Sie wird verkürzt: Für jeden Zentimeter Tiefe zählst du nur 1 Kästchen schräg statt 2. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
           4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
 
           In den Aufgaben zeichnest du mit zwei Zählern: „Nach rechts“ und „Nach oben“ legen fest, wie weit die Rückseite gegenüber der Vorderseite verschoben ist. Die Zeichnung in der Aufgabe zeichnet den Körper dazu.
@@ -106,7 +106,7 @@ blocks:
           - answer: 8
             message: "8 Kästchen sind 4 cm in wahrer Länge. Die Tiefenkante wird verkürzt: Du zählst nur halb so viele Kästchen."
           - answer: 2
-            message: "Du hast die Tiefe in Zentimetern halbiert. Gezählt werden Kästchen: so viele, wie die Kante cm lang ist."
+            message: "Du hast die Tiefe noch einmal halbiert. Pro Zentimeter Tiefe zeichnest du schon 1 Kästchen schräg, bei 4 cm also 4 Kästchen."
       - type: true-false
         id: tiefenkante-halbiert
         text: "Eine Kante des Quaders ist 6 cm tief. Im Schrägbild zeichnest du sie über 12 Kästchen."
