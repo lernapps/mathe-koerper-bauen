@@ -58,7 +58,7 @@ Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
 1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
 2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
-3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
+3. Sie wird verkürzt: Für jeden Zentimeter Tiefe zählst du nur 1 Kästchen schräg statt 2. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
 4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
 
 In den Aufgaben zeichnest du mit zwei Zählern: „Nach rechts“ und „Nach oben“ legen fest, wie weit die Rückseite gegenüber der Vorderseite verschoben ist. Die Zeichnung in der Aufgabe zeichnet den Körper dazu.
@@ -188,7 +188,7 @@ Nr. | w | h | d | W (verdeckt) | H (verdeckt) | Lösung | F1 | F2 | F3 | F4
 - Erklärung: Ein Würfel ist ein Quader mit gleichen Maßen. Seine Tiefe ist 4 cm, also zeichnest du die Tiefenkante schräg über 4 Kästchen. Die Rückseite liegt 4 Kästchen weiter rechts, und ebenso 4 Kästchen höher.
 - Typische Fehler und was die App sagt:
   - 8: 8 Kästchen sind 4 cm in wahrer Länge. Die Tiefenkante wird verkürzt: Du zählst nur halb so viele Kästchen.
-  - 2: Du hast die Tiefe in Zentimetern halbiert. Gezählt werden Kästchen: so viele, wie die Kante cm lang ist.
+  - 2: Du hast die Tiefe noch einmal halbiert. Pro Zentimeter Tiefe zeichnest du schon 1 Kästchen schräg, bei 4 cm also 4 Kästchen.
 - Link: [../?via=tutor#wuerfel-schraegbild](../?via=tutor#wuerfel-schraegbild)
 
 ### Aufgabe tiefenkante-halbiert

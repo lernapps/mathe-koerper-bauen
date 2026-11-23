@@ -74,6 +74,8 @@ Verzerrung gibt es nicht.
 
 - Aufgabe `flaechen-netz-pyramide` (unten)
 
+- Aufgabe `rand-grundflaeche` (unten)
+
 - Aufgabe `weltkarte-warum` (unten)
 
 - Aufgabe `kegelmantel-rand` (unten)
@@ -95,7 +97,7 @@ Verzerrung gibt es nicht.
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Netz A – Der Mantel des Kegels ist ein Kreisausschnitt, und der kleine Kreis hängt an seinem runden Rand. Dort passen die Ränder zusammen.
   - ✗ Netz B – Ein Dreieck hat gerade Seiten. Der Mantel eines Kegels ist gekrümmt, mit einem Dreieck würde der Rand des Kreises nicht passen.
-  - ✗ Netz C – Ein Rechteck ergäbe einen Zylinder. Beim Kegel läuft der Mantel in einer Spitze zusammen, dafür braucht er einen Ausschnitt.
+  - ✗ Netz C – Das Netz hat ein schmales Rechteck. Der Mantel des Kegels läuft aber in einer Spitze zusammen und ist darum kein Rechteck, sondern ein Kreisausschnitt.
 - Lösung: Netz A
 - Erklärung: Der Kegelmantel ist ein Kreisausschnitt. Der runde Rand des Ausschnitts wird um den Grundkreis gebogen.
 - Link: [../?via=tutor#netz-kegel-waehlen](../?via=tutor#netz-kegel-waehlen)
@@ -142,6 +144,51 @@ Nr. | n | Lösung | F1 | F2
 5 | 6 | 7 | 6 | 8
 6 | 8 | 9 | 8 | 10
 7 | 3 | 4 | 3 | 5
+```
+
+### Aufgabe rand-grundflaeche
+
+- Aufgabe: „Die Grundfläche einer Pyramide hat {n} gleich lange Seiten von je {a} cm. Im Netz hängt an jeder dieser Seiten ein Dreieck. Wie lang ist der Rand der Grundfläche zusammen?“
+- Antwortformat: eine Zahl eintippen
+- Tipp der App: „Wie viele Seiten hat der Rand, und wie lang ist jede?“
+- Typische Fehler und was die App sagt:
+  - F1: „Das ist nur eine Seite. Der Rand besteht aus allen {n} Seiten, an jeder hängt ein Dreieck.“
+  - F2: „Du hast die Zahl der Seiten und die Länge einer Seite addiert. Der Rand ist {n} Seiten von je {a} cm lang, also malnehmen.“
+- Link zu Nummer n: `../?rand-grundflaeche=n&via=tutor#rand-grundflaeche`
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+
+```
+Nr. | n | a | Lösung | F1 | F2
+1 | 9 | 4 | 36 | 4 | 13
+2 | 7 | 5 | 35 | 5 | 12
+3 | 5 | 5 | 25 | 5 | 10
+4 | 6 | 5 | 30 | 5 | 11
+5 | 9 | 3 | 27 | 3 | 12
+6 | 5 | 8 | 40 | 8 | 13
+7 | 7 | 4 | 28 | 4 | 11
+8 | 7 | 7 | 49 | 7 | 14
+9 | 6 | 8 | 48 | 8 | 14
+10 | 9 | 8 | 72 | 8 | 17
+11 | 6 | 6 | 36 | 6 | 12
+12 | 5 | 3 | 15 | 3 | 8
+13 | 7 | 8 | 56 | 8 | 15
+14 | 6 | 7 | 42 | 7 | 13
+15 | 7 | 6 | 42 | 6 | 13
+16 | 8 | 7 | 56 | 7 | 15
+17 | 8 | 5 | 40 | 5 | 13
+18 | 8 | 3 | 24 | 3 | 11
+19 | 9 | 6 | 54 | 6 | 15
+20 | 5 | 6 | 30 | 6 | 11
+21 | 8 | 4 | 32 | 4 | 12
+22 | 9 | 7 | 63 | 7 | 16
+23 | 5 | 7 | 35 | 7 | 12
+24 | 8 | 6 | 48 | 6 | 14
+25 | 8 | 8 | 64 | 8 | 16
+26 | 6 | 4 | 24 | 4 | 10
+27 | 7 | 3 | 21 | 3 | 10
+28 | 6 | 3 | 18 | 3 | 9
+29 | 9 | 5 | 45 | 5 | 14
+30 | 5 | 4 | 20 | 4 | 9
 ```
 
 ### Aufgabe weltkarte-warum

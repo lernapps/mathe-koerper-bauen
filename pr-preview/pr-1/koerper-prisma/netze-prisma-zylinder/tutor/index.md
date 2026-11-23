@@ -101,7 +101,7 @@ flach: ein langes Rechteck und zwei Kreise. Die Höhe des Rechtecks ist die Höh
 
 ### Aufgabe mantel-breite
 
-- Aufgabe: „Ein Prisma ist {k} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {a} cm, {b} cm und {c} cm. Wie breit ist das Rechteck im Netz, das an die Dreiecksseite {b} cm grenzt?“
+- Aufgabe: „Ein Prisma ist {k} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {a} cm, {b} cm und {c} cm. Wie lang ist die Seite des Rechtecks im Netz, die an der Dreiecksseite {b} cm liegt?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Das Rechteck hängt an einer Seite des Dreiecks. Wie lang ist diese Seite?“
 - Typische Fehler und was die App sagt:
