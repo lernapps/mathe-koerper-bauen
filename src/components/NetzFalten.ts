@@ -106,7 +106,9 @@ export function fill(text: string, task: Task, n = 0): string {
 
 /** The app's message for a wrong answer, from the props: that of its typical mistake, or none. */
 export function reason(task: Task, answer: Answer, props: Props, _lang?: string): string | undefined {
-  const index = mistakes(task, props).findIndex((mistaken) => mistaken === answer);
+  // every square that touches the asked one in the net gets the message of the neighbour
+  const neighbour = task.mode === "gegenueber" && neighbours(task).includes(answer);
+  const index = neighbour ? 2 : mistakes(task, props).findIndex((mistaken) => mistaken === answer);
   // a wrong answer of no typical mistake in the mode gegenueber gets the general message, the fourth one
   const general = task.mode === "gegenueber" && !check(task, answer) && answer >= 1 && answer <= 6 ? 3 : -1;
   const message = props.mistakes?.[index < 0 ? general : index];

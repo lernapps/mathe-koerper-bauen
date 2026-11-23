@@ -19,7 +19,7 @@ blocks:
           d: 2
           h: 3
           start: 100
-          alt: "Ein Quader aus sechs Rechtecken, die von 1 bis 6 nummeriert sind. Er ist zu {p} % zugeklappt."
+          alt: "Ein Quader aus sechs Rechtecken, die von 1 bis 6 nummeriert sind. Er ist zu {p} % zugeklappt."
           slider: Zugeklappt
           left: Nach links drehen
           right: Nach rechts drehen
@@ -27,7 +27,7 @@ blocks:
           down: Von unten ansehen
           reset: Zurücksetzen
         nojs: |
-          Ein Quader, 4 Kästchen lang, 2 breit und 3 hoch. Er hat sechs Rechtecke als Flächen: je zwei gegenüberliegende
+          Ein Quader, 4 Einheiten lang, 2 breit und 3 hoch. Er hat sechs Rechtecke als Flächen: je zwei gegenüberliegende
           sind gleich groß. Er hat zwölf Kanten und acht Ecken.
       - type: single-choice
         id: form-der-flaechen
@@ -107,12 +107,12 @@ blocks:
           b: { int: [7, 11] }
           c: { int: [12, 16] }
         task:
-          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Wie viele seiner Kanten sind {{a}} cm lang?"
+          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Wie viele seiner Kanten sind {{a}} cm lang?"
         answer: { value: "4", compare: number }
         mistakes:
           - {
               value: "12",
-              message: "Zwölf Kanten hat der Quader insgesamt. Gefragt sind nur die Kanten, die {{a}} cm lang sind.",
+              message: "Zwölf Kanten hat der Quader insgesamt. Gefragt sind nur die Kanten, die {{a}} cm lang sind.",
             }
           - {
               value: "2",

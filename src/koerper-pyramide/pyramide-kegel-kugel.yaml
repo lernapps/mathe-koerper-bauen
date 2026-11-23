@@ -57,8 +57,8 @@ blocks:
         header: [Körper, Flächen, Kanten, Ecken]
         rows:
           - [Pyramide mit Viereck, "5", "8", "5"]
-          - [Kegel, "2", "keine geraden", "1"]
-          - [Kugel, "1", "keine", "0"]
+          - [Kegel, "2", "1 (gekrümmt)", "1"]
+          - [Kugel, "1", "0", "0"]
   - type: section
     id: uebung
     title: Übung
@@ -98,7 +98,7 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Die Grundfläche einer Pyramide ist ein {{n}}-Eck. Wie viele Ecken hat die Pyramide?"
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Ecken hat die Pyramide?"
         answer: { value: "n + 1", compare: number }
         mistakes:
           - { value: "n", message: "Das sind nur die Ecken der Grundfläche. Die Spitze ist noch eine Ecke." }
@@ -114,7 +114,7 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Die Grundfläche einer Pyramide ist ein {{n}}-Eck. Wie viele Kanten hat die Pyramide?"
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Kanten hat die Pyramide?"
         answer: { value: "2 * n", compare: number }
         mistakes:
           - {
@@ -123,7 +123,7 @@ blocks:
             }
           - {
               value: "n + 1",
-              message: "n + 1 ist die Zahl der Ecken oder Flächen. Hier sind die Kanten gefragt: {{n}} am Boden und {{n}} zur Spitze.",
+              message: "{{n}} + 1 ist die Zahl der Ecken oder Flächen. Hier sind die Kanten gefragt: {{n}} am Boden und {{n}} zur Spitze.",
             }
         hint: "Zähle die Kanten der Grundfläche und die Kanten, die zur Spitze laufen."
         steps:

@@ -35,18 +35,18 @@ blocks:
     blocks:
       - type: text
         text: |
-          Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Die Tiefe zeichnest du wie beim Quader schräg und
+          Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Die Tiefe zeichnest du wie beim Quader schräg und
           halbiert: so viele Kästchen diagonal, wie die Kante cm lang ist.
           Einen Kreis zeichnest du im Schrägbild als Ellipse. Sie ist so breit wie der Kreis, aber nur halb so hoch.
           Beim Zylinder verschiebst du die Ellipse um die Höhe nach oben. Dann verbindest du die beiden Ränder mit zwei
           senkrechten Linien.
       - type: example
-        title: Ein Zylinder mit Radius 2 cm und Höhe 3 cm
+        title: Ein Zylinder mit Radius 2 cm und Höhe 3 cm
         blocks:
           - type: text
             text: |
-              Der Durchmesser ist 4 cm, das sind 8 Kästchen. Die Ellipse ist 8 Kästchen breit und 4 Kästchen hoch.
-              Die obere Ellipse liegt 3 cm hoch, das sind 6 Kästchen, über der unteren.
+              Der Durchmesser ist 4 cm, das sind 8 Kästchen. Die Ellipse ist 8 Kästchen breit und 4 Kästchen hoch.
+              Die obere Ellipse liegt 3 cm hoch, das sind 6 Kästchen, über der unteren.
   - type: section
     id: uebung
     title: Übung
@@ -56,24 +56,24 @@ blocks:
         given:
           r: { int: [2, 5] }
         task:
-          text: "Ein Kreis hat den Radius {{r}} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?"
+          text: "Ein Kreis hat den Radius {{r}} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?"
         answer: { value: "4 * r", compare: number }
         mistakes:
           - {
               value: "2 * r",
-              message: "Das ist der Durchmesser in Zentimetern. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind 2 Kästchen.",
+              message: "Das ist der Durchmesser in Zentimetern. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind 2 Kästchen.",
             }
           - {
               value: "r",
               message: "Das ist der Radius in Zentimetern. Rechne zuerst den Durchmesser aus und dann in Kästchen um.",
             }
-        hint: "Der Durchmesser ist doppelt so lang wie der Radius. 1 cm sind 2 Kästchen."
+        hint: "Der Durchmesser ist doppelt so lang wie der Radius. 1 cm sind 2 Kästchen."
       - type: vue-component
         id: schraegbild-prisma
         component: Schraegbild
         props:
           body: prisma
-          task: "Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
+          task: "Zeichne das Schrägbild eines Prismas. Vorn ist ein rechtwinkliges Dreieck mit den Katheten {w} cm und {h} cm. Das Prisma ist {d} cm tief. Wie viele Kästchen liegt die hintere Fläche rechts und oberhalb der vorderen?"
           alt: "Ein Prisma mit einem Dreieck als Grundfläche auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben
@@ -83,7 +83,7 @@ blocks:
             - "Du hast die Tiefenkante doppelt so lang gezeichnet. Die Tiefe wird halbiert: so viele Kästchen, wie die Kante cm lang ist."
             - "Du bist nur nach rechts gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
             - "Du bist nur nach oben gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
-            - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
+            - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
         examples:
           accepted:
             - { answer: { right: 4, up: 4 }, seed: 1 }
@@ -95,7 +95,7 @@ blocks:
         component: Schraegbild
         props:
           body: zylinder
-          task: "Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?"
+          task: "Zeichne das Schrägbild eines Zylinders mit dem Radius {w} cm und der Höhe {h} cm. Die untere Ellipse ist schon da. Wie viele Kästchen liegt der Mittelpunkt der oberen Ellipse rechts und oberhalb des Mittelpunkts der unteren?"
           alt: "Ein Zylinder auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben

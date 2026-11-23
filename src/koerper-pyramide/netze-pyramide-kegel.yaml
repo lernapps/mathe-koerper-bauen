@@ -81,12 +81,12 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Die Grundfläche einer Pyramide ist ein {{n}}-Eck. Wie viele Dreiecke hat ihr Netz?"
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Dreiecke hat ihr Netz?"
         answer: { value: "n", compare: number }
         mistakes:
           - {
               value: "n + 1",
-              message: "n + 1 ist die Zahl aller Flächen. Eine davon ist die Grundfläche und kein Dreieck.",
+              message: "{{n}} + 1 ist die Zahl aller Flächen. Eine davon ist die Grundfläche und kein Dreieck.",
             }
           - {
               value: "2 * n",
@@ -98,7 +98,7 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Das Netz einer Pyramide besteht aus der Grundfläche und den Seitenflächen. Die Grundfläche ist ein {{n}}-Eck. Aus wie vielen Teilen besteht das Netz?"
+          text: "Das Netz einer Pyramide besteht aus der Grundfläche und den Seitenflächen. Die Grundfläche hat {{n}} Ecken. Aus wie vielen Teilen besteht das Netz?"
         answer: { value: "n + 1", compare: number }
         mistakes:
           - { value: "n", message: "Das sind nur die Dreiecke. Die Grundfläche gehört auch zum Netz." }

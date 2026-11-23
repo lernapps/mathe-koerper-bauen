@@ -26,7 +26,7 @@ blocks:
             info: Nummer 1 hat sechs Rechtecke als Flächen. Das ist der Quader.
           - text: Nummer 2
             correct: false
-            info: Nummer 2 hat oben und unten ein Dreieck. Ein Quader hat nur Rechtecke.
+            info: Nummer 2 hat vorn und hinten ein Dreieck. Ein Quader hat nur Rechtecke.
           - text: Nummer 4
             correct: false
             info: Nummer 4 hat oben und unten einen Kreis. Ein Quader hat keine runden Flächen.
@@ -56,7 +56,7 @@ blocks:
         rows:
           - [Dreiecksprisma, "5", "9", "6"]
           - [Fünfeckprisma, "7", "15", "10"]
-          - [Zylinder, "3", "keine geraden", "0"]
+          - [Zylinder, "3", "2 (gekrümmt)", "0"]
   - type: section
     id: uebung
     title: Übung
@@ -68,7 +68,7 @@ blocks:
           - { left: "Die Grundfläche ist ein Dreieck.", right: Dreiecksprisma }
           - { left: "Die Grundfläche ist ein Kreis.", right: Zylinder }
           - { left: "Die Grundfläche ist ein Rechteck.", right: Quader }
-        explanation: Die Grundfläche bestimmt den Namen des Körpers. Ein Kreis als Grundfläche gibt den Zylinder, Vielecke geben Prismen.
+        explanation: Die Grundfläche bestimmt den Namen des Körpers. Zwei gleiche Kreise als Grund- und Deckfläche geben den Zylinder, zwei gleiche Vielecke mit Rechtecken dazwischen ein Prisma.
         links:
           - title: Prisma und Zylinder (Lernlandkarte)
             url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/
@@ -88,7 +88,7 @@ blocks:
           - text: Eine Dose mit rundem Boden
             correct: false
             info: Eine Dose mit rundem Boden ist ein Zylinder. Ihre Grundfläche ist ein Kreis, kein Vieleck.
-        explanation: Ein Prisma hat ein Vieleck als Grundfläche. Alles mit einem Kreis als Grundfläche ist ein Zylinder.
+        explanation: Ein Prisma hat ein Vieleck als Grundfläche. Hat ein Körper zwei gleiche Kreise als Grund- und Deckfläche, ist er ein Zylinder.
         links:
           - title: Prisma und Zylinder (Lernlandkarte)
             url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/
@@ -97,13 +97,13 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Die Grundfläche eines Prismas ist ein {{n}}-Eck. Wie viele Ecken hat das Prisma?"
+          text: "Die Grundfläche eines Prismas hat {{n}} Ecken. Wie viele Ecken hat das Prisma?"
         answer: { value: "2 * n", compare: number }
         mistakes:
           - { value: "n", message: "Das sind nur die Ecken der Grundfläche. Die Deckfläche hat ebenso viele Ecken." }
           - {
               value: "n + 2",
-              message: "n + 2 ist die Zahl der Flächen. Hier sind die Ecken gefragt: Grundfläche und Deckfläche haben je {{n}}.",
+              message: "{{n}} + 2 ist die Zahl der Flächen. Hier sind die Ecken gefragt: Grundfläche und Deckfläche haben je {{n}}.",
             }
         hint: "Wie viele Ecken hat die Grundfläche, wie viele die Deckfläche?"
         steps:
@@ -113,7 +113,7 @@ blocks:
         given:
           n: { int: [3, 9] }
         task:
-          text: "Die Grundfläche eines Prismas ist ein {{n}}-Eck. Wie viele Flächen hat das Prisma insgesamt?"
+          text: "Die Grundfläche eines Prismas hat {{n}} Ecken. Wie viele Flächen hat das Prisma insgesamt?"
         answer: { value: "n + 2", compare: number }
         mistakes:
           - { value: "n", message: "Das sind nur die Seitenflächen. Grundfläche und Deckfläche kommen noch dazu." }

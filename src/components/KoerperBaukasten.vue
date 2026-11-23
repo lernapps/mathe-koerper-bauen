@@ -96,8 +96,8 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
     </svg>
     <div class="koerper-baukasten-controls">
       <label class="koerper-baukasten-slider">
-        <span>{{ slider }}: {{ percent }} %</span>
-        <input v-model.number="percent" type="range" min="0" max="100" step="1" :aria-valuetext="`${percent} %`" />
+        <span>{{ slider }}: {{ percent }} %</span>
+        <input v-model.number="percent" type="range" min="0" max="100" step="1" :aria-valuetext="`${percent} %`" />
       </label>
       <div class="koerper-baukasten-buttons">
         <button type="button" @click="turn(-45, 0)">{{ left }}</button>

@@ -34,7 +34,9 @@ export function generate(seed: number, props?: Props): Task {
   const body = props?.body ?? "quader";
   const pick = (lo: number, hi: number) => lo + Math.floor(next() * (hi - lo + 1));
   if (body === "zylinder" || body === "kegel") return { body, w: pick(2, 4), h: pick(2, 4), d: 0 };
-  return { body, w: pick(3, 6), h: pick(2, 4), d: body === "pyramide" ? 2 * pick(1, 2) : pick(2, 5) };
+  // a pyramid is at least 3 cm high, so that its left face stays hidden behind the base as drawn
+  if (body === "pyramide") return { body, w: pick(3, 6), h: pick(3, 4), d: 2 * pick(1, 2) };
+  return { body, w: pick(3, 6), h: pick(2, 4), d: pick(2, 5) };
 }
 
 /** The right answer. */
@@ -75,9 +77,11 @@ export function wrong(task: Task): Answer {
  */
 export function mistakes(task: Task, _props?: Props): (Answer | undefined)[] {
   const e = expected(task);
+  const standing = task.body === "zylinder" || task.body === "kegel";
   const candidates: Answer[] = [
     { right: 2 * e.right, up: 2 * e.up },
-    { right: e.right, up: 0 },
+    // a cylinder or a cone stands straight: the typical mistake is to put the top or the tip to the side
+    standing ? { right: task.w, up: e.up } : { right: e.right, up: 0 },
     { right: 0, up: e.up },
     { right: e.right / 2, up: e.up / 2 },
   ];

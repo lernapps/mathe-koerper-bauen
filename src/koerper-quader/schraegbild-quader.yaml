@@ -40,18 +40,18 @@ blocks:
         explanation: Ein Schrägbild ist die Zeichnung eines Körpers, bei der die Vorderseite in wahrer Größe gezeichnet wird und die Tiefe schräg nach hinten läuft.
       - type: text
         text: |
-          Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten drei Regeln:
+          Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
-          1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
+          1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
           2. Jede Kante nach hinten zeichnest du schräg, als Diagonale durch Kästchen.
-          3. Sie wird auf die halbe Länge verkürzt: Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
-          Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
+          3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
+          4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
       - type: example
-        title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
+        title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
         blocks:
           - type: text
             text: |
-              Vorderseite: 3 cm sind 6 Kästchen, 2 cm sind 4 Kästchen. Tiefe: 4 cm werden 4 Kästchen diagonal, also 4
+              Vorderseite: 3 cm sind 6 Kästchen, 2 cm sind 4 Kästchen. Tiefe: 4 cm werden 4 Kästchen diagonal, also 4
               Kästchen nach rechts und 4 nach oben. Die Rückseite ist die Vorderseite, um 4 Kästchen nach rechts und 4 nach
               oben verschoben.
   - type: section
@@ -63,24 +63,24 @@ blocks:
         given:
           b: { int: [2, 8] }
         task:
-          text: "Eine Kante des Quaders ist {{b}} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?"
+          text: "Eine Kante des Quaders ist {{b}} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?"
         answer: { value: "2 * b", compare: number }
         mistakes:
           - {
               value: "b",
-              message: "Du hast die Zentimeter als Kästchen gezählt. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind also 2 Kästchen.",
+              message: "Du hast die Zentimeter als Kästchen gezählt. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind also 2 Kästchen.",
             }
           - {
               value: "b / 2",
-              message: "Du hast durch 2 geteilt. Die Vorderseite wird nicht verkürzt: 1 cm sind 2 Kästchen, also mal 2.",
+              message: "Du hast durch 2 geteilt. Die Vorderseite wird nicht verkürzt: 1 cm sind 2 Kästchen, also mal 2.",
             }
-        hint: "Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?"
+        hint: "Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?"
       - type: vue-component
         id: schraegbild-quader-zeichnen
         component: Schraegbild
         props:
           body: quader
-          task: "Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?"
+          task: "Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?"
           alt: "Ein Quader auf Kästchenpapier im Schrägbild."
           right: Nach rechts
           up: Nach oben
@@ -90,18 +90,32 @@ blocks:
             - "Du hast die Tiefenkante doppelt so lang gezeichnet. Die Tiefe wird halbiert: so viele Kästchen, wie die Kante cm lang ist."
             - "Du bist nur nach rechts gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
             - "Du bist nur nach oben gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
-            - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
+            - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
         examples:
           accepted:
             - { answer: { right: 4, up: 4 }, seed: 1 }
           rejected:
             - { answer: { right: 0, up: 0 } }
             - { answer: { right: 1, up: 2 }, seed: 1 }
+      - type: number
+        id: wuerfel-schraegbild
+        text: Ein Würfel hat die Kantenlänge 4 cm. Du zeichnest ihn wie einen Quader als Schrägbild. Um wie viele Kästchen liegt seine Rückseite nach rechts versetzt?
+        answer: 4
+        tolerance: 0
+        explanation: Ein Würfel ist ein Quader mit gleichen Maßen. Seine Tiefe ist 4 cm, also zeichnest du die Tiefenkante schräg über 4 Kästchen. Die Rückseite liegt 4 Kästchen weiter rechts, und ebenso 4 Kästchen höher.
+        mistakes:
+          - answer: 8
+            message: "8 Kästchen sind 4 cm in wahrer Länge. Die Tiefenkante wird verkürzt: Du zählst nur halb so viele Kästchen."
+          - answer: 2
+            message: "Du hast die Tiefe in Zentimetern halbiert. Gezählt werden Kästchen: so viele, wie die Kante cm lang ist."
+        links:
+          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
+            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
       - type: true-false
         id: tiefenkante-halbiert
-        text: "Eine Kante des Quaders ist 6 cm tief. Im Schrägbild zeichnest du sie über 12 Kästchen."
+        text: "Eine Kante des Quaders ist 6 cm tief. Im Schrägbild zeichnest du sie über 12 Kästchen."
         answer: false
-        explanation: Tiefenkanten werden halbiert. Eine Kante von 6 cm zeichnest du schräg über 6 Kästchen. 12 Kästchen wären die wahre Länge, aber die gilt nur für waagerechte und senkrechte Kanten.
+        explanation: Tiefenkanten werden halbiert. Eine Kante von 6 cm zeichnest du schräg über 6 Kästchen. 12 Kästchen wären die wahre Länge, aber die gilt nur für waagerechte und senkrechte Kanten.
         links:
           - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
             url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
@@ -110,11 +124,11 @@ blocks:
         given:
           t: { int: [2, 9] }
         task:
-          text: "Der Quader ist {{t}} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?"
+          text: "Der Quader ist {{t}} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?"
         answer: { value: "t", compare: number }
         mistakes:
           - {
               value: "2 * t",
-              message: "Du hast die Tiefe wie eine Vorderkante gerechnet (1 cm sind 2 Kästchen). Die Tiefenkante wird halbiert, also nur {{t}} Kästchen.",
+              message: "Du hast die Tiefe wie eine Vorderkante gerechnet (1 cm sind 2 Kästchen). Die Tiefenkante wird halbiert, also nur {{t}} Kästchen.",
             }
         hint: "Eine Kante nach hinten wird auf die halbe Länge verkürzt."

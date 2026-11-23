@@ -20,12 +20,12 @@ blocks:
           d: 3
           h: 3
           start: 100
-          alt: "Ein Würfel aus sechs Quadraten, die von 1 bis 6 nummeriert sind. Der Würfel ist zu {p} % zugeklappt: bei 100 % steht er geschlossen da, bei 0 % liegen alle Flächen als Kreuz flach nebeneinander."
+          alt: "Ein Würfel aus sechs Quadraten, die von 1 bis 6 nummeriert sind. Der Würfel ist zu {p} % zugeklappt: bei 100 % steht er geschlossen da, bei 0 % liegen alle Flächen als Kreuz flach nebeneinander."
           slider: Zugeklappt
           left: Nach links drehen
           right: Nach rechts drehen
           up: Von oben ansehen
-          down: Von vorn ansehen
+          down: Von unten ansehen
           reset: Zurücksetzen
         nojs: |
           Ein Würfel, der sich aufklappen lässt. Geschlossen hat er sechs Quadrate: Boden (1), vorn (2), rechts (3),
@@ -64,6 +64,7 @@ blocks:
           Seite des Würfels. Würden zwei Quadrate dieselbe Seite bekommen, bliebe eine andere leer: Das Netz geht nicht.
           Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines oben und eines unten an
           der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
+          Gegenüber liegen zwei Flächen des Würfels, wenn sie im Netz in einer geraden Reihe mit genau einem Quadrat dazwischen liegen.
       - type: figure
         image: images/netz-kreuz.svg
         alt: "Das Netz aus dem Baukasten: eine Spalte aus vier Quadraten (6, 4, 1, 2 von oben nach unten), Quadrat 5 links und Quadrat 3 rechts von Quadrat 1."
@@ -150,15 +151,15 @@ blocks:
           b: { int: [7, 11] }
           c: { int: [12, 16] }
         task:
-          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Im Netz hat eine Fläche die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen im Netz haben genau diese Maße?"
+          text: "Ein Quader ist {{a}} cm lang, {{b}} cm breit und {{c}} cm hoch. Im Netz hat eine Fläche die Maße {{a}} cm mal {{b}} cm. Wie viele Flächen im Netz haben genau diese Maße?"
         answer: { value: "2", compare: number }
         mistakes:
           - value: "1"
             message: "Zu jeder Fläche eines Quaders gibt es eine gegenüberliegende Fläche mit denselben Maßen. Also sind es zwei."
           - value: "3"
-            message: "Ein Quader hat drei Paare gleicher Flächen, aber zu {{a}} cm mal {{b}} cm gehört nur ein Paar."
+            message: "Ein Quader hat drei Paare gleicher Flächen, aber zu {{a}} cm mal {{b}} cm gehört nur ein Paar."
           - value: "4"
-            message: "Vier gleiche Flächen gäbe es nur, wenn zwei der drei Maße gleich wären. Hier sind alle drei verschieden, also haben nur zwei Flächen diese Maße."
+            message: "Vier Flächen mit denselben Maßen gäbe es nur, wenn die Höhe so groß wäre wie die Länge oder die Breite. Hier sind alle drei Maße verschieden, also haben nur zwei Flächen diese Maße."
           - value: "6"
-            message: "Ein Quader hat zwar sechs Flächen, aber nur zwei davon haben die Maße {{a}} cm mal {{b}} cm."
+            message: "Ein Quader hat zwar sechs Flächen, aber nur zwei davon haben die Maße {{a}} cm mal {{b}} cm."
         hint: "Welche Fläche liegt im Quader gegenüber? Sie sieht genau so aus."
