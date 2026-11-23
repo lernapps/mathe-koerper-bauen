@@ -50,12 +50,6 @@ blocks:
       - type: definition
         term: Zylinder
         explanation: Ein Zylinder hat zwei gleich große Kreise als Grundfläche und Deckfläche. Dazwischen liegt ein gekrümmter Mantel.
-      - type: text
-        text: |
-          Ein Prisma benennst du nach seiner Grundfläche: Hat sie drei Ecken, ist es ein Dreiecksprisma, bei fünf Ecken ein
-          Fünfeckprisma. Der Quader ist ein Prisma mit einem Rechteck als Grundfläche. Boden und Deckel heißen bei Prisma und Zylinder Grundfläche und Deckfläche.
-          Beim Zylinder ist die Grundfläche ein Kreis. Man kann sich den Zylinder als Prisma mit sehr vielen Ecken
-          vorstellen. Er hat keine Ecken und keine geraden Seitenflächen.
       - type: table
         caption: Wie viele Flächen, Kanten und Ecken haben die Körper?
         header: [Körper, Flächen, Kanten, Ecken]
@@ -63,6 +57,12 @@ blocks:
           - [Dreiecksprisma, "5", "9", "6"]
           - [Fünfeckprisma, "7", "15", "10"]
           - [Zylinder, "3", "2 (gekrümmt)", "0"]
+      - type: text
+        text: |
+          Ein Prisma benennst du nach seiner Grundfläche: Hat sie drei Ecken, ist es ein Dreiecksprisma, bei fünf Ecken ein
+          Fünfeckprisma. Der Quader ist ein Prisma mit einem Rechteck als Grundfläche. Boden und Deckel heißen bei Prisma und Zylinder Grundfläche und Deckfläche.
+          Beim Zylinder ist die Grundfläche ein Kreis. Man kann sich den Zylinder als Prisma mit sehr vielen Ecken
+          vorstellen. Er hat keine Ecken und keine geraden Seitenflächen.
   - type: section
     id: uebung
     title: Übung

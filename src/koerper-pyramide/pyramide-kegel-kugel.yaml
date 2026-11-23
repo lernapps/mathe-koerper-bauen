@@ -50,11 +50,6 @@ blocks:
       - type: definition
         term: Kugel
         explanation: Eine Kugel hat nur eine runde Fläche. Alle Punkte der Fläche sind gleich weit vom Mittelpunkt entfernt.
-      - type: text
-        text: |
-          Wie beim Prisma benennst du die Pyramide nach ihrer Grundfläche: Die Dreiecke der Pyramide bilden ihren Mantel. Mit einem Quadrat als Grundfläche ist es eine quadratische
-          Pyramide, mit einem Dreieck eine Dreieckspyramide. Den Kegel kannst du dir als Pyramide mit sehr vielen Ecken in
-          der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.
       - type: table
         caption: Pyramide, Kegel und Kugel im Vergleich
         header: [Körper, Flächen, Kanten, Ecken]
@@ -62,6 +57,11 @@ blocks:
           - [Pyramide mit Viereck, "5", "8", "5"]
           - [Kegel, "2", "1 (gekrümmt)", "1"]
           - [Kugel, "1", "0", "0"]
+      - type: text
+        text: |
+          Wie beim Prisma benennst du die Pyramide nach ihrer Grundfläche: Die Dreiecke der Pyramide bilden ihren Mantel. Mit einem Quadrat als Grundfläche ist es eine quadratische
+          Pyramide, mit einem Dreieck eine Dreieckspyramide. Den Kegel kannst du dir als Pyramide mit sehr vielen Ecken in
+          der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.
   - type: section
     id: uebung
     title: Übung

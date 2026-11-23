@@ -56,6 +56,16 @@ blocks:
       - type: definition
         term: Würfel
         explanation: Ein Würfel ist ein Quader, dessen sechs Flächen alle gleich große Quadrate sind.
+      - type: text
+        text: |
+          Der Quader hat sechs Rechtecke als Flächen. Je zwei gegenüberliegende Flächen sind gleich groß. Der Würfel ist
+          ein besonderer Quader: Alle seine Flächen sind gleich große Quadrate und alle Kanten gleich lang.
+      - type: figure
+        image: images/schraegbild-quader.svg
+        alt: "Ein Quader auf Kästchenpapier gezeichnet: vorn ein Rechteck, dahinter ein gleich großes Rechteck, nach rechts oben versetzt, dazwischen vier schräge Kanten. Drei Kanten hinten sind gestrichelt."
+        caption: Ein Quader. Du zählst sechs Flächen, zwölf Kanten und acht Ecken. Gestrichelt sind die Kanten, die du von vorn nicht siehst.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
       - type: definition
         term: Fläche
         explanation: Eine Fläche ist ein Stück der Oberfläche eines Körpers, eben oder gekrümmt. Beim Quader ist jede Fläche ein Rechteck.
@@ -65,10 +75,6 @@ blocks:
       - type: definition
         term: Ecke
         explanation: Eine Ecke ist der Punkt, an dem Kanten zusammenstoßen.
-      - type: text
-        text: |
-          Der Quader hat sechs Rechtecke als Flächen. Je zwei gegenüberliegende Flächen sind gleich groß. Der Würfel ist
-          ein besonderer Quader: Alle seine Flächen sind gleich große Quadrate und alle Kanten gleich lang.
       - type: table
         caption: Quader und Würfel im Vergleich
         header: [Körper, Flächen, Kanten, Ecken]

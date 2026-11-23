@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -54,7 +54,7 @@ Strang `mathematik/geometrie` (Raum und Form). Drei Kapitel, sechs Bausteine (Ka
 - Quellen (geöffnet, verifiziert; Wikipedia nur zum Nachschlagen, Fakten selbst hergeleitet, nicht in Quellen/Weiterlesen des Explainers, keine Formulierungen/Bilder; Orchestrator 2026-11-22): Lernlandkarte `https://lernapps.net/apps/map/mathematik.json` (alle sechs Bausteine); Wikipedia „Axonometrie“ (`https://de.wikipedia.org/wiki/Schr%C3%A4gbild` leitet dorthin; Kavalierprojektion, nur Fakten) und „Netz (Geometrie)“ (`https://de.wikipedia.org/wiki/Netz_(Geometrie)`, nur Fakten). Kein Lehrplan nötig (App mit Strang, Karte gibt die Reihenfolge). KMK 2022 und Hessischer Lehrplan: nicht geöffnet = ungeprüft. serlo-Seite zu Körpern: Adresse 404, weggelassen. Eigene Herleitungen und Aufgaben, keine Schulbuchtexte, keine Dritt-Inhalte (`thirdParty` leer).
 - Wie Lernende hinkommen: sie bauen/falten selbst (Netz klicken → Körper faltet; Schrägbild Kante für Kante ziehen), sie lesen es nicht nur ab. Fehlvorstellung je Kompetenz siehe oben; die Rückmeldung nennt den Fehlertyp.
 - Lernenden-Check der Musterseite (Subagent, Klasse 5/6): behoben: falsche Bildunterschrift zum Block-Netz (benachbarte Quadrate „auf derselben Seite“; jetzt Ecke mit vier Flächen erklärt, Rückmeldung nennt weit entfernte Kollision zuerst), falsche Quader-Rückmeldung bei „4“, Netz-Nummerierung im Beispiel und im Baukasten gleich, Baukasten zeigt flach das echte Netz von oben und lässt von unten ansehen (45°/40°-Schritte), eine Flächenfarbe, „Netz“ und „Mantel“ vor Gebrauch erklärt, Quader-Regel (gegenüberliegende Flächen gleich) im Text. Offen: „Prüfen“ ist bei Komponenten ohne Auswahl grau (Laufzeit, nicht änderbar; gemeldet an Orchestrator); Stimmt/Stimmt nicht „vier in Reihe“ hat keine neue Variante.
-
+- Ganze-App-Check (Subagent Lernender) und fachlicher Prüfer (Subagent), beide nicht die Autorin dieser Seiten. Behoben: unmögliche Dreiecke in zwei Zufallsaufgaben, zu allgemeine Aussagen (Kreis/Vieleck als Grundfläche), „lange Seite“ des Zylinder-Mantels, Pyramide mit falsch gestrichelten Kanten bei niedriger Höhe (Höhe mindestens 3 cm), tote Rückmeldungen für Zylinder/Kegel, Ellipse im Bild halb so hoch wie breit, Kanten der Rundkörper in den Tabellen, fehlende Fachwörter (Katheten, Tiefenkante, Ellipse, Vieleck, Spitze, Grundfläche und Deckfläche, Quader, Würfel im Glossar), geschützte Leerzeichen bei cm und % (nicht in Überschriften: Laufzeittest scheitert dort), Brückensätze am Seitenanfang, Würfel im Schrägbild, Gegenüber-Methode, Baukasten ohne leeren Tab-Stopp, Textlast. Nicht behoben (Werkzeug/Umfang): „Prüfen“ grau ohne Hinweis bei Komponenten, Rückmeldung bei Stimmt/Stimmt-nicht ist der Verweis der Laufzeit, die Schrägbild-Übung stellt zwei Zähler ein und zeichnet nicht selbst (Tastatur und Textalternative haben Vorrang), keine eigene Wiederholungsseite für Kapitel 2 und 3 (Karte nennt keine Voraussetzung von außen).
 ## Explore
 
 <!--
@@ -228,7 +228,7 @@ page, which a link. -->
 - [x] Run `npx --no -- lernapps check` until it passes.
 - [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
