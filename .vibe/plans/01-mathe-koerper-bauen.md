@@ -67,6 +67,8 @@ Strang `mathematik/geometrie` (Raum und Form). Drei Kapitel, sechs Bausteine (Ka
 
 - Recap-Überarbeitung (regeln.md Abschnitt 7): Lernenden-Prüfer nur für die Seite „Das brauchst du für dieses Kapitel“ und fachlicher Prüfer nur für ihre neuen Texte, Begriffe und Selbsttest-Rechnungen. Fachlich: Rückmeldung „nur die gegenüberliegenden Seiten“ ungenau (behoben), „Ein Quadrat ist ein besonderes Rechteck“ fehlte (ergänzt), „senkrecht“ unerklärt (eigener Abschnitt), Baustein „Parallel, senkrecht, Abstand“ fehlte (Abschnitt mit Begriffen, Beispiel, zwei Aufgaben und Kartenlink ergänzt, weil er `requires` von `grundfiguren-eben` ist), Kreis/Vieleck unscharf (umformuliert), Körper-Stoff in der Checkliste (gestrichen), Beispiele mit Zahlen. Lernender: keine Zeichnungen (zwei SVGs ergänzt), Zahlenaufgaben ohne Fehlerhinweis (Laufzeit: eine Antwort, dann Lösung; Fehlermeldungen der Seite ergänzt, wo möglich), „Wo lese ich nach?“ nur unten (Kartenlink bei jedem Selbsttest und am Ende). Nach diesen Änderungen nicht erneut geprüft: der umgebaute Seitentext und die zwei Bilder (nur `lernapps check`, Build, eigene Sichtprüfung der Bilder).
 
+- Recap als `recap`-Seite mit `Kurztest`-Komponenten (Orchestrator-Entscheid): Lernenden-Prüfer nur für diese Seite. Ergebnis: Voraussetzung beurteilbar, Begriffe verständlich, keine falsche Aussage. Behoben: „Viereck“ wird jetzt erklärt, Rückmeldung zu senkrecht/parallel nennt „also nicht parallel“. Offen/bewusst: „Lies nach“ führt auf die Kartenseite (Vorgabe regeln.md 7.3, kein Anker in der App); ohne JavaScript steht die Antwort sofort da (nojs); der fachliche Prüfer hat die umgebaute Fassung mit Kurztests nicht gesehen; Mittelpunkt/Rand stehen nicht in der Checkliste.
+
 ## Explore
 
 <!--

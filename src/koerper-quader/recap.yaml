@@ -71,7 +71,7 @@ blocks:
                 - {
                     text: "Ja",
                     correct: false,
-                    info: "Senkrechte Linien bilden einen rechten Winkel und treffen sich.",
+                    info: "Senkrechte Linien bilden einen rechten Winkel und treffen sich, also sind sie nicht parallel.",
                   }
                 - {
                     text: "Nein",
@@ -131,7 +131,7 @@ blocks:
         explanation: "Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm."
       - type: definition
         term: Vieleck
-        explanation: "Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke. Ein Fünfeck hat fünf Ecken, ein Sechseck sechs."
+        explanation: "Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke: Ein Viereck hat vier Ecken, ein Fünfeck fünf, ein Sechseck sechs."
       - type: example
         title: Ein Fünfeck zählen
         blocks:
