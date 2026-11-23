@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du kennst Quader und Würfel. Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
+          Du kennst Quader und Würfel, und Vieleck und Kreis von den [ebenen Figuren](/koerper-quader/recap/). Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
           Schau dir zuerst die vier Körper an.
       - type: figure
         image: images/koerper-prisma-zylinder.svg
@@ -41,9 +41,6 @@ blocks:
       - type: definition
         term: Grundfläche und Deckfläche
         explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen an den Enden eines Prismas oder Zylinders, beim stehenden Körper oben und unten.
-      - type: definition
-        term: Vieleck
-        explanation: Ein Vieleck ist eine ebene Figur mit geraden Seiten, zum Beispiel ein Dreieck, ein Viereck oder ein Fünfeck.
       - type: definition
         term: Prisma
         explanation: Ein Prisma hat zwei gleiche Vielecke als Grundfläche und Deckfläche. Dazwischen stehen Rechtecke als Seitenflächen.

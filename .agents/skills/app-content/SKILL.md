@@ -22,7 +22,7 @@ Alle sechs sind Lücken der Karte. Zwei Seiten je Kapitel nennen dieselbe Kompet
 - Kapitel `koerper-quader` (5-6)
   - `grundkoerper-quader-wuerfel`: „Ich kann Quader, Würfel und zusammengesetzte Körper erkennen und beschreiben.“ Seite `quader-wuerfel`.
   - `netze-schraegbilder-modelle`: „Ich kann Netze, Schrägbilder und Modelle von Quader und Würfel zeichnen oder bauen.“ Seiten `netze-quader-wuerfel`, `schraegbild-quader`.
-  - Recap `recap` (`mathematik/grundfiguren-eben`, aus #397), keine Übung.
+  - Vorwissen-Seite `recap` („Das brauchst du für dieses Kapitel“, `competencies: [grundfiguren-eben]`, aus #397): eine normale Seite statt `recap`-Block, weil der Block keine Aufgaben erlaubt (regeln.md Abschnitt 7). Fachbegriffe als `definition` (Seite und Ecke, Quadrat und Rechteck, Dreieck, Kreis, Vieleck), vier Aufgaben (`recap-quadrat`, `recap-merkmale`, `recap-seiten`, `recap-durchmesser`), am Ende „Du bist bereit, wenn du …“ mit Links auf die Kartenseiten von `grundfiguren-eben` und `parallel-senkrecht-abstand`. Kein Link in die App eines anderen Explainers.
 - Kapitel `koerper-prisma` (7-8)
   - `grundkoerper-prisma-zylinder`: „Ich kann Prisma und Zylinder erkennen und von anderen Körpern unterscheiden.“ Seite `prisma-zylinder`.
   - `netze-schraegbilder-prisma-zylinder`: Seiten `netze-prisma-zylinder`, `schraegbild-prisma-zylinder`.
@@ -37,7 +37,7 @@ Die Übungs-Ids stehen in den Seitendateien (`src/<kapitel>/<seite>.yaml`, Absch
 Jede Seite: Abschnitt `einstieg` (erste Aufgabe oder Bild, was Lernende gleich tun, Ziel in einem Satz), `erklaerung`
 (ein neuer Gedanke, mit Baukasten oder Bild), `uebung` (mindestens drei Aufgaben von Erkennen über Anwenden zu neuer
 Situation, Rückmeldung mit Fehlertyp). Höchstens 350 Wörter Text je Seite, höchstens vier Textblöcke hintereinander.
-Der Recap hat nur Text. Anrede „du“, kurze Sätze.
+Die Vorwissen-Seite hat Begriffe (fett als Definition mit Beispiel), Aufgaben mit Rückmeldung und eine Checkliste. Anrede „du“, kurze Sätze.
 
 ## Terminology
 
