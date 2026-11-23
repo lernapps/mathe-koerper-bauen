@@ -43,9 +43,6 @@ blocks:
             correct: false
             info: Ein Kreis hat keine Ecken. An einer Schachtel sind alle Flächen eben und haben gerade Kanten.
         explanation: Jede Fläche des Quaders hat vier Ecken und vier rechte Winkel. Das ist ein Rechteck.
-        links:
-          - title: Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/
   - type: section
     id: erklaerung
     title: Flächen, Kanten, Ecken
@@ -109,9 +106,6 @@ blocks:
             correct: true
             info: Ein Spielwürfel ist ein Würfel, und jeder Würfel ist ein besonderer Quader.
         explanation: Quader sind alle Körper mit sechs Rechtecken als Flächen. Der Würfel gehört dazu. Eine ebene Figur ist kein Körper.
-        links:
-          - title: Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/
       - type: generated
         id: kanten-gleicher-laenge
         given:
@@ -143,6 +137,3 @@ blocks:
             message: "18 ist dreimal sechs. Die Flächen, an denen die Würfel zusammenkleben, liegen innen und zählen nicht mehr."
           - answer: 14
             message: "Du hast die Quadrate an den Enden und alle Seitenquadrate einzeln gezählt. Die Seiten bestehen aber aus je einer langen Fläche."
-        links:
-          - title: Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-quader-wuerfel/

@@ -12,23 +12,20 @@ blocks:
           Beim Quader hast du Netze gefaltet. Schneidest du ein Prisma auf, liegt auch ein Netz vor dir. Nach dieser Seite findest und prüfst du das Netz von
           Prisma und Zylinder. Das Bild zeigt ein Netz.
       - type: figure
-        image: images/netz-dreiecksprisma.svg
-        alt: "Ein Netz: drei Rechtecke nebeneinander, a, b und c genannt. Am mittleren Rechteck hängt oben ein rechtwinkliges Dreieck und unten ein zweites gleiches Dreieck."
-        caption: Das Netz eines Prismas mit einem Dreieck als Grundfläche.
+        image: images/aufklappen-prisma.svg
+        alt: "Links ein Prisma mit einem rechtwinkligen Dreieck als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: drei Rechtecke nebeneinander, a, b und c genannt, am mittleren Rechteck oben und unten je ein Dreieck."
+        caption: Das Prisma wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du sein Netz.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: number
         id: rechtecke-zaehlen
-        text: Wie viele Rechtecke hat das Netz im Bild?
+        text: Wie viele Rechtecke hat das Netz rechts im Bild?
         answer: 3
         tolerance: 0
         explanation: Die drei Rechtecke a, b und c sind die Seitenflächen des Prismas. Dazu kommen die zwei Dreiecke als Grundfläche und Deckfläche.
         mistakes:
           - answer: 5
             message: "Fünf Flächen hat das Netz insgesamt, aber zwei davon sind Dreiecke. Gefragt sind die Rechtecke."
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
   - type: section
     id: erklaerung
     title: Mantel und Deckel
@@ -40,6 +37,12 @@ blocks:
           Mantels, die so lang sind wie ihr Rand.
           Beim Zylinder ist der Mantel ein einziges Rechteck. Eine Seite ist so lang wie der Rand des Kreises, denn
           der Mantel rollt sich um den Kreis. Die zwei Kreise hängen an den beiden Seiten, die so lang sind wie ihr Rand.
+      - type: figure
+        image: images/aufklappen-zylinder.svg
+        alt: "Links ein Zylinder, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: ein langes Rechteck, an dessen oberer und unterer langer Seite je ein Kreis hängt."
+        caption: "Der Zylinder wird aufgeschnitten: Der Mantel wird zum Rechteck, Boden und Deckel bleiben Kreise."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
       - type: example
         title: Eine Dose aufschneiden
         blocks:
@@ -72,9 +75,6 @@ blocks:
             correct: false
             info: Hier hängen beide Kreise an derselben Seite. Dann ist der Deckel doppelt da, und unten fehlt der Boden.
         explanation: Beim Zylinder hängt an zwei gegenüberliegenden Seiten des Mantels je ein Kreis, einer oben, einer unten. Diese Seiten sind so lang wie der Kreisrand.
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
       - type: generated
         id: mantel-breite
         given:
@@ -126,14 +126,8 @@ blocks:
             message: "Fünf Rechtecke sind es nur im Mantel. Grundfläche und Deckfläche fehlen noch."
           - answer: 10
             message: "10 ist die Zahl der Ecken. Gefragt sind Flächen: fünf Rechtecke und zwei Fünfecke."
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
       - type: true-false
         id: zylinder-mantel-laenge
         text: "Beim Netz eines Zylinders ist eine Seite des Rechtecks so lang wie der Rand eines der beiden Kreise."
         answer: true
         explanation: Der Mantel rollt sich einmal um den Kreis. Darum passt der Rand des Kreises genau an eine Seite des Rechtecks.
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/

@@ -31,9 +31,6 @@ blocks:
             correct: true
             info: Die Kugel hat nur eine runde Fläche. Darum hat sie weder Ecken noch Kanten.
         explanation: Nur die Kugel ist überall rund. Pyramide und Kegel laufen in einer Spitze zusammen.
-        links:
-          - title: Pyramide, Kegel und Kugel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-pyramide-kegel-kugel/
   - type: section
     id: erklaerung
     title: Spitze, Grundfläche, Mantel
@@ -74,9 +71,6 @@ blocks:
           - { left: "Die Grundfläche ist ein Kreis. Der runde Mantel läuft in einer Spitze zusammen.", right: Kegel }
           - { left: "Es gibt nur eine runde Fläche, keine Kante und keine Ecke.", right: Kugel }
         explanation: Die Grundfläche und die Spitze unterscheiden die Körper. Die Kugel hat weder das eine noch das andere.
-        links:
-          - title: Pyramide, Kegel und Kugel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-pyramide-kegel-kugel/
       - type: matching
         id: alltag-zerlegen
         text: Aus welchen Grundkörpern besteht der Gegenstand?
@@ -93,9 +87,6 @@ blocks:
         distractors:
           - Zylinder und Kegel
         explanation: Zerlege den Gegenstand in Teile, die du kennst. Die Tüte läuft spitz zu, das ist der Kegel, die Eiskugel ist eine Kugel. Das Haus hat vier Wände wie ein Quader und ein Dach, das in einer Spitze endet.
-        links:
-          - title: Pyramide, Kegel und Kugel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-pyramide-kegel-kugel/
       - type: generated
         id: ecken-pyramide
         given:
@@ -136,6 +127,3 @@ blocks:
         text: "Eine Kugel hat keine Kanten und keine Ecken."
         answer: true
         explanation: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.
-        links:
-          - title: Pyramide, Kegel und Kugel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-pyramide-kegel-kugel/

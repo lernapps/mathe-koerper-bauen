@@ -28,9 +28,6 @@ blocks:
             message: "Zwölf Kanten hat der Quader insgesamt. Im Bild sind aber drei davon gestrichelt."
           - answer: 3
             message: "Drei Kanten sind gestrichelt. Gefragt sind die durchgezogenen Kanten."
-        links:
-          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
   - type: section
     id: regeln
     title: So zeichnest du es
@@ -46,6 +43,8 @@ blocks:
           2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
           3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
           4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
+
+          In den Aufgaben zeichnest du mit zwei Zählern: „Nach rechts“ und „Nach oben“ legen fest, wie weit die Rückseite gegenüber der Vorderseite verschoben ist. Die Zeichnung in der Aufgabe zeichnet den Körper dazu.
       - type: example
         title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
         blocks:
@@ -108,17 +107,11 @@ blocks:
             message: "8 Kästchen sind 4 cm in wahrer Länge. Die Tiefenkante wird verkürzt: Du zählst nur halb so viele Kästchen."
           - answer: 2
             message: "Du hast die Tiefe in Zentimetern halbiert. Gezählt werden Kästchen: so viele, wie die Kante cm lang ist."
-        links:
-          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
       - type: true-false
         id: tiefenkante-halbiert
         text: "Eine Kante des Quaders ist 6 cm tief. Im Schrägbild zeichnest du sie über 12 Kästchen."
         answer: false
         explanation: Tiefenkanten werden halbiert. Eine Kante von 6 cm zeichnest du schräg über 6 Kästchen. 12 Kästchen wären die wahre Länge, aber die gilt nur für waagerechte und senkrechte Kanten.
-        links:
-          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
       - type: generated
         id: tiefe-in-kaestchen
         given:

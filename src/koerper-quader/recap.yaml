@@ -11,7 +11,7 @@ blocks:
         text: |
           Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du für dieses Kapitel zwei
           Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die Begriffe und prüfe dich mit den
-          Kurztests „Kannst du das?“.
+          Kurztests „Kannst du das?“. Du klickst eine Antwort an und siehst sofort, ob sie stimmt und warum.
   - type: section
     id: parallel-senkrecht
     title: Parallelen, Senkrechten und Abstand
@@ -110,19 +110,27 @@ blocks:
             id: test-quadrat
             component: Kurztest
             props:
-              question: "Welche Figur hat immer vier gleich lange Seiten?"
+              question: "Ein Rechteck hat vier rechte Winkel. Wann ist es ein Quadrat?"
               options:
-                - { text: "Das Quadrat", correct: true, info: "Beim Quadrat sind alle vier Seiten gleich lang." }
                 - {
-                    text: "Das Rechteck",
-                    correct: false,
-                    info: "Beim Rechteck müssen nur die gegenüberliegenden Seiten gleich lang sein. Sind alle vier Seiten gleich lang, ist es ein Quadrat.",
+                    text: "Wenn alle vier Seiten gleich lang sind",
+                    correct: true,
+                    info: "Ein Rechteck mit vier gleich langen Seiten ist ein Quadrat.",
                   }
-                - { text: "Das Dreieck", correct: false, info: "Ein Dreieck hat nur drei Seiten, nicht vier." }
+                - {
+                    text: "Wenn gegenüberliegende Seiten gleich lang sind",
+                    correct: false,
+                    info: "Das gilt für jedes Rechteck, auch für eines mit 5 cm und 3 cm.",
+                  }
+                - {
+                    text: "Wenn es drei Ecken hat",
+                    correct: false,
+                    info: "Ein Rechteck hat immer vier Ecken, ein Dreieck hat drei.",
+                  }
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Welche Figur hat immer vier gleich lange Seiten? Quadrat, Rechteck oder Dreieck. Antwort: das Quadrat. Beim Rechteck müssen nur gegenüberliegende Seiten gleich lang sein, ein Dreieck hat nur drei Seiten.
+              Kurztest: Ein Rechteck hat vier rechte Winkel. Wann ist es ein Quadrat? Antwort: wenn alle vier Seiten gleich lang sind. Gegenüberliegende Seiten sind bei jedem Rechteck gleich lang.
       - type: definition
         term: Dreieck
         explanation: "Ein **Dreieck** hat drei Seiten und drei Ecken."
@@ -146,40 +154,40 @@ blocks:
             id: test-vieleck
             component: Kurztest
             props:
-              question: "Ein Vieleck hat 6 Ecken. Wie viele Seiten hat es?"
+              question: "Ein Vieleck hat 9 Ecken. Wie viele Seiten hat es?"
               options:
                 - {
-                    text: "5 Seiten",
+                    text: "8 Seiten",
                     correct: false,
                     info: "An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Es gibt genauso viele Seiten wie Ecken.",
                   }
                 - {
-                    text: "6 Seiten",
+                    text: "9 Seiten",
                     correct: true,
                     info: "Ebenso viele Seiten wie Ecken: an jeder Ecke stoßen zwei Seiten zusammen.",
                   }
                 - {
-                    text: "12 Seiten",
+                    text: "18 Seiten",
                     correct: false,
                     info: "Das wäre doppelt so viele Seiten wie Ecken. Jede Seite gehört aber zu zwei Ecken.",
                   }
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Ein Vieleck hat 6 Ecken. Wie viele Seiten hat es? Antwort: 6, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
+              Kurztest: Ein Vieleck hat 9 Ecken. Wie viele Seiten hat es? Antwort: 9, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
           - type: vue-component
             id: test-durchmesser
             component: Kurztest
             props:
-              question: "Ein Kreis hat den Radius 4 cm. Wie lang ist sein Durchmesser?"
+              question: "Ein Kreis hat den Radius 12 cm. Wie lang ist sein Durchmesser?"
               options:
                 - {
-                    text: "4 cm",
+                    text: "12 cm",
                     correct: false,
                     info: "Das ist der Radius. Der Durchmesser geht von Rand zu Rand durch den Mittelpunkt.",
                   }
                 - {
-                    text: "8 cm",
+                    text: "24 cm",
                     correct: true,
                     info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 4cm = 8cm.",
                   }
@@ -191,7 +199,7 @@ blocks:
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Ein Kreis hat den Radius 4 cm. Wie lang ist sein Durchmesser? Antwort: 8 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
+              Kurztest: Ein Kreis hat den Radius 12 cm. Wie lang ist sein Durchmesser? Antwort: 24 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
           - type: text
             text: "Falsch? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)."
   - type: section

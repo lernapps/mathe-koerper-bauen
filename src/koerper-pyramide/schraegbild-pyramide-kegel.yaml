@@ -26,9 +26,6 @@ blocks:
         mistakes:
           - answer: 8
             message: "Acht Kanten hat die Pyramide insgesamt. Gefragt sind nur die gestrichelten."
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/
   - type: section
     id: regeln
     title: Über der Mitte
@@ -114,6 +111,3 @@ blocks:
         text: "Bei einer geraden Pyramide liegt die Spitze im Schrägbild senkrecht über der Mitte der Grundfläche."
         answer: true
         explanation: Eine gerade Pyramide steht gerade. Ihre Spitze liegt über dem Punkt, an dem sich die Diagonalen der Grundfläche schneiden.
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/

@@ -12,23 +12,20 @@ blocks:
           Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
           Schau dir zuerst das Netz einer Pyramide an.
       - type: figure
-        image: images/netz-pyramide.svg
-        alt: "Netz einer Pyramide: ein Quadrat in der Mitte, an jeder der vier Seiten ein gleichschenkliges Dreieck."
-        caption: Das Netz einer Pyramide mit einem Quadrat als Grundfläche.
+        image: images/aufklappen-pyramide.svg
+        alt: "Links eine Pyramide mit einem Quadrat als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts ihr Netz: ein Quadrat mit einem Dreieck an jeder der vier Seiten."
+        caption: Die Pyramide wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du ihr Netz.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: number
         id: dreiecke-zaehlen
-        text: Wie viele Dreiecke hat das Netz im Bild?
+        text: Wie viele Dreiecke hat das Netz rechts im Bild?
         answer: 4
         tolerance: 0
         explanation: An jeder der vier Seiten des Quadrats hängt ein Dreieck. Beim Falten laufen ihre Spitzen oben zusammen.
         mistakes:
           - answer: 5
             message: "Fünf Flächen hat das Netz insgesamt, aber eine davon ist das Quadrat. Gefragt sind die Dreiecke."
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/
   - type: section
     id: erklaerung
     title: Dreiecke, Kreisausschnitt, Kugel
@@ -40,6 +37,12 @@ blocks:
           Beim Kegel ist die Grundfläche ein Kreis. Der Mantel ist ein Kreisausschnitt, ein Stück aus einem großen Kreis
           wie ein Tortenstück. Der runde Rand des Ausschnitts ist so lang wie der Rand der Grundfläche.
           Bei der Kugel geht das nicht: Eine Kugel lässt sich nicht flach legen, ohne zu dehnen oder zu reißen.
+      - type: figure
+        image: images/aufklappen-kegel.svg
+        alt: "Links ein Kegel, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: ein Ausschnitt aus einem großen Kreis wie ein Stück Kuchen, an dessen rundem Rand ein kleiner Kreis hängt."
+        caption: "Der Kegel wird aufgeschnitten: Der Mantel wird zum Kreisausschnitt, der Boden bleibt ein Kreis."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
       - type: example
         title: Globus und Weltkarte
         blocks:
@@ -73,9 +76,6 @@ blocks:
             correct: false
             info: Ein Rechteck ergäbe einen Zylinder. Beim Kegel läuft der Mantel in einer Spitze zusammen, dafür braucht er einen Ausschnitt.
         explanation: Der Kegelmantel ist ein Kreisausschnitt. Der runde Rand des Ausschnitts wird um den Grundkreis gebogen.
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/
       - type: generated
         id: dreiecke-pyramide
         given:
@@ -121,14 +121,8 @@ blocks:
             correct: false
             info: Die Erde ist fast eine Kugel. Eine Pyramide hätte Kanten und Ecken, und ihr Netz wäre ohne Verzerrung möglich.
         explanation: Die Kugel hat als einziger der Grundkörper kein Netz. Jede flache Karte der Erde verzerrt irgendwo.
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/
       - type: true-false
         id: kegelmantel-rand
         text: "Der runde Rand des Kreisausschnitts, der den Mantel eines Kegels bildet, ist so lang wie der Rand des Grundkreises."
         answer: true
         explanation: Der Mantel wird um den Grundkreis gebogen. Der runde Rand des Ausschnitts liegt dann genau auf dem Rand der Grundfläche.
-        links:
-          - title: Netze und Schrägbilder von Pyramide und Kegel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-pyramide-kegel/

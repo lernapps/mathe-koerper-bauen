@@ -31,9 +31,6 @@ blocks:
             correct: false
             info: Nummer 4 hat oben und unten einen Kreis. Ein Quader hat keine runden Flächen.
         explanation: Der Quader ist der Körper, dessen sechs Flächen alle Rechtecke sind.
-        links:
-          - title: Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/
   - type: section
     id: erklaerung
     title: Grundfläche entscheidet
@@ -72,9 +69,6 @@ blocks:
           - { left: "Die Grundfläche ist ein Kreis.", right: Zylinder }
           - { left: "Die Grundfläche ist ein Rechteck.", right: Quader }
         explanation: Die Grundfläche bestimmt den Namen des Körpers. Zwei gleiche Kreise als Grund- und Deckfläche geben den Zylinder, zwei gleiche Vielecke mit Rechtecken dazwischen ein Prisma.
-        links:
-          - title: Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/
       - type: multiple-choice
         id: welche-prismen
         text: Welche Körper sind Prismen?
@@ -92,9 +86,6 @@ blocks:
             correct: false
             info: Eine Dose mit rundem Boden ist ein Zylinder. Ihre Grundfläche ist ein Kreis, kein Vieleck.
         explanation: Ein Prisma hat ein Vieleck als Grundfläche. Hat ein Körper zwei gleiche Kreise als Grund- und Deckfläche, ist er ein Zylinder.
-        links:
-          - title: Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/
       - type: generated
         id: ecken-prisma
         given:
@@ -132,6 +123,3 @@ blocks:
         text: "Ein Zylinder hat keine Ecken."
         answer: true
         explanation: Der Zylinder hat Kreise als Grundfläche und Deckfläche. Ein Kreis hat keine Ecken, und der Mantel ist rund. Darum gibt es keine Ecke.
-        links:
-          - title: Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundkoerper-prisma-zylinder/

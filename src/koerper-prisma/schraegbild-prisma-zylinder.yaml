@@ -26,9 +26,6 @@ blocks:
         mistakes:
           - answer: 9
             message: "Neun Kanten hat das Prisma insgesamt. Gefragt sind nur die gestrichelten."
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/
   - type: section
     id: regeln
     title: Dreieck und Ellipse
@@ -120,6 +117,3 @@ blocks:
         text: "Im Schrägbild zeichnest du einen Kreis als Ellipse, die genauso hoch wie breit ist."
         answer: false
         explanation: Die Ellipse ist so breit wie der Kreis, aber nur halb so hoch. Die Tiefenrichtung wird wie bei allen Schrägbildern halbiert.
-        links:
-          - title: Netze und Schrägbilder von Prisma und Zylinder (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-prisma-zylinder/

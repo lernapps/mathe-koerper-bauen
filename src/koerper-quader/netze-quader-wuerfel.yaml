@@ -33,7 +33,7 @@ blocks:
           vorn, rechts, hinten und links hängen an seinen Kanten, der Deckel hängt am hinteren Quadrat.
       - type: single-choice
         id: flaechen-zaehlen
-        text: Wie viele Quadrate siehst du, wenn der Würfel ganz aufgeklappt ist?
+        text: Du schiebst den Regler ganz nach links. Wie viele Quadrate liegen dann flach vor dir?
         options:
           - text: Vier
             correct: false
@@ -45,9 +45,6 @@ blocks:
             correct: false
             info: Ein Würfel hat acht Ecken, aber nur sechs Flächen. Zähle Flächen, nicht Ecken.
         explanation: Aufklappen ändert die Flächen nicht. Aus den sechs Quadraten des Würfels wird ein flaches Bild mit sechs Quadraten.
-        links:
-          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
   - type: section
     id: erklaerung
     title: Was ein Netz ist
@@ -63,7 +60,7 @@ blocks:
           Nicht jede Anordnung von sechs Quadraten ist ein Würfelnetz. Beim Falten bekommt jedes Quadrat eine eigene
           Seite des Würfels. Würden zwei Quadrate dieselbe Seite bekommen, bliebe eine andere leer: Das Netz geht nicht.
           Vier Quadrate in einer Reihe bilden den Mantel. Boden und Deckel müssen dann eines auf jeder Seite der Reihe hängen. Ein Quader hat auch sechs Flächen, aber Rechtecke: Je zwei gegenüberliegende Flächen sind gleich.
-          Gegenüber liegen zwei Flächen des Würfels, wenn sie im Netz in einer geraden Reihe mit genau einem Quadrat dazwischen liegen. Sonst lege im Kopf die gesuchte Fläche als Boden und klappe die anderen nach oben: Die Fläche, die oben als Deckel ankommt, liegt gegenüber.
+          Gegenüber liegen zwei Flächen des Würfels, wenn sie im Netz in einer geraden Reihe mit genau einem Quadrat dazwischen liegen. In den Aufgaben siehst du ein Netz aus nummerierten Quadraten. Du entscheidest, ob es sich zum Würfel faltet, oder welche Fläche gegenüber einer anderen liegt. Sonst lege im Kopf die gesuchte Fläche als Boden und klappe die anderen nach oben: Die Fläche, die oben als Deckel ankommt, liegt gegenüber.
       - type: figure
         image: images/netz-kreuz.svg
         alt: "Das Netz aus dem Baukasten: eine Spalte aus vier Quadraten (6, 4, 1, 2 von oben nach unten), Quadrat 5 links und Quadrat 3 rechts von Quadrat 1."
@@ -116,9 +113,6 @@ blocks:
         text: "Ein Netz hat vier Quadrate in einer Reihe. Die anderen zwei Quadrate hängen beide oberhalb der Reihe. Daraus wird immer ein Würfel."
         answer: false
         explanation: Die vier Quadrate in der Reihe bilden den Mantel des Würfels. Die beiden anderen müssen Deckel und Boden werden, also eines oberhalb und eines unterhalb der Reihe hängen. Hängen beide oben, landen sie auf derselben Seite.
-        links:
-          - title: Netze und Schrägbilder von Quader und Würfel (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/netze-schraegbilder-modelle/
       - type: vue-component
         id: netz-gegenueber
         component: NetzFalten
