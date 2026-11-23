@@ -41,7 +41,7 @@ blocks:
           Beim Zylinder verschiebst du die Ellipse um die Höhe nach oben. Dann verbindest du die beiden Ränder mit zwei
           senkrechten Linien.
       - type: example
-        title: Ein Zylinder mit Radius 2 cm und Höhe 3 cm
+        title: Ein Zylinder mit Radius 2 cm und Höhe 3 cm
         blocks:
           - type: text
             text: |

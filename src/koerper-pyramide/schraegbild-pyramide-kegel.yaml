@@ -41,7 +41,7 @@ blocks:
           Beim Kegel liegt die Spitze senkrecht über dem Mittelpunkt der Grundfläche. Die Grundfläche zeichnest du als
           Ellipse, wie beim Zylinder.
       - type: example
-        title: Ein Kegel mit Radius 2 cm und Höhe 3 cm
+        title: Ein Kegel mit Radius 2 cm und Höhe 3 cm
         blocks:
           - type: text
             text: |

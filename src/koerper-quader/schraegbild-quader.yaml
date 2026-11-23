@@ -47,7 +47,7 @@ blocks:
           3. Sie wird verkürzt: Du zählst nur halb so viele Kästchen wie in wahrer Länge. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
           4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
       - type: example
-        title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
+        title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
         blocks:
           - type: text
             text: |
