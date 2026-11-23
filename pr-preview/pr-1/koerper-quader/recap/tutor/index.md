@@ -88,7 +88,7 @@ Interaktiv: Kurztest: Welche Figur hat immer vier gleich lange Seiten? Quadrat, 
 
 - **Kreis**: Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm.
 
-- **Vieleck**: Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke. Ein Fünfeck hat fünf Ecken, ein Sechseck sechs.
+- **Vieleck**: Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke: Ein Viereck hat vier Ecken, ein Fünfeck fünf, ein Sechseck sechs.
 
 **Beispiel: Ein Fünfeck zählen**
 
