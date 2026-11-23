@@ -39,34 +39,59 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du für dieses Kapitel“
 
-Ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
+Parallel, senkrecht und ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
 
 ### Wofür diese Seite ist
 
-Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du in diesem Kapitel die ebenen
-Grundfiguren: Quadrat, Rechteck, Dreieck, Kreis und Vieleck. Lies die Begriffe und löse die Aufgaben. Wenn du sie
-schaffst, kannst du loslegen. Wenn nicht, lies die Seite zu den ebenen Grundfiguren nach (Link unten).
+Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du parallel, senkrecht und die
+ebenen Grundfiguren. Löse die Aufgaben „Kannst du das?“. Sonst lies auf der Lernlandkarte nach.
+
+### Parallel, senkrecht, Abstand
+
+- **Senkrecht**: Zwei Linien sind **senkrecht** zueinander, wenn sie einen **rechten Winkel** bilden, eine Ecke wie die einer Heftseite. Beispiel: Wand und Boden im Zimmer.
+
+- **Parallel und Abstand**: Zwei Linien sind **parallel**, wenn sie überall gleich weit voneinander entfernt sind. Dieser **Abstand** wird senkrecht gemessen. Beispiel: Die Linien in deinem Heft sind parallel, ihr Abstand ist 0,5 cm.
+
+Bild: Links zwei waagerechte Linien untereinander, parallel, mit einer gestrichelten Linie dazwischen als Abstand. Rechts eine waagerechte und eine senkrechte Linie, die einen rechten Winkel bilden, mit Winkelzeichen. Bildunterschrift: Parallele Linien (links) und senkrechte Linien (rechts).
+
+#### Kannst du das?
+
+- Aufgabe `recap-abstand` (unten)
+
+- Aufgabe `recap-senkrecht` (unten)
+
+**Beispiel: Abstand im Heft**
+
+Zwei Heftlinien haben 0,5 cm Abstand. Vier Linien weiter ist der Abstand zur ersten
+4 · 0,5 cm = 2 cm. Du misst immer senkrecht von Linie zu Linie.
 
 ### Ebene Grundfiguren
 
-- **Seite und Ecke**: Eine Seite ist eine gerade Strecke am Rand einer ebenen Figur. Eine Ecke ist ein Punkt, an dem zwei Seiten zusammenstoßen. Bei Körpern heißen die Strecken Kanten, bei ebenen Figuren heißen sie Seiten.
+Bild: Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck, ein rechtwinkliges Dreieck, ein Kreis mit Mittelpunkt, Radius r und Durchmesser d, und ein Fünfeck. Rechte Winkel sind mit einem kleinen Winkelzeichen markiert. Bildunterschrift: Die ebenen Grundfiguren. Das kleine Winkelzeichen zeigt einen rechten Winkel.
 
-- **Quadrat und Rechteck**: Ein Quadrat hat vier gleich lange Seiten und vier rechte Winkel. Ein rechter Winkel ist eine Ecke wie die einer Heftseite, die beiden Seiten stehen senkrecht aufeinander. Ein Rechteck hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel, das heißt, sie haben überall den gleichen Abstand.
+- **Seite und Ecke**: Eine **Seite** ist eine gerade Strecke am Rand einer ebenen Figur. Eine **Ecke** ist ein Punkt, an dem zwei Seiten zusammenstoßen. Bei Körpern heißen solche Strecken später Kanten.
+
+- **Quadrat und Rechteck**: Ein **Rechteck** hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel. Beispiel: 5 cm lang und 3 cm breit, also zwei Seiten von 5 cm und zwei von 3 cm. Ein **Quadrat** ist ein besonderes Rechteck: Alle vier Seiten sind gleich lang.
+
+#### Kannst du das?
 
 - Aufgabe `recap-quadrat` (unten)
 
-- **Dreieck**: Ein Dreieck hat drei Seiten und drei Ecken. Ein rechtwinkliges Dreieck hat einen rechten Winkel.
+- **Dreieck**: Ein **Dreieck** hat drei Seiten und drei Ecken.
 
-- **Kreis**: Ein Kreis ist rund. Alle Punkte auf dem Rand sind gleich weit vom Mittelpunkt entfernt. Diese Strecke heißt Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius.
+- **Kreis**: Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm.
 
-- **Vieleck**: Ein Vieleck ist eine ebene Figur mit geraden Seiten. Ein Viereck hat vier Ecken, ein Fünfeck fünf, ein Sechseck sechs.
+#### Kannst du das?
+
+- Aufgabe `recap-merkmale` (unten)
+
+- **Vieleck**: Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke. Ein Fünfeck hat fünf Ecken, ein Sechseck sechs.
 
 **Beispiel: Ein Fünfeck zählen**
 
-Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Darum hat das
-Fünfeck auch 5 Seiten.
+Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat es auch 5 Seiten.
 
-- Aufgabe `recap-merkmale` (unten)
+#### Kannst du das noch?
 
 - Aufgabe `recap-seiten` (unten)
 
@@ -74,14 +99,34 @@ Fünfeck auch 5 Seiten.
 
 ### Du bist bereit, wenn du …
 
-„Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“ Das heißt: Du …
+„Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“ Du …
 
-- erkennst Quadrat, Rechteck, Dreieck, Kreis und Vieleck und nennst ihre Eigenschaften,
-- unterscheidest Seiten (ebene Figur) und Kanten (Körper),
-- weißt, was ein rechter Winkel, parallele Seiten, Radius und Durchmesser sind.
+- weißt, was senkrecht, parallel und Abstand bedeuten,
+- Quadrat, Rechteck, Dreieck, Kreis und Vieleck erkennst und beschreibst,
+- Seite, Ecke, Radius und Durchmesser kennst.
 
-Fällt dir etwas schwer? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)
+Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)
 und [Parallel, senkrecht, Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).
+
+### Aufgabe recap-abstand
+
+- Aufgabe: Zwei Linien im Heft sind parallel. An einer Stelle sind sie 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt?
+- Antwortformat: eine Antwort wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ Auch 0,5 cm – Parallele Linien haben überall den gleichen Abstand.
+  - ✗ Weiter, weil die Linien sich entfernen – Linien, die sich entfernen, sind nicht parallel. Parallele Linien haben überall den gleichen Abstand.
+  - ✗ Näher, weil die Linien sich treffen – Linien, die sich treffen, sind nicht parallel. Parallele Linien treffen sich nie.
+- Lösung: Auch 0,5 cm
+- Erklärung: Der Abstand paralleler Linien ändert sich nicht, egal wo du misst.
+- Link: [../?via=tutor#recap-abstand](../?via=tutor#recap-abstand)
+
+### Aufgabe recap-senkrecht
+
+- Aufgabe: Zwei Linien, die senkrecht aufeinander stehen, sind parallel.
+- Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
+- Lösung: Die Aussage stimmt nicht.
+- Erklärung: Senkrechte Linien bilden einen rechten Winkel und treffen sich. Parallele Linien treffen sich nie.
+- Link: [../?via=tutor#recap-senkrecht](../?via=tutor#recap-senkrecht)
 
 ### Aufgabe recap-quadrat
 
@@ -89,7 +134,7 @@ und [Parallel, senkrecht, Abstand](https://lernapps.net/apps/map/mathematik/c/pa
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Das Quadrat – Beim Quadrat sind alle vier Seiten gleich lang.
-  - ✗ Das Rechteck – Beim Rechteck sind nur die gegenüberliegenden Seiten gleich lang. Ein Rechteck mit vier gleich langen Seiten wäre ein Quadrat.
+  - ✗ Das Rechteck – Beim Rechteck müssen nur die gegenüberliegenden Seiten gleich lang sein. Sind alle vier Seiten gleich lang, ist das Rechteck ein Quadrat.
   - ✗ Das Dreieck – Ein Dreieck hat nur drei Seiten, nicht vier.
 - Lösung: Das Quadrat
 - Erklärung: Das Quadrat ist die Figur, bei der alle vier Seiten gleich lang sind und alle vier Winkel rechte Winkel.

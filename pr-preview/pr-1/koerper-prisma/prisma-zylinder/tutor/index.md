@@ -43,7 +43,7 @@ Prismen und Zylinder beschreiben und von anderen Körpern unterscheiden.
 
 ### Vier Körper im Vergleich
 
-Du kennst Quader und Würfel, und Vieleck und Kreis von den ebenen Figuren. Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
+Du kennst Quader und Würfel. Vieleck und Kreis kennst du von den ebenen Figuren. Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
 Schau dir zuerst die vier Körper an.
 
 Bild: Vier Körper, nummeriert von 1 bis 4: 1 ein Quader, 2 ein Körper mit einem Dreieck als Grundfläche und drei Rechtecken als Seitenflächen, 3 ein Körper mit einem Fünfeck als Grundfläche, 4 ein Zylinder mit zwei Kreisen oben und unten. Bildunterschrift: Vier Körper: 1 Quader, 2 Prisma mit Dreieck, 3 Prisma mit Fünfeck, 4 Zylinder.
