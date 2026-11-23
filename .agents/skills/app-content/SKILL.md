@@ -74,10 +74,11 @@ Dritt-Inhalte, `thirdParty` leer. Der fachliche Prüfer rechnet Aufgaben nach.
 ## Adding a chapter or round
 
 1. Kompetenz-Ids aus der Karte nehmen, neue Seiten in `chapter.yaml` unter `pages` eintragen (Reihenfolge der Karte).
-2. Seite `src/<kapitel>/<seite>.yaml` mit den Abschnitten oben; Daten in `src/data/koerper.yaml` ergänzen.
-3. Komponenten in `src/components/` (`<Name>.vue`, `.ts`, `.test.ts`), gemeinsame Geometrie in `Koerper.ts`.
-4. Kapitel in `src/app.yaml` unter `chapters` eintragen.
-5. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, commit.
+2. Seite `src/<kapitel>/<seite>.yaml` mit den Abschnitten oben (keine Datendatei nötig).
+3. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt (`chapter.yaml` des Kapitels; Übungen, die ohne Seite klar sind, bevorzugt `generated` und Komponenten).
+4. Komponenten in `src/components/` (`<Name>.vue`, `.ts`, `.test.ts`), gemeinsame Geometrie in `Koerper.ts`.
+5. Kapitel in `src/app.yaml` unter `chapters` eintragen.
+6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, commit.
 
 ## Rules learned from mistakes
 

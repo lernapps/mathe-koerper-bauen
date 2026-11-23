@@ -2,3 +2,16 @@
 title: Quader und Würfel
 summary: Du baust Quader und Würfel, findest ihre Netze, prüfst, ob ein Netz sich falten lässt, und zeichnest sie als Schrägbild.
 pages: [recap, quader-wuerfel, netze-quader-wuerfel, schraegbild-quader]
+selfAssessment:
+  pages:
+    - exercises:
+        - /koerper-quader/quader-wuerfel/#kanten-gleicher-laenge
+        - /koerper-quader/quader-wuerfel/#drei-wuerfel
+        - /koerper-quader/netze-quader-wuerfel/#netz-faltbar
+    - exercises:
+        - /koerper-quader/netze-quader-wuerfel/#netz-gegenueber
+        - /koerper-quader/netze-quader-wuerfel/#quader-netz
+        - /koerper-quader/schraegbild-quader/#breite-in-kaestchen
+    - exercises:
+        - /koerper-quader/schraegbild-quader/#schraegbild-quader-zeichnen
+        - /koerper-quader/schraegbild-quader/#tiefe-in-kaestchen
