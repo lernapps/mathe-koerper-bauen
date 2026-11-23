@@ -35,7 +35,7 @@ Lernende bauen, drehen, klappen auf und zeichnen Körper in einem 3D-Baukasten u
 - Kein `scope` (guess): kein `open-task`, kein eigenes Material des Erstellers.
 - Links je Frage (guess): Seite des Bausteins auf der Lernlandkarte (`https://lernapps.net/apps/map/mathematik/c/<id>/`), nicht Wikipedia (Orchestrator: Wikipedia weder in Quellen noch als Weiterlesen). Das Skill empfiehlt Wikipedia; Abweichung ist begründet.
 - Keine Datendatei `src/data/koerper.yaml` (guess): Anzahlen folgen aus n und stehen als `generated`-Rechnung; eine Tabelle der Körper wäre ein zweites Mal dieselbe Aussage.
-- Recap (Auftrag vom Menschen über den Orchestrator, regeln.md Abschnitt 7): Der Block `recap` erlaubt keine Aufgaben, daher eine normale Seite mit `competencies: [grundfiguren-eben]` (guess): Sie gilt damit für die Karte als geübt von dieser App; der Orchestrator entscheidet, ob das so bleiben soll. Kapitel 2 und 3 haben laut `requires` der Karte keine Voraussetzung von außen (nur Bausteine dieses Explainers); Vieleck, Kreis, Radius, Durchmesser stehen im Recap und sind im Glossar.
+- Recap (Auftrag vom Menschen über den Orchestrator, regeln.md Abschnitt 7): Der Block `recap` erlaubt keine Aufgaben, daher eine normale Seite mit `competencies: [grundfiguren-eben]` (guess): Der Orchestrator entschied dagegen (der Baustein gehört zu #397): Die Seite ist wieder eine `recap`-Seite, der Selbsttest sind `Kurztest`-Komponenten aus dem gemeinsamen Ordner. Kapitel 2 und 3 haben laut `requires` der Karte keine Voraussetzung von außen (nur Bausteine dieses Explainers); Vieleck, Kreis, Radius, Durchmesser stehen im Recap und sind im Glossar.
 
 ## Notes
 
