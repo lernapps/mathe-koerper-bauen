@@ -20,11 +20,9 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
-- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?recap-seiten=12`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
-- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/koerper-quader/recap/?recap-seiten=12&via=tutor#recap-seiten`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -39,14 +37,19 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du für dieses Kapitel“
 
+Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/, https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/
+
 Parallel, senkrecht und ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
 
 ### Wofür diese Seite ist
 
-Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du parallel, senkrecht und die
-ebenen Grundfiguren. Löse die Aufgaben „Kannst du das?“. Sonst lies auf der Lernlandkarte nach.
+Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du für dieses Kapitel zwei
+Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die Begriffe und prüfe dich mit den
+Kurztests „Kannst du das?“.
 
-### Parallel, senkrecht, Abstand
+### Parallelen, Senkrechten und Abstand
+
+„Ich kann parallele und senkrechte Geraden zeichnen und Abstände messen.“
 
 - **Senkrecht**: Zwei Linien sind **senkrecht** zueinander, wenn sie einen **rechten Winkel** bilden, eine Ecke wie die einer Heftseite. Beispiel: Wand und Boden im Zimmer.
 
@@ -54,18 +57,22 @@ ebenen Grundfiguren. Löse die Aufgaben „Kannst du das?“. Sonst lies auf der
 
 Bild: Links zwei waagerechte Linien untereinander, parallel, mit einer gestrichelten Linie dazwischen als Abstand. Rechts eine waagerechte und eine senkrechte Linie, die einen rechten Winkel bilden, mit Winkelzeichen. Bildunterschrift: Parallele Linien (links) und senkrechte Linien (rechts).
 
-#### Kannst du das?
-
-- Aufgabe `recap-abstand` (unten)
-
-- Aufgabe `recap-senkrecht` (unten)
-
 **Beispiel: Abstand im Heft**
 
 Zwei Heftlinien haben 0,5 cm Abstand. Vier Linien weiter ist der Abstand zur ersten
 4 · 0,5 cm = 2 cm. Du misst immer senkrecht von Linie zu Linie.
 
+#### Kannst du das?
+
+Interaktiv: Kurztest: Zwei Linien im Heft sind parallel und 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt? Antwort: auch 0,5 cm, denn parallele Linien haben überall den gleichen Abstand.
+
+Interaktiv: Kurztest: Zwei Linien stehen senkrecht aufeinander. Sind sie dann auch parallel? Antwort: nein. Senkrechte Linien bilden einen rechten Winkel und treffen sich, parallele Linien treffen sich nie.
+
+Falsch? Lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).
+
 ### Ebene Grundfiguren
+
+„Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“
 
 Bild: Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck, ein rechtwinkliges Dreieck, ein Kreis mit Mittelpunkt, Radius r und Durchmesser d, und ein Fünfeck. Rechte Winkel sind mit einem kleinen Winkelzeichen markiert. Bildunterschrift: Die ebenen Grundfiguren. Das kleine Winkelzeichen zeigt einen rechten Winkel.
 
@@ -75,15 +82,11 @@ Bild: Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck,
 
 #### Kannst du das?
 
-- Aufgabe `recap-quadrat` (unten)
+Interaktiv: Kurztest: Welche Figur hat immer vier gleich lange Seiten? Quadrat, Rechteck oder Dreieck. Antwort: das Quadrat. Beim Rechteck müssen nur gegenüberliegende Seiten gleich lang sein, ein Dreieck hat nur drei Seiten.
 
 - **Dreieck**: Ein **Dreieck** hat drei Seiten und drei Ecken.
 
 - **Kreis**: Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm.
-
-#### Kannst du das?
-
-- Aufgabe `recap-merkmale` (unten)
 
 - **Vieleck**: Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke. Ein Fünfeck hat fünf Ecken, ein Sechseck sechs.
 
@@ -93,100 +96,16 @@ Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat e
 
 #### Kannst du das noch?
 
-- Aufgabe `recap-seiten` (unten)
+Interaktiv: Kurztest: Ein Vieleck hat 6 Ecken. Wie viele Seiten hat es? Antwort: 6, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
 
-- Aufgabe `recap-durchmesser` (unten)
+Interaktiv: Kurztest: Ein Kreis hat den Radius 4 cm. Wie lang ist sein Durchmesser? Antwort: 8 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
+
+Falsch? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/).
 
 ### Du bist bereit, wenn du …
-
-„Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“ Du …
 
 - weißt, was senkrecht, parallel und Abstand bedeuten,
 - Quadrat, Rechteck, Dreieck, Kreis und Vieleck erkennst und beschreibst,
 - Seite, Ecke, Radius und Durchmesser kennst.
 
-Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)
-und [Parallel, senkrecht, Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).
-
-### Aufgabe recap-abstand
-
-- Aufgabe: Zwei Linien im Heft sind parallel. An einer Stelle sind sie 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt?
-- Antwortformat: eine Antwort wählen
-- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Auch 0,5 cm – Parallele Linien haben überall den gleichen Abstand.
-  - ✗ Weiter, weil die Linien sich entfernen – Linien, die sich entfernen, sind nicht parallel. Parallele Linien haben überall den gleichen Abstand.
-  - ✗ Näher, weil die Linien sich treffen – Linien, die sich treffen, sind nicht parallel. Parallele Linien treffen sich nie.
-- Lösung: Auch 0,5 cm
-- Erklärung: Der Abstand paralleler Linien ändert sich nicht, egal wo du misst.
-- Link: [../?via=tutor#recap-abstand](../?via=tutor#recap-abstand)
-
-### Aufgabe recap-senkrecht
-
-- Aufgabe: Zwei Linien, die senkrecht aufeinander stehen, sind parallel.
-- Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
-- Lösung: Die Aussage stimmt nicht.
-- Erklärung: Senkrechte Linien bilden einen rechten Winkel und treffen sich. Parallele Linien treffen sich nie.
-- Link: [../?via=tutor#recap-senkrecht](../?via=tutor#recap-senkrecht)
-
-### Aufgabe recap-quadrat
-
-- Aufgabe: Welche Figur hat immer vier gleich lange Seiten?
-- Antwortformat: eine Antwort wählen
-- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Das Quadrat – Beim Quadrat sind alle vier Seiten gleich lang.
-  - ✗ Das Rechteck – Beim Rechteck müssen nur die gegenüberliegenden Seiten gleich lang sein. Sind alle vier Seiten gleich lang, ist das Rechteck ein Quadrat.
-  - ✗ Das Dreieck – Ein Dreieck hat nur drei Seiten, nicht vier.
-- Lösung: Das Quadrat
-- Erklärung: Das Quadrat ist die Figur, bei der alle vier Seiten gleich lang sind und alle vier Winkel rechte Winkel.
-- Link: [../?via=tutor#recap-quadrat](../?via=tutor#recap-quadrat)
-
-### Aufgabe recap-merkmale
-
-- Aufgabe: Ordne jedem Merkmal die Figur zu.
-- Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Drei Ecken – Dreieck; Vier rechte Winkel, gegenüberliegende Seiten gleich lang – Rechteck; Alle Randpunkte sind gleich weit vom Mittelpunkt entfernt – Kreis; Fünf Seiten – Fünfeck
-- Erklärung: Zähle Ecken und Seiten und prüfe die Winkel. Nur der Kreis hat keine geraden Seiten.
-- Link: [../?via=tutor#recap-merkmale](../?via=tutor#recap-merkmale)
-
-### Aufgabe recap-seiten
-
-- Aufgabe: „Ein Vieleck hat {n} Ecken. Wie viele Seiten hat es?“
-- Antwortformat: eine Zahl eintippen
-- Tipp der App: „Wie viele Seiten stoßen an einer Ecke zusammen, und wie viele Ecken hat jede Seite?“
-- Typische Fehler und was die App sagt:
-  - F1: „An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Es gibt darum genauso viele Seiten wie Ecken.“
-- Link zu Nummer n: `../?recap-seiten=n&via=tutor#recap-seiten`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
-
-```
-Nr. | n | Lösung | F1
-1 | 3 | 3 | 4
-2 | 5 | 5 | 6
-3 | 7 | 7 | 8
-4 | 4 | 4 | 5
-5 | 6 | 6 | 7
-6 | 8 | 8 | 9
-7 | 9 | 9 | 10
-```
-
-### Aufgabe recap-durchmesser
-
-- Aufgabe: „Ein Kreis hat den Radius {r} cm. Wie lang ist sein Durchmesser in Zentimetern?“
-- Antwortformat: eine Zahl eintippen
-- Tipp der App: „Der Durchmesser besteht aus zwei Radien.“
-- Typische Fehler und was die App sagt:
-  - F1: „Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.“
-- Link zu Nummer n: `../?recap-durchmesser=n&via=tutor#recap-durchmesser`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
-
-```
-Nr. | r | Lösung | F1
-1 | 6 | 12 | 6
-2 | 2 | 4 | 2
-3 | 7 | 14 | 7
-4 | 4 | 8 | 4
-5 | 9 | 18 | 9
-6 | 3 | 6 | 3
-7 | 5 | 10 | 5
-8 | 8 | 16 | 8
-```
+Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) und [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).

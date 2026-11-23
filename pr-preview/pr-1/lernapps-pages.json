@@ -5,8 +5,9 @@
     {
       "path": "koerper-quader/recap/",
       "title": "Das brauchst du für dieses Kapitel",
-      "competencies": [
-        "grundfiguren-eben"
+      "recap": [
+        "mathematik/parallel-senkrecht-abstand",
+        "mathematik/grundfiguren-eben"
       ]
     },
     {
