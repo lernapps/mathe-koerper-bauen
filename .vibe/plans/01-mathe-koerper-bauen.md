@@ -272,12 +272,21 @@ page, which a link. -->
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Commit bis zum Checkpoint „Veröffentlichen“ (Recherche, Plan, Musterseite freigegeben; Vorschau-PR #1 offen, Checks grün, nicht gemergt; Veröffentlichen vom Orchestrator an den Menschen weitergegeben). Katalogeintrag und Merge stehen aus.
+
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+Drei Antworten des Orchestrators in Vertretung des Menschen nach dem Plan: Musterseite angenommen (mit Hinweis zu Links), Vorschau-PR angenommen (mit zwei Aufträgen: Review-Stand und Retro), dazu ein Werkzeughinweis aus #430 (Winkelzeichen). Eigene Rückfragen nach dem Plan: keine. Ein Eingriff des Menschen vor dem Plan: Erlaubnis für npx-Befehle.
+
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Eine Seite je Baustein war nicht möglich: „Netze und Schrägbilder“ ist eine Kompetenz der Karte, ich teilte sie in zwei Seiten je Kapitel, beide nennen sie (10 statt 6 Seiten; vom Orchestrator bestätigt).
+- Links je Frage: Skill empfiehlt Wikipedia, Regel verbietet es; gewählt wurde die Kartenseite des Bausteins (bestätigt).
+- Kein `scope`; keine Datendatei (Anzahlen folgen aus n); nur Deutsch; Suchbegriffe.
+- Schrägbild-Konvention: 1 Kästchen 0,5 cm, Tiefe diagonal mit so vielen Kästchen wie cm (Schulkonvention, nicht exakte Halbierung); Ellipse halb so hoch wie breit.
+- Die Schrägbild-Übung stellt zwei Zähler ein, statt auf dem Raster selbst zu zeichnen (Tastatur und Textalternative zuerst).
+- Keine Recap-Seiten für Kapitel 2 und 3: die Karte nennt keine Voraussetzung von außen; ein Prüfer fand dort fehlende Vorkenntnisse (Radius, Durchmesser, Vieleck); sie sind im Text eingeführt.
+- Plan sagt „push nothing before Commit“, der Orchestrator und die Stop-Hooks verlangten früheren Push von `work`; ich pushte `work` ab dem Plan-Checkpoint.
+
