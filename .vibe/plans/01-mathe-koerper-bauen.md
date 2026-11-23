@@ -65,6 +65,8 @@ Strang `mathematik/geometrie` (Raum und Form). Drei Kapitel, sechs Bausteine (Ka
 - Nicht geprüft (offen): Aussehen der Schrägbilder und Baukasten bei allen Drehwinkeln; Pyramidenkanten gestrichelt bei Höhe 3 bis 4 (nur Orientierungsrechnung des ersten Laufs); Tastatur und Screenreader nur per Playwright durch den Lernenden-Prüfer; KMK und Hessischer Lehrplan nicht geöffnet.
 - Lernenden-Prüfer: Lauf an der Musterseite und Lauf über die ganze App (Befunde und Fixes oben); nach dem zweiten Lauf nur die Wortlautänderungen und Brückensätze, kein erneuter Gesamtdurchlauf.
 
+- Recap-Überarbeitung (regeln.md Abschnitt 7): Lernenden-Prüfer nur für die Seite „Das brauchst du für dieses Kapitel“ und fachlicher Prüfer nur für ihre neuen Texte, Begriffe und Selbsttest-Rechnungen. Fachlich: Rückmeldung „nur die gegenüberliegenden Seiten“ ungenau (behoben), „Ein Quadrat ist ein besonderes Rechteck“ fehlte (ergänzt), „senkrecht“ unerklärt (eigener Abschnitt), Baustein „Parallel, senkrecht, Abstand“ fehlte (Abschnitt mit Begriffen, Beispiel, zwei Aufgaben und Kartenlink ergänzt, weil er `requires` von `grundfiguren-eben` ist), Kreis/Vieleck unscharf (umformuliert), Körper-Stoff in der Checkliste (gestrichen), Beispiele mit Zahlen. Lernender: keine Zeichnungen (zwei SVGs ergänzt), Zahlenaufgaben ohne Fehlerhinweis (Laufzeit: eine Antwort, dann Lösung; Fehlermeldungen der Seite ergänzt, wo möglich), „Wo lese ich nach?“ nur unten (Kartenlink bei jedem Selbsttest und am Ende). Nach diesen Änderungen nicht erneut geprüft: der umgebaute Seitentext und die zwei Bilder (nur `lernapps check`, Build, eigene Sichtprüfung der Bilder).
+
 ## Explore
 
 <!--

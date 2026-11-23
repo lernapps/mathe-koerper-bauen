@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Das brauchst du für dieses Kapitel
-description: Ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
+description: Parallel, senkrecht und ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
 competencies: [grundfiguren-eben]
 blocks:
   - type: section
@@ -9,101 +9,169 @@ blocks:
     blocks:
       - type: text
         text: |
-          Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du in diesem Kapitel die ebenen
-          Grundfiguren: Quadrat, Rechteck, Dreieck, Kreis und Vieleck. Lies die Begriffe und löse die Aufgaben. Wenn du sie
-          schaffst, kannst du loslegen. Wenn nicht, lies die Seite zu den ebenen Grundfiguren nach (Link unten).
+          Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du parallel, senkrecht und die
+          ebenen Grundfiguren. Löse die Aufgaben „Kannst du das?“. Sonst lies auf der Lernlandkarte nach.
+  - type: section
+    id: parallel-senkrecht
+    title: Parallel, senkrecht, Abstand
+    blocks:
+      - type: definition
+        term: Senkrecht
+        explanation: "Zwei Linien sind **senkrecht** zueinander, wenn sie einen **rechten Winkel** bilden, eine Ecke wie die einer Heftseite. Beispiel: Wand und Boden im Zimmer."
+      - type: definition
+        term: Parallel und Abstand
+        explanation: "Zwei Linien sind **parallel**, wenn sie überall gleich weit voneinander entfernt sind. Dieser **Abstand** wird senkrecht gemessen. Beispiel: Die Linien in deinem Heft sind parallel, ihr Abstand ist 0,5 cm."
+      - type: figure
+        image: images/parallel-senkrecht.svg
+        alt: "Links zwei waagerechte Linien untereinander, parallel, mit einer gestrichelten Linie dazwischen als Abstand. Rechts eine waagerechte und eine senkrechte Linie, die einen rechten Winkel bilden, mit Winkelzeichen."
+        caption: Parallele Linien (links) und senkrechte Linien (rechts).
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: section
+        id: test-parallel
+        title: Kannst du das?
+        blocks:
+          - type: single-choice
+            id: recap-abstand
+            text: Zwei Linien im Heft sind parallel. An einer Stelle sind sie 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt?
+            options:
+              - text: Auch 0,5 cm
+                correct: true
+                info: Parallele Linien haben überall den gleichen Abstand.
+              - text: Weiter, weil die Linien sich entfernen
+                correct: false
+                info: Linien, die sich entfernen, sind nicht parallel. Parallele Linien haben überall den gleichen Abstand.
+              - text: Näher, weil die Linien sich treffen
+                correct: false
+                info: Linien, die sich treffen, sind nicht parallel. Parallele Linien treffen sich nie.
+            explanation: Der Abstand paralleler Linien ändert sich nicht, egal wo du misst.
+            links:
+              - title: Parallel, senkrecht, Abstand (Lernlandkarte)
+                url: https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/
+          - type: true-false
+            id: recap-senkrecht
+            text: "Zwei Linien, die senkrecht aufeinander stehen, sind parallel."
+            answer: false
+            explanation: Senkrechte Linien bilden einen rechten Winkel und treffen sich. Parallele Linien treffen sich nie.
+            links:
+              - title: Parallel, senkrecht, Abstand (Lernlandkarte)
+                url: https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/
+      - type: example
+        title: Abstand im Heft
+        blocks:
+          - type: text
+            text: |
+              Zwei Heftlinien haben 0,5 cm Abstand. Vier Linien weiter ist der Abstand zur ersten
+              4 · 0,5 cm = 2 cm. Du misst immer senkrecht von Linie zu Linie.
   - type: section
     id: grundfiguren
     title: Ebene Grundfiguren
     blocks:
+      - type: figure
+        image: images/ebene-figuren.svg
+        alt: "Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck, ein rechtwinkliges Dreieck, ein Kreis mit Mittelpunkt, Radius r und Durchmesser d, und ein Fünfeck. Rechte Winkel sind mit einem kleinen Winkelzeichen markiert."
+        caption: Die ebenen Grundfiguren. Das kleine Winkelzeichen zeigt einen rechten Winkel.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
       - type: definition
         term: Seite und Ecke
-        explanation: Eine Seite ist eine gerade Strecke am Rand einer ebenen Figur. Eine Ecke ist ein Punkt, an dem zwei Seiten zusammenstoßen. Bei Körpern heißen die Strecken Kanten, bei ebenen Figuren heißen sie Seiten.
+        explanation: "Eine **Seite** ist eine gerade Strecke am Rand einer ebenen Figur. Eine **Ecke** ist ein Punkt, an dem zwei Seiten zusammenstoßen. Bei Körpern heißen solche Strecken später Kanten."
       - type: definition
         term: Quadrat und Rechteck
-        explanation: Ein Quadrat hat vier gleich lange Seiten und vier rechte Winkel. Ein rechter Winkel ist eine Ecke wie die einer Heftseite, die beiden Seiten stehen senkrecht aufeinander. Ein Rechteck hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel, das heißt, sie haben überall den gleichen Abstand.
-      - type: single-choice
-        id: recap-quadrat
-        text: Welche Figur hat immer vier gleich lange Seiten?
-        options:
-          - text: Das Quadrat
-            correct: true
-            info: Beim Quadrat sind alle vier Seiten gleich lang.
-          - text: Das Rechteck
-            correct: false
-            info: Beim Rechteck sind nur die gegenüberliegenden Seiten gleich lang. Ein Rechteck mit vier gleich langen Seiten wäre ein Quadrat.
-          - text: Das Dreieck
-            correct: false
-            info: Ein Dreieck hat nur drei Seiten, nicht vier.
-        explanation: Das Quadrat ist die Figur, bei der alle vier Seiten gleich lang sind und alle vier Winkel rechte Winkel.
-        links:
-          - title: Ebene Grundfiguren (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/
+        explanation: "Ein **Rechteck** hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel. Beispiel: 5 cm lang und 3 cm breit, also zwei Seiten von 5 cm und zwei von 3 cm. Ein **Quadrat** ist ein besonderes Rechteck: Alle vier Seiten sind gleich lang."
+      - type: section
+        id: test-figuren
+        title: Kannst du das?
+        blocks:
+          - type: single-choice
+            id: recap-quadrat
+            text: Welche Figur hat immer vier gleich lange Seiten?
+            options:
+              - text: Das Quadrat
+                correct: true
+                info: Beim Quadrat sind alle vier Seiten gleich lang.
+              - text: Das Rechteck
+                correct: false
+                info: Beim Rechteck müssen nur die gegenüberliegenden Seiten gleich lang sein. Sind alle vier Seiten gleich lang, ist das Rechteck ein Quadrat.
+              - text: Das Dreieck
+                correct: false
+                info: Ein Dreieck hat nur drei Seiten, nicht vier.
+            explanation: Das Quadrat ist die Figur, bei der alle vier Seiten gleich lang sind und alle vier Winkel rechte Winkel.
+            links:
+              - title: Ebene Grundfiguren (Lernlandkarte)
+                url: https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/
       - type: definition
         term: Dreieck
-        explanation: Ein Dreieck hat drei Seiten und drei Ecken. Ein rechtwinkliges Dreieck hat einen rechten Winkel.
+        explanation: "Ein **Dreieck** hat drei Seiten und drei Ecken."
       - type: definition
         term: Kreis
-        explanation: Ein Kreis ist rund. Alle Punkte auf dem Rand sind gleich weit vom Mittelpunkt entfernt. Diese Strecke heißt Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius.
+        explanation: "Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm."
+      - type: section
+        id: test-figuren2
+        title: Kannst du das?
+        blocks:
+          - type: matching
+            id: recap-merkmale
+            text: Ordne jedem Merkmal die Figur zu.
+            pairs:
+              - { left: "Drei Ecken", right: Dreieck }
+              - { left: "Vier rechte Winkel, gegenüberliegende Seiten gleich lang", right: Rechteck }
+              - { left: "Alle Randpunkte sind gleich weit vom Mittelpunkt entfernt", right: Kreis }
+              - { left: "Fünf Seiten", right: Fünfeck }
+            explanation: Zähle Ecken und Seiten und prüfe die Winkel. Nur der Kreis hat keine geraden Seiten.
+            links:
+              - title: Ebene Grundfiguren (Lernlandkarte)
+                url: https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/
       - type: definition
         term: Vieleck
-        explanation: Ein Vieleck ist eine ebene Figur mit geraden Seiten. Ein Viereck hat vier Ecken, ein Fünfeck fünf, ein Sechseck sechs.
+        explanation: "Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke. Ein Fünfeck hat fünf Ecken, ein Sechseck sechs."
       - type: example
         title: Ein Fünfeck zählen
         blocks:
           - type: text
             text: |
-              Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Darum hat das
-              Fünfeck auch 5 Seiten.
-      - type: matching
-        id: recap-merkmale
-        text: Ordne jedem Merkmal die Figur zu.
-        pairs:
-          - { left: "Drei Ecken", right: Dreieck }
-          - { left: "Vier rechte Winkel, gegenüberliegende Seiten gleich lang", right: Rechteck }
-          - { left: "Alle Randpunkte sind gleich weit vom Mittelpunkt entfernt", right: Kreis }
-          - { left: "Fünf Seiten", right: Fünfeck }
-        explanation: Zähle Ecken und Seiten und prüfe die Winkel. Nur der Kreis hat keine geraden Seiten.
-        links:
-          - title: Ebene Grundfiguren (Lernlandkarte)
-            url: https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/
-      - type: generated
-        id: recap-seiten
-        given:
-          n: { int: [3, 9] }
-        task:
-          text: "Ein Vieleck hat {{n}} Ecken. Wie viele Seiten hat es?"
-        answer: { value: "n", compare: number }
-        mistakes:
-          - {
-              value: "n + 1",
-              message: "An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Es gibt darum genauso viele Seiten wie Ecken.",
-            }
-        hint: "Wie viele Seiten stoßen an einer Ecke zusammen, und wie viele Ecken hat jede Seite?"
-      - type: generated
-        id: recap-durchmesser
-        given:
-          r: { int: [2, 9] }
-        task:
-          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist sein Durchmesser in Zentimetern?"
-        answer: { value: "2 * r", compare: number }
-        mistakes:
-          - {
-              value: "r",
-              message: "Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.",
-            }
-        hint: "Der Durchmesser besteht aus zwei Radien."
+              Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat es auch 5 Seiten.
+      - type: section
+        id: test-vielecke
+        title: Kannst du das noch?
+        blocks:
+          - type: generated
+            id: recap-seiten
+            given:
+              n: { int: [3, 9] }
+            task:
+              text: "Ein Vieleck hat {{n}} Ecken. Wie viele Seiten hat es?"
+            answer: { value: "n", compare: number }
+            mistakes:
+              - {
+                  value: "n + 1",
+                  message: "An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Es gibt darum genauso viele Seiten wie Ecken.",
+                }
+            hint: "Wie viele Seiten stoßen an einer Ecke zusammen, und wie viele Ecken hat jede Seite?"
+          - type: generated
+            id: recap-durchmesser
+            given:
+              r: { int: [2, 9] }
+            task:
+              text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist sein Durchmesser in Zentimetern?"
+            answer: { value: "2 * r", compare: number }
+            mistakes:
+              - {
+                  value: "r",
+                  message: "Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.",
+                }
+            hint: "Der Durchmesser besteht aus zwei Radien."
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …
     blocks:
       - type: text
         text: |
-          „Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“ Das heißt: Du …
+          „Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“ Du …
 
-          - erkennst Quadrat, Rechteck, Dreieck, Kreis und Vieleck und nennst ihre Eigenschaften,
-          - unterscheidest Seiten (ebene Figur) und Kanten (Körper),
-          - weißt, was ein rechter Winkel, parallele Seiten, Radius und Durchmesser sind.
+          - weißt, was senkrecht, parallel und Abstand bedeuten,
+          - Quadrat, Rechteck, Dreieck, Kreis und Vieleck erkennst und beschreibst,
+          - Seite, Ecke, Radius und Durchmesser kennst.
 
-          Fällt dir etwas schwer? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)
+          Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)
           und [Parallel, senkrecht, Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).
