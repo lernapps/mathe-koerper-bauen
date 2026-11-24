@@ -102,8 +102,8 @@ Falsch? Dann lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.n
 
 - Aufgabe: Wenn du die Begriffe sicher kennst, kannst du sie zuordnen. Ordne jedem Begriff die Beschreibung zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Senkrecht – bilden einen rechten Winkel; Parallel – überall gleich weit voneinander entfernt; Quadrat – Rechteck mit vier gleich langen Seiten; Durchmesser – geht durch den Mittelpunkt von Rand zu Rand; Fünfeck – Vieleck mit fünf Ecken und fünf Seiten
-- Erklärung: Senkrecht und parallel beschreiben, wie zwei Linien zueinander liegen. Quadrat, Durchmesser und Fünfeck sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
+- Lösung: Senkrecht – bilden einen rechten Winkel; Parallel – überall gleich weit entfernt; Abstand – senkrecht gemessene Entfernung; Quadrat – Rechteck mit vier gleichen Seiten; Durchmesser – geht durch den Mittelpunkt
+- Erklärung: Senkrecht, parallel und Abstand beschreiben, wie zwei Linien zueinander liegen. Quadrat und Durchmesser sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
 - Link: [../?via=tutor#recap-begriffe](../?via=tutor#recap-begriffe)
 
 ### Aufgabe recap-durchmesser
@@ -111,11 +111,13 @@ Falsch? Dann lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.n
 - Aufgabe: „Ein Kreis hat den Radius {r} cm. Wie lang ist sein Durchmesser in Zentimetern?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Durchmesser besteht aus zwei Radien.“
+- Lösungsweg:
+  - Der Durchmesser ist doppelt so lang wie der Radius: 2 · {r} cm = {answer} cm.
 - Typische Fehler und was die App sagt:
   - F1: „Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.“
   - F2: „Du hast durch 2 geteilt. Der Durchmesser ist doppelt so lang wie der Radius, also mal 2.“
 - Link zu Nummer n: `../?recap-durchmesser=n&via=tutor#recap-durchmesser`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | r | Lösung | F1 | F2

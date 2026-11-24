@@ -54,7 +54,7 @@ Bild: Schrägbild eines Quaders auf Kästchenpapier: vorn ein Rechteck, dahinter
 
 - **Schrägbild**: Ein Schrägbild ist die Zeichnung eines Körpers, bei der die Vorderseite in wahrer Größe gezeichnet wird und die Tiefe schräg nach hinten läuft.
 
-Damit jeder Quader gleich aussieht und räumlich wirkt, gibt es feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
+Wenn du einen Quader so zeichnen willst, dass man ihn erkennt, gelten feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
 1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
 2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
@@ -97,11 +97,13 @@ oben verschoben.
 - Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Eine Kante des Quaders ist {b} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?“
+- Lösungsweg:
+  - 1 cm sind 2 Kästchen: {b} · 2 = {answer} Kästchen.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast die Zentimeter als Kästchen gezählt. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind also 2 Kästchen.“
   - F2: „Du hast durch 2 geteilt. Die Vorderseite wird nicht verkürzt: 1 cm sind 2 Kästchen, also mal 2.“
 - Link zu Nummer n: `../?breite-in-kaestchen=n&via=tutor#breite-in-kaestchen`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | b | Lösung | F1 | F2
@@ -204,10 +206,12 @@ Nr. | w | h | d | W (verdeckt) | H (verdeckt) | Lösung | F1 | F2 | F3 | F4
 - Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Tiefenkanten zeichnest du schräg und zählst nur halb so viele Kästchen wie in wahrer Länge. Der Quader ist {t} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Eine Kante nach hinten wird auf die halbe Länge verkürzt.“
+- Lösungsweg:
+  - Pro Zentimeter Tiefe zählst du 1 Kästchen schräg: {t} cm sind {answer} Kästchen.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast die Tiefe wie eine Vorderkante gerechnet (1 cm sind 2 Kästchen). Die Tiefenkante wird halbiert, also nur {t} Kästchen.“
 - Link zu Nummer n: `../?tiefe-in-kaestchen=n&via=tutor#tiefe-in-kaestchen`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | t | Lösung | F1

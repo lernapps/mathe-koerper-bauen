@@ -277,13 +277,15 @@ Nr. | Netz | k | Lösung | F3
 - Aufgabe: „Ein Quader ist {a} cm lang, {b} cm breit und {c} cm hoch. Eine Fläche des Quaders hat die Maße {a} cm mal {b} cm. Wie viele Flächen des Quaders haben genau diese Maße?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Welche Fläche liegt im Quader gegenüber? Sie sieht genau so aus.“
+- Lösungsweg:
+  - Gegenüberliegende Flächen des Quaders sind gleich groß, und hier sind alle drei Maße verschieden: Es sind {answer} Flächen mit diesen Maßen.
 - Typische Fehler und was die App sagt:
   - F1: „Zu jeder Fläche eines Quaders gibt es eine gegenüberliegende Fläche mit denselben Maßen. Also sind es zwei.“
   - F2: „Ein Quader hat drei Paare gleicher Flächen, aber zu {a} cm mal {b} cm gehört nur ein Paar.“
   - F3: „Vier Flächen mit denselben Maßen gäbe es nur, wenn die Höhe so groß wäre wie die Länge oder die Breite. Hier sind alle drei Maße verschieden, also haben nur zwei Flächen diese Maße.“
   - F4: „Ein Quader hat zwar sechs Flächen, aber nur zwei davon haben die Maße {a} cm mal {b} cm.“
 - Link zu Nummer n: `../?quader-netz=n&via=tutor#quader-netz`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | a | b | c | Lösung | F1 | F2 | F3 | F4

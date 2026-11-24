@@ -107,11 +107,13 @@ Verzerrung gibt es nicht.
 - Aufgabe: „Die Grundfläche einer Pyramide hat {n} Ecken. Wie viele Dreiecke hat ihr Netz?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „An jeder Seite der Grundfläche hängt ein Dreieck.“
+- Lösungsweg:
+  - An jeder der {n} Seiten der Grundfläche hängt ein Dreieck, also sind es {answer} Dreiecke.
 - Typische Fehler und was die App sagt:
   - F1: „{n} + 1 ist die Zahl aller Flächen. Eine davon ist die Grundfläche und kein Dreieck.“
   - F2: „Eine Pyramide hat nur eine Spitze: An jeder Seite der Grundfläche hängt ein Dreieck, mehr nicht.“
 - Link zu Nummer n: `../?dreiecke-pyramide=n&via=tutor#dreiecke-pyramide`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | n | Lösung | F1 | F2
@@ -129,11 +131,13 @@ Nr. | n | Lösung | F1 | F2
 - Aufgabe: „Das Netz einer Pyramide besteht aus der Grundfläche und den Seitenflächen. Die Grundfläche hat {n} Ecken. Aus wie vielen Teilen besteht das Netz?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Zähle die Dreiecke und die Grundfläche.“
+- Lösungsweg:
+  - {n} Dreiecke und die Grundfläche: {n} + 1 = {answer} Teile.
 - Typische Fehler und was die App sagt:
   - F1: „Das sind nur die Dreiecke. Die Grundfläche gehört auch zum Netz.“
   - F2: „Das wäre das Netz eines Prismas mit Deckfläche. Die Pyramide hat nur eine Grundfläche.“
 - Link zu Nummer n: `../?flaechen-netz-pyramide=n&via=tutor#flaechen-netz-pyramide`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | n | Lösung | F1 | F2
@@ -151,11 +155,13 @@ Nr. | n | Lösung | F1 | F2
 - Aufgabe: „Die Grundfläche einer Pyramide hat {n} gleich lange Seiten von je {a} cm. Im Netz hängt an jeder dieser Seiten ein Dreieck. Wie lang ist der Rand der Grundfläche zusammen?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Wie viele Seiten hat der Rand, und wie lang ist jede?“
+- Lösungsweg:
+  - {n} Seiten von je {a} cm: {n} · {a} = {answer} cm.
 - Typische Fehler und was die App sagt:
   - F1: „Das ist nur eine Seite. Der Rand besteht aus allen {n} Seiten, an jeder hängt ein Dreieck.“
   - F2: „Du hast die Zahl der Seiten und die Länge einer Seite addiert. Der Rand ist {n} Seiten von je {a} cm lang, also malnehmen.“
 - Link zu Nummer n: `../?rand-grundflaeche=n&via=tutor#rand-grundflaeche`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | n | a | Lösung | F1 | F2

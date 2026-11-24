@@ -52,7 +52,7 @@ Bild: Vier Körper im Schrägbild, nummeriert von 1 bis 4: ein Quader, ein Dreie
 
 ### Dreieck und Ellipse
 
-Wenn du ein Prisma oder einen Zylinder zeichnest, brauchst du zwei neue Regeln: eine für die Grundfläche und eine für den Kreis. Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Das Prisma liegt dabei auf der Seite: Seine Höhe ist im Bild die Tiefe. Die Tiefe zeichnest du wie beim Quader schräg und
+Wenn du ein Prisma oder einen Zylinder zeichnest, brauchst du zwei neue Regeln: eine für die Grundfläche und eine für den Kreis. Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Das Prisma liegt dabei auf der Seite, damit du das Dreieck vorn in wahrer Größe zeichnen kannst: Seine Höhe ist im Bild die Tiefe. Die Tiefe zeichnest du wie beim Quader schräg und
 halbiert: so viele Kästchen diagonal, wie die Kante cm lang ist.
 Einen Kreis zeichnest du im Schrägbild als Ellipse. Sie ist so breit wie der Kreis, aber nur halb so hoch.
 Beim Zylinder verschiebst du die Ellipse um die Höhe nach oben. Dann verbindest du die beiden Ränder mit zwei
@@ -90,11 +90,13 @@ Die obere Ellipse liegt 3 cm hoch, das sind 6 Kästchen, über der unteren.
 - Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Ein Kreis hat den Radius {r} cm. Wie viele Kästchen breit zeichnest du die Ellipse im Schrägbild?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Durchmesser ist doppelt so lang wie der Radius. 1 cm sind 2 Kästchen.“
+- Lösungsweg:
+  - Der Durchmesser ist doppelt so lang wie der Radius, und 1 cm sind 2 Kästchen: 4 · {r} = {answer} Kästchen.
 - Typische Fehler und was die App sagt:
   - F1: „Das ist der Durchmesser in Zentimetern. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind 2 Kästchen.“
   - F2: „Das ist der Radius in Zentimetern. Rechne zuerst den Durchmesser aus und dann in Kästchen um.“
 - Link zu Nummer n: `../?ellipse-breite=n&via=tutor#ellipse-breite`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | r | Lösung | F1 | F2

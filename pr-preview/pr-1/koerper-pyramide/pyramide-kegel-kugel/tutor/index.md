@@ -82,8 +82,6 @@ der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.
 
 - Aufgabe `kanten-pyramide` (unten)
 
-- Aufgabe `kugel-kanten` (unten)
-
 ### Aufgabe kugel-erkennen
 
 - Aufgabe: Welche Nummer hat der Körper ohne Ecke und ohne Kante?
@@ -159,11 +157,3 @@ Nr. | n | Lösung | F1 | F2
 6 | 4 | 8 | 4 | 5
 7 | 6 | 12 | 6 | 7
 ```
-
-### Aufgabe kugel-kanten
-
-- Aufgabe: Eine Kugel hat keine Kanten und keine Ecken.
-- Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
-- Lösung: Die Aussage stimmt.
-- Erklärung: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.
-- Link: [../?via=tutor#kugel-kanten](../?via=tutor#kugel-kanten)

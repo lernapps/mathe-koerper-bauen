@@ -88,11 +88,13 @@ senkrecht über dem Mittelpunkt der Ellipse. Dann verbindest du die Spitze mit d
 - Aufgabe: „Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Die Pyramide ist {h} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Die Höhe verläuft senkrecht, also in wahrer Länge. Ein Kästchen ist 0,5 cm lang.“
+- Lösungsweg:
+  - Die Höhe zeichnest du in wahrer Länge, 1 cm sind 2 Kästchen: 2 · {h} = {answer} Kästchen.
 - Typische Fehler und was die App sagt:
   - F1: „Du hast die Zentimeter als Kästchen gezählt. 1 cm sind 2 Kästchen.“
   - F2: „Du hast durch 2 geteilt. Nur die Tiefe wird halbiert, die Höhe zeichnest du in wahrer Länge: 1 cm sind 2 Kästchen.“
 - Link zu Nummer n: `../?hoehe-in-kaestchen=n&via=tutor#hoehe-in-kaestchen`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | h | Lösung | F1 | F2

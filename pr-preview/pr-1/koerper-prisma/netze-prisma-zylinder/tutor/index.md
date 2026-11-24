@@ -104,11 +104,13 @@ flach: ein langes Rechteck und zwei Kreise. Die Höhe des Rechtecks ist die Höh
 - Aufgabe: „Ein Prisma ist {k} cm hoch. Seine Grundfläche ist ein Dreieck mit den Seiten {a} cm, {b} cm und {c} cm. Wie lang ist die Seite des Rechtecks im Netz, die an der Dreiecksseite {b} cm liegt?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Das Rechteck hängt an einer Seite des Dreiecks. Wie lang ist diese Seite?“
+- Lösungsweg:
+  - Das Rechteck hängt mit einer Seite am Dreieck, und diese Seite ist {b} cm lang. Die Höhe {k} cm ist die andere Seite des Rechtecks. Gefragt ist die Seite am Dreieck: {answer} cm.
 - Typische Fehler und was die App sagt:
   - F1: „{k} cm ist die Höhe des Prismas, also die Höhe des Rechtecks. Die Breite ist die Seite des Dreiecks, an der es hängt.“
   - F2: „Das ist die Länge aller drei Rechtecke zusammen, wenn sie nebeneinander liegen. Gefragt ist ein einzelnes Rechteck.“
 - Link zu Nummer n: `../?mantel-breite=n&via=tutor#mantel-breite`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | k | a | b | c | Lösung | F1 | F2
@@ -186,11 +188,13 @@ Nr. | k | a | b | c | Lösung | F1 | F2
 - Aufgabe: „Die drei Rechtecke des Mantels liegen im Netz nebeneinander. Das Prisma ist {k} cm hoch, die Grundfläche ein Dreieck mit den Seiten {a} cm, {b} cm und {c} cm. Wie lang ist der ganze Mantel in der langen Richtung?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Mantel ist so lang wie der Rand der Grundfläche.“
+- Lösungsweg:
+  - Der Mantel ist so lang wie der Rand des Dreiecks: {a} + {b} + {c} = {answer} cm.
 - Typische Fehler und was die App sagt:
   - F1: „{k} cm ist die Höhe des Prismas, die kurze Seite des Mantels. Gefragt ist die lange Richtung.“
   - F2: „Dir fehlt das Rechteck an der dritten Seite. Alle drei Rechtecke liegen nebeneinander.“
 - Link zu Nummer n: `../?mantel-laenge=n&via=tutor#mantel-laenge`
-- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
 Nr. | k | a | b | c | Lösung | F1 | F2

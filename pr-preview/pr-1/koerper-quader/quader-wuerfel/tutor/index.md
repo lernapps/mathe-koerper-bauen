@@ -117,6 +117,8 @@ Quadrate an den beiden Enden und Rechtecke an den Seiten.
 - Aufgabe: „Ein Quader ist {a} cm lang, {b} cm breit und {c} cm hoch. Wie viele seiner Kanten sind {a} cm lang?“
 - Antwortformat: eine Zahl eintippen
 - Tipp der App: „Der Quader hat drei Richtungen: lang, breit, hoch. Wie viele Kanten laufen in jeder Richtung?“
+- Lösungsweg:
+  - Der Quader hat drei Richtungen. In jeder Richtung laufen vier gleich lange Kanten, also sind vier Kanten {a} cm lang.
 - Typische Fehler und was die App sagt:
   - F1: „Zwölf Kanten hat der Quader insgesamt. Gefragt sind nur die Kanten, die {a} cm lang sind.“
   - F2: „Zwei Kanten wären es, wenn du nur die Kanten einer Fläche zählst. Der Quader hat vier gleich lange Kanten in jeder Richtung: oben zwei und unten zwei.“

@@ -28,7 +28,7 @@
 </details>
 <p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
 <p class="explainer-tutor-status" role="status" aria-live="polite"></p>
-<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧koerper-pyramide/pyramide-kegel-kugel/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"mathe-koerper-bauen","page":{"id":"pyramide-kegel-kugel","title":"Pyramide, Kegel und Kugel erkennen","exercises":[{"id":"kugel-erkennen","section":"einstieg","numbered":false},{"id":"koerper-zuordnen","section":"uebung","numbered":false},{"id":"alltag-zerlegen","section":"uebung","numbered":false},{"id":"ecken-pyramide","section":"uebung","numbered":true},{"id":"kanten-pyramide","section":"uebung","numbered":true},{"id":"kugel-kanten","section":"uebung","numbered":false}],"sections":["einstieg","erklaerung","uebung"]},"tutor":"koerper-pyramide/pyramide-kegel-kugel/tutor/","markdown":"koerper-pyramide/pyramide-kegel-kugel/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧koerper-pyramide/pyramide-kegel-kugel/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"mathe-koerper-bauen","page":{"id":"pyramide-kegel-kugel","title":"Pyramide, Kegel und Kugel erkennen","exercises":[{"id":"kugel-erkennen","section":"einstieg","numbered":false},{"id":"koerper-zuordnen","section":"uebung","numbered":false},{"id":"alltag-zerlegen","section":"uebung","numbered":false},{"id":"ecken-pyramide","section":"uebung","numbered":true},{"id":"kanten-pyramide","section":"uebung","numbered":true}],"sections":["einstieg","erklaerung","uebung"]},"tutor":"koerper-pyramide/pyramide-kegel-kugel/tutor/","markdown":"koerper-pyramide/pyramide-kegel-kugel/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
 </div>
 </div>
 <nav class="explainer-toc" aria-label="Auf dieser Seite"><p class="explainer-toc-title">Auf dieser Seite</p><ol><li><a href="#einstieg">Drei Körper mit Spitze und ohne</a></li><li><a href="#erklaerung">Spitze, Grundfläche, Mantel</a></li><li><a href="#uebung">Übung</a></li></ol></nav>
@@ -184,31 +184,6 @@ der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.</p></div>
 <script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"kanten-pyramide","given":{"n":{"int":[3,9]}},"task":{"text":"Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Kanten hat die Pyramide?"},"answer":{"value":"2 * n","compare":"number"},"mistakes":[{"value":"n","message":"Das sind nur die Kanten der Grundfläche. Von jeder Ecke läuft noch eine Kante zur Spitze."},{"value":"n + 1","message":"{{n}} + 1 ist die Zahl der Ecken oder Flächen. Hier sind die Kanten gefragt: {{n}} am Boden und {{n}} zur Spitze."}],"hint":"Zähle die Kanten der Grundfläche und die Kanten, die zur Spitze laufen.","steps":["{{n}} Kanten in der Grundfläche und {{n}} Kanten zur Spitze: {{n}} + {{n}} = {{answer}} Kanten."]},"templates":{"de":{"task":"Die Grundfläche einer Pyramide hat ⟦n⟧ Ecken. Wie viele Kanten hat die Pyramide?","steps":["⟦n⟧ Kanten in der Grundfläche und ⟦n⟧ Kanten zur Spitze: ⟦n⟧ + ⟦n⟧ = ⟦answer⟧ Kanten."],"hint":"Zähle die Kanten der Grundfläche und die Kanten, die zur Spitze laufen.","messages":["Das sind nur die Kanten der Grundfläche. Von jeder Ecke läuft noch eine Kante zur Spitze.","⟦n⟧ + 1 ist die Zahl der Ecken oder Flächen. Hier sind die Kanten gefragt: ⟦n⟧ am Boden und ⟦n⟧ zur Spitze."]}},"data":{},"seeds":[1,4,5,6,11,16,30],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/5" data-block-id="3eadbfff" data-block-type="true-false" data-block-order="15">
-<div class="explainer-exercise explainer-question" id="kugel-kanten">
-<p class="explainer-exercise-label">Aufgabe</p>
-<div class="question" id="frage-kugel-kanten" data-id="kugel-kanten" data-type="true-false">
-<form class="question-form" novalidate>
-<fieldset>
-<legend class="question-text">Eine Kugel hat keine Kanten und keine Ecken.</legend>
-<label class="question-option"><input type="radio" name="frage-kugel-kanten" value="true"> <span>Stimmt</span></label>
-<label class="question-option"><input type="radio" name="frage-kugel-kanten" value="false"> <span>Stimmt nicht</span></label>
-</fieldset>
-<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
-<div class="question-reveal" hidden>
-<p><strong>Richtige Antwort:</strong> Die Aussage stimmt.</p>
-<p class="question-explanation">Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.</p>
-</div>
-<p class="question-actions" hidden><button type="submit" class="question-check">Prüfen</button></p>
-</form>
-</div>
-<details class="explainer-solution"><summary>Lösung</summary>
-<p><strong>Richtige Antwort:</strong> Die Aussage stimmt.</p>
-<p class="question-explanation">Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.</p>
-</details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"kugel-kanten","text":"Eine Kugel hat keine Kanten und keine Ecken.","explanation":"Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.","links":[],"type":"true-false","answer":true},"rendered":{}}</script>
-</div>
-</div>
 </section>
 <p class="explainer-feedback-invite" hidden><span>Fehler gefunden oder eine Idee für diese App?</span> <button type="button" class="explainer-feedback-switch">Feedback zu „Körper bauen, aufklappen und zeichnen“ geben</button></p>
 </main>
@@ -248,7 +223,7 @@ der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.</p></div>
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-koerper-bauen","app":"Körper bauen, aufklappen und zeichnen","root":"../../","repository":"lernapps/mathe-koerper-bauen","revision":"9ac4a73","page":{"title":"Pyramide, Kegel und Kugel erkennen","order":7}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-koerper-bauen","app":"Körper bauen, aufklappen und zeichnen","root":"../../","repository":"lernapps/mathe-koerper-bauen","revision":"cd1a0b9","page":{"title":"Pyramide, Kegel und Kugel erkennen","order":7}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../koerper-prisma/schraegbild-prisma-zylinder/">Zurück: Schrägbilder von Prisma und Zylinder</a><a rel="next" href="../../koerper-pyramide/netze-pyramide-kegel/">Weiter: Netze von Pyramide und Kegel</a></nav>
