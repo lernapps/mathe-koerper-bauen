@@ -9,15 +9,15 @@ blocks:
     blocks:
       - type: text
         text: |
-          Körper bestehen aus Flächen, und viele Flächen sind ebene Figuren. Darum brauchst du für dieses Kapitel zwei
-          Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die Begriffe und prüfe dich mit den
-          Kurztests „Kannst du das?“. Du klickst eine Antwort an und siehst sofort, ob sie stimmt und warum.
+          Wenn du Körper beschreiben und zeichnen willst, brauchst du die Flächen, aus denen sie bestehen, und das sind
+          ebene Figuren. Du brauchst zwei Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die
+          Begriffe und prüfe dich mit den beiden Aufgaben am Ende.
   - type: section
     id: parallel-senkrecht
     title: Parallelen, Senkrechten und Abstand
     blocks:
       - type: text
-        text: "„Ich kann parallele und senkrechte Geraden zeichnen und Abstände messen.“"
+        text: "Wenn du Linien beschreiben willst, die sich nie treffen oder im rechten Winkel kreuzen, brauchst du diese Wörter. „Ich kann parallele und senkrechte Geraden zeichnen und Abstände messen.“"
       - type: definition
         term: Senkrecht
         explanation: "Zwei Linien sind **senkrecht** zueinander, wenn sie einen **rechten Winkel** bilden, eine Ecke wie die einer Heftseite. Beispiel: Wand und Boden im Zimmer."
@@ -37,59 +37,12 @@ blocks:
             text: |
               Zwei Heftlinien haben 0,5 cm Abstand. Vier Linien weiter ist der Abstand zur ersten
               4 · 0,5 cm = 2 cm. Du misst immer senkrecht von Linie zu Linie.
-      - type: section
-        id: test-parallel
-        title: Kannst du das?
-        blocks:
-          - type: vue-component
-            id: test-abstand
-            component: Kurztest
-            props:
-              question: "Zwei Linien im Heft sind parallel. An einer Stelle sind sie 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt?"
-              options:
-                - { text: "Auch 0,5 cm", correct: true, info: "Parallele Linien haben überall den gleichen Abstand." }
-                - {
-                    text: "Weiter, weil die Linien sich entfernen",
-                    correct: false,
-                    info: "Linien, die sich entfernen, sind nicht parallel.",
-                  }
-                - {
-                    text: "Näher, weil die Linien sich treffen",
-                    correct: false,
-                    info: "Linien, die sich treffen, sind nicht parallel.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Zwei Linien im Heft sind parallel und 0,5 cm voneinander entfernt. Wie weit sind sie an einer anderen Stelle entfernt? Antwort: auch 0,5 cm, denn parallele Linien haben überall den gleichen Abstand.
-          - type: vue-component
-            id: test-senkrecht
-            component: Kurztest
-            props:
-              question: "Zwei Linien stehen senkrecht aufeinander. Sind sie dann auch parallel?"
-              options:
-                - {
-                    text: "Ja",
-                    correct: false,
-                    info: "Senkrechte Linien bilden einen rechten Winkel und treffen sich, also sind sie nicht parallel.",
-                  }
-                - {
-                    text: "Nein",
-                    correct: true,
-                    info: "Parallele Linien treffen sich nie, senkrechte Linien bilden einen rechten Winkel.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Zwei Linien stehen senkrecht aufeinander. Sind sie dann auch parallel? Antwort: nein. Senkrechte Linien bilden einen rechten Winkel und treffen sich, parallele Linien treffen sich nie.
-          - type: text
-            text: "Falsch? Lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/)."
   - type: section
     id: grundfiguren
     title: Ebene Grundfiguren
     blocks:
       - type: text
-        text: "„Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“"
+        text: "Wenn du die Flächen eines Körpers benennen willst, brauchst du die Namen der ebenen Figuren. „Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“"
       - type: figure
         image: images/ebene-figuren.svg
         alt: "Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck, ein rechtwinkliges Dreieck, ein Kreis mit Mittelpunkt, Radius r und Durchmesser d, und ein Fünfeck. Rechte Winkel sind mit einem kleinen Winkelzeichen markiert."
@@ -102,35 +55,6 @@ blocks:
       - type: definition
         term: Quadrat und Rechteck
         explanation: "Ein **Rechteck** hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel. Beispiel: 5 cm lang und 3 cm breit, also zwei Seiten von 5 cm und zwei von 3 cm. Ein **Quadrat** ist ein besonderes Rechteck: Alle vier Seiten sind gleich lang."
-      - type: section
-        id: test-quadrat
-        title: Kannst du das?
-        blocks:
-          - type: vue-component
-            id: test-quadrat
-            component: Kurztest
-            props:
-              question: "Ein Rechteck hat vier rechte Winkel. Wann ist es ein Quadrat?"
-              options:
-                - {
-                    text: "Wenn alle vier Seiten gleich lang sind",
-                    correct: true,
-                    info: "Ein Rechteck mit vier gleich langen Seiten ist ein Quadrat.",
-                  }
-                - {
-                    text: "Wenn gegenüberliegende Seiten gleich lang sind",
-                    correct: false,
-                    info: "Das gilt für jedes Rechteck, auch für eines mit 5 cm und 3 cm.",
-                  }
-                - {
-                    text: "Wenn es drei Ecken hat",
-                    correct: false,
-                    info: "Ein Rechteck hat immer vier Ecken, ein Dreieck hat drei.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Ein Rechteck hat vier rechte Winkel. Wann ist es ein Quadrat? Antwort: wenn alle vier Seiten gleich lang sind. Gegenüberliegende Seiten sind bei jedem Rechteck gleich lang.
       - type: definition
         term: Dreieck
         explanation: "Ein **Dreieck** hat drei Seiten und drei Ecken."
@@ -146,62 +70,39 @@ blocks:
           - type: text
             text: |
               Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat es auch 5 Seiten.
-      - type: section
-        id: test-kreis
-        title: Kannst du das noch?
-        blocks:
-          - type: vue-component
-            id: test-vieleck
-            component: Kurztest
-            props:
-              question: "Ein Vieleck hat 9 Ecken. Wie viele Seiten hat es?"
-              options:
-                - {
-                    text: "8 Seiten",
-                    correct: false,
-                    info: "An jeder Ecke stoßen zwei Seiten zusammen, und jede Seite hat zwei Ecken. Es gibt genauso viele Seiten wie Ecken.",
-                  }
-                - {
-                    text: "9 Seiten",
-                    correct: true,
-                    info: "Ebenso viele Seiten wie Ecken: an jeder Ecke stoßen zwei Seiten zusammen.",
-                  }
-                - {
-                    text: "18 Seiten",
-                    correct: false,
-                    info: "Das wäre doppelt so viele Seiten wie Ecken. Jede Seite gehört aber zu zwei Ecken.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Ein Vieleck hat 9 Ecken. Wie viele Seiten hat es? Antwort: 9, denn an jeder Ecke stoßen zwei Seiten zusammen und jede Seite hat zwei Ecken.
-          - type: vue-component
-            id: test-durchmesser
-            component: Kurztest
-            props:
-              question: "Ein Kreis hat den Radius 12 cm. Wie lang ist sein Durchmesser?"
-              options:
-                - {
-                    text: "12 cm",
-                    correct: false,
-                    info: "Das ist der Radius. Der Durchmesser geht von Rand zu Rand durch den Mittelpunkt.",
-                  }
-                - {
-                    text: "24 cm",
-                    correct: true,
-                    info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 12 cm = 24 cm.",
-                  }
-                - {
-                    text: "6 cm",
-                    correct: false,
-                    info: "Das ist der halbe Radius. Der Durchmesser ist doppelt so lang wie der Radius.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Ein Kreis hat den Radius 12 cm. Wie lang ist sein Durchmesser? Antwort: 24 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
-          - type: text
-            text: "Falsch? Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)."
+  - type: section
+    id: kannst-du-das
+    title: Kannst du das?
+    blocks:
+      - type: matching
+        id: recap-begriffe
+        text: Wenn du die Begriffe sicher kennst, kannst du sie zuordnen. Ordne jedem Begriff die Beschreibung zu.
+        pairs:
+          - { left: "Senkrecht", right: "bilden einen rechten Winkel" }
+          - { left: "Parallel", right: "überall gleich weit voneinander entfernt" }
+          - { left: "Quadrat", right: "Rechteck mit vier gleich langen Seiten" }
+          - { left: "Durchmesser", right: "geht durch den Mittelpunkt von Rand zu Rand" }
+          - { left: "Fünfeck", right: "Vieleck mit fünf Ecken und fünf Seiten" }
+        explanation: Senkrecht und parallel beschreiben, wie zwei Linien zueinander liegen. Quadrat, Durchmesser und Fünfeck sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
+      - type: generated
+        id: recap-durchmesser
+        given:
+          r: { int: [6, 19] }
+        task:
+          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist sein Durchmesser in Zentimetern?"
+        answer: { value: "2 * r", compare: number }
+        mistakes:
+          - {
+              value: "r",
+              message: "Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.",
+            }
+          - {
+              value: "r / 2",
+              message: "Du hast durch 2 geteilt. Der Durchmesser ist doppelt so lang wie der Radius, also mal 2.",
+            }
+        hint: "Der Durchmesser besteht aus zwei Radien."
+      - type: text
+        text: "Falsch? Dann lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/) und [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)."
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …
@@ -211,5 +112,3 @@ blocks:
           - weißt, was senkrecht, parallel und Abstand bedeuten,
           - Quadrat, Rechteck, Dreieck, Kreis und Vieleck erkennst und beschreibst,
           - Seite, Ecke, Radius und Durchmesser kennst.
-
-          Lies nach: [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) und [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/).

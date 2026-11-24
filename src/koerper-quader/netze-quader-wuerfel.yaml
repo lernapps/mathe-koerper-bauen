@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Schneidest du eine Schachtel an den Kanten auf und legst sie flach hin, hast du ein Netz. Auf dieser Seite
+          Wenn du aus Pappe eine Schachtel bauen willst, brauchst du ein Netz. Schneidest du eine Schachtel an den Kanten auf und legst sie flach hin, hast du ein Netz. Auf dieser Seite
           lernst du, ein Netz im Kopf zu falten und zu prüfen, ob daraus ein Würfel wird. Schiebe den Regler nach links:
           Der Würfel klappt auf. Mit den Knöpfen drehst du ihn und siehst auch seine Unterseite.
       - type: vue-component
@@ -49,6 +49,8 @@ blocks:
     id: erklaerung
     title: Was ein Netz ist
     blocks:
+      - type: text
+        text: "Wenn du prüfen willst, ob sich ein Netz zum Würfel faltet, achtest du darauf, welche Flächen aneinanderhängen."
       - type: definition
         term: Netz
         explanation: Ein Netz zeigt alle Flächen eines Körpers flach in einem Stück. Die Flächen hängen an Kanten zusammen.

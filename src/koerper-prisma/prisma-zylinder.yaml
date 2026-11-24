@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du kennst Quader und Würfel. Vieleck und Kreis kennst du von den [ebenen Figuren](/koerper-quader/recap/). Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
+          Wenn du Dosen, Zelte und Verpackungen ordnen willst, brauchst du ihre Namen. Du kennst Quader und Würfel. Vieleck und Kreis kennst du von den [ebenen Figuren](/koerper-quader/recap/). Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
           Schau dir zuerst die vier Körper an.
       - type: figure
         image: images/koerper-prisma-zylinder.svg
@@ -35,6 +35,8 @@ blocks:
     id: erklaerung
     title: Grundfläche entscheidet
     blocks:
+      - type: text
+        text: "Wenn du einen Körper benennen willst, schaust du auf seine Grundfläche."
       - type: definition
         term: Grundfläche und Deckfläche
         explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen an den Enden eines Prismas oder Zylinders, beim stehenden Körper oben und unten.

@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
+          Wenn du jemandem erklären willst, wie ein Karton aussieht, musst du seine Teile benennen. Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
           Kanten und Ecken. Mit dem Regler klappst du den Körper auf, mit den Knöpfen drehst du ihn. Seine Flächen sind von 1 bis 6 nummeriert.
       - type: vue-component
         id: baukasten-quader
@@ -47,6 +47,8 @@ blocks:
     id: erklaerung
     title: Flächen, Kanten, Ecken
     blocks:
+      - type: text
+        text: "Wenn du einen Körper beschreiben willst, brauchst du Wörter für seine Teile."
       - type: definition
         term: Quader
         explanation: Ein Quader ist ein Körper mit sechs Rechtecken als Flächen. Gegenüberliegende Flächen sind gleich groß.

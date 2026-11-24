@@ -59,6 +59,11 @@ function turn(da: number, de: number): void {
   azimuth.value = (azimuth.value + da + 360) % 360;
   elevation.value = Math.min(80, Math.max(-80, elevation.value + de));
 }
+const flat = computed(() => percent.value === 0);
+const isStart = computed(() => percent.value === props.start && azimuth.value === 25 && elevation.value === 30);
+const reason = computed(() =>
+  flat.value ? "Zum Drehen schiebst du den Regler erst nach rechts: Ein flaches Netz dreht sich nicht." : "",
+);
 function back(): void {
   percent.value = props.start;
   azimuth.value = 25;
@@ -88,12 +93,26 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
         <input v-model.number="percent" type="range" min="0" max="100" step="1" :aria-valuetext="`${percent} %`" />
       </label>
       <div class="koerper-baukasten-buttons">
-        <button type="button" @click="turn(-45, 0)">{{ left }}</button>
-        <button type="button" @click="turn(45, 0)">{{ right }}</button>
-        <button type="button" @click="turn(0, 40)">{{ up }}</button>
-        <button type="button" @click="turn(0, -40)">{{ down }}</button>
-        <button type="button" @click="back">{{ reset }}</button>
+        <button type="button" class="koerper-baukasten-button" :disabled="flat" @click="turn(-45, 0)">
+          {{ left }}
+        </button>
+        <button type="button" class="koerper-baukasten-button" :disabled="flat" @click="turn(45, 0)">
+          {{ right }}
+        </button>
+        <button type="button" class="koerper-baukasten-button" :disabled="flat || elevation >= 80" @click="turn(0, 40)">
+          {{ up }}
+        </button>
+        <button
+          type="button"
+          class="koerper-baukasten-button"
+          :disabled="flat || elevation <= -80"
+          @click="turn(0, -40)"
+        >
+          {{ down }}
+        </button>
+        <button type="button" class="koerper-baukasten-button" :disabled="isStart" @click="back">{{ reset }}</button>
       </div>
+      <p class="koerper-baukasten-reason" aria-live="polite">{{ reason }}</p>
     </div>
   </div>
 </template>
@@ -145,9 +164,31 @@ const polygon = (points: [number, number][]) => points.map((p) => p.join(",")).j
   gap: 0.5rem;
 }
 
-.koerper-baukasten-buttons button {
-  min-height: 44px;
-  min-width: 44px;
-  padding: 0 0.75rem;
+.koerper-baukasten-button {
+  font: inherit;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0.375rem 0.875rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.koerper-baukasten-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.koerper-baukasten-button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.koerper-baukasten-reason {
+  margin: 0;
+  min-height: 1.5rem;
+  color: var(--page-muted);
 }
 </style>

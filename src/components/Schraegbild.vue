@@ -102,7 +102,15 @@ const description = computed(
     <div class="schraegbild-counters">
       <div v-for="c in counters" :key="c.key" class="schraegbild-counter">
         <span>{{ c.label }}</span>
-        <button type="button" :aria-label="`${c.label}: ${less}`" @click="set(c.key, c.value - 1)">−</button>
+        <button
+          type="button"
+          class="schraegbild-button"
+          :aria-label="`${c.label}: ${less}`"
+          :disabled="c.value <= 0"
+          @click="set(c.key, c.value - 1)"
+        >
+          −
+        </button>
         <input
           type="number"
           min="0"
@@ -111,7 +119,15 @@ const description = computed(
           :value="c.value"
           @change="set(c.key, Number(($event.target as HTMLInputElement).value))"
         />
-        <button type="button" :aria-label="`${c.label}: ${more}`" @click="set(c.key, c.value + 1)">+</button>
+        <button
+          type="button"
+          class="schraegbild-button"
+          :aria-label="`${c.label}: ${more}`"
+          :disabled="c.value >= 30"
+          @click="set(c.key, c.value + 1)"
+        >
+          +
+        </button>
       </div>
     </div>
   </div>
@@ -156,12 +172,34 @@ const description = computed(
   gap: 0.5rem;
 }
 
-.schraegbild-counter button {
-  min-width: 44px;
-  min-height: 44px;
+.schraegbild-button {
+  font: inherit;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.375rem 0.875rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.schraegbild-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.schraegbild-button:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
 }
 
 .schraegbild-counter input {
+  font: inherit;
+  border: 2px solid var(--page-border);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-text);
   width: 4rem;
   min-height: 44px;
   text-align: center;

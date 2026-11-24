@@ -22,7 +22,7 @@ Alle sechs sind Lücken der Karte. Zwei Seiten je Kapitel nennen dieselbe Kompet
 - Kapitel `koerper-quader` (5-6)
   - `grundkoerper-quader-wuerfel`: „Ich kann Quader, Würfel und zusammengesetzte Körper erkennen und beschreiben.“ Seite `quader-wuerfel`.
   - `netze-schraegbilder-modelle`: „Ich kann Netze, Schrägbilder und Modelle von Quader und Würfel zeichnen oder bauen.“ Seiten `netze-quader-wuerfel`, `schraegbild-quader`.
-  - Vorwissen-Seite `recap` („Das brauchst du für dieses Kapitel“, `recap: [mathematik/parallel-senkrecht-abstand, mathematik/grundfiguren-eben]`, beide aus #397/Karte): beschreibende Seite mit Abschnitt je Baustein in der Wortwahl der Karte, Begriffe als `definition` (fett, mit Zahlenbeispiel), Bild, Beispielkasten, Selbsttest „Kannst du das?“ als Komponente `Kurztest` (`src/components/Kurztest.*`, Vorlage aus dem gemeinsamen Ordner, kein Prüfen, nichts gezählt, Lösung als `nojs`), Satz „Falsch? Lies nach: <Baustein> (Kartenseite)“ und am Ende „Du bist bereit, wenn du …“. Kein Link in die App eines anderen Explainers, die Seite hat keine `competencies`.
+  - Vorwissen-Seite `recap` („Das brauchst du für dieses Kapitel“, `recap: [mathematik/parallel-senkrecht-abstand, mathematik/grundfiguren-eben]`, beide aus #397/Karte): `recap`-Seite mit Abschnitt je Baustein in der Wortwahl der Karte, jeder beginnt mit dem Anlass („Wenn du … willst, brauchst du …“). Begriffe als `definition` (fett, mit Zahlenbeispiel), Bilder, Beispielkasten, am Ende der Abschnitt „Kannst du das?“ mit höchstens zwei Übungen (`recap-begriffe` matching, `recap-durchmesser` generated), dem Satz „Falsch? Dann lies nach: …“ (Kartenseiten) und „Du bist bereit, wenn du …“. Keine `links:` an Aufgaben, kein Link in die App eines anderen Explainers, keine `competencies`. Die Komponente `Kurztest` ist gelöscht.
 - Kapitel `koerper-prisma` (7-8)
   - `grundkoerper-prisma-zylinder`: „Ich kann Prisma und Zylinder erkennen und von anderen Körpern unterscheiden.“ Seite `prisma-zylinder`.
   - `netze-schraegbilder-prisma-zylinder`: Seiten `netze-prisma-zylinder`, `schraegbild-prisma-zylinder`.
@@ -34,7 +34,7 @@ Die Übungs-Ids stehen in den Seitendateien (`src/<kapitel>/<seite>.yaml`, Absch
 
 ## Content structure
 
-Jede Seite: Abschnitt `einstieg` (erste Aufgabe oder Bild, was Lernende gleich tun, Ziel in einem Satz), `erklaerung`
+Jede Seite beginnt mit dem Anlass (ein bis zwei Sätze „Wenn du … willst, brauchst du …“, dann das Ziel), ebenso jeder Abschnitt mit einem Verfahren oder einer Reihe von Regeln. Wiederholungen stehen nur im Recap, Inhaltsseiten wiederholen nichts. Jede Seite: Abschnitt `einstieg` (erste Aufgabe oder Bild, was Lernende gleich tun, Ziel in einem Satz), `erklaerung`
 (ein neuer Gedanke, mit Baukasten oder Bild), `uebung` (mindestens drei Aufgaben von Erkennen über Anwenden zu neuer
 Situation, Rückmeldung mit Fehlertyp). Höchstens 350 Wörter Text je Seite, höchstens vier Textblöcke hintereinander.
 Die Vorwissen-Seite hat Begriffe (fett als Definition mit Beispiel), Aufgaben mit Rückmeldung und eine Checkliste. Anrede „du“, kurze Sätze.
@@ -63,7 +63,7 @@ Daten: keine Datendatei. Anzahlen (Flächen, Kanten, Ecken) folgen aus der Zahl 
 
 Eigene SVG-Bilder (kein Foto, nichts von Dritten), in `src/images/` aus einem Skript ausserhalb des Repos erzeugt: Quader-, Prisma-, Zylinder-, Pyramide-, Kegel-, Kugelbilder im Schrägbild (verdeckte Kanten gestrichelt) und Netze. Flächen unterscheiden sich durch Beschriftung (1–6) und Muster, nie
 nur durch Farbe. Jedes Bild mit `alt` und Bildunterschrift. Komponenten nutzen nur die Farbvariablen der Seite und haben
-`nojs`-Text; alle Aktionen per Tastatur (Tab, Pfeile, Enter), Ziele mindestens 44 px.
+`nojs`-Text; Buttons nur mit sichtbarer Wirkung (sonst `disabled`, im Baukasten mit Grund neben den Knöpfen) und in der Gestaltung der Laufzeit (zweite Art: Rand und Schrift in `--page-accent`, Hintergrund `--page-background`); alle Aktionen per Tastatur (Tab, Pfeile, Enter), Ziele mindestens 44 px.
 
 ## Sources
 
