@@ -124,8 +124,3 @@ blocks:
         hint: "Zähle die Kanten der Grundfläche und die Kanten, die zur Spitze laufen."
         steps:
           - "{{n}} Kanten in der Grundfläche und {{n}} Kanten zur Spitze: {{n}} + {{n}} = {{answer}} Kanten."
-      - type: true-false
-        id: kugel-kanten
-        text: "Eine Kugel hat keine Kanten und keine Ecken."
-        answer: true
-        explanation: Eine Kante ist die Linie, an der zwei Flächen zusammenstoßen. Die Kugel hat nur eine einzige runde Fläche, also stoßen keine zwei Flächen aneinander und es gibt keine Ecke.

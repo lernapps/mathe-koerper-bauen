@@ -37,7 +37,7 @@ blocks:
         explanation: Ein Schrägbild ist die Zeichnung eines Körpers, bei der die Vorderseite in wahrer Größe gezeichnet wird und die Tiefe schräg nach hinten läuft.
       - type: text
         text: |
-          Damit jeder Quader gleich aussieht und räumlich wirkt, gibt es feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
+          Wenn du einen Quader so zeichnen willst, dass man ihn erkennt, gelten feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
           1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
           2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
@@ -74,6 +74,8 @@ blocks:
               message: "Du hast durch 2 geteilt. Die Vorderseite wird nicht verkürzt: 1 cm sind 2 Kästchen, also mal 2.",
             }
         hint: "Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?"
+        steps:
+          - "1 cm sind 2 Kästchen: {{b}} · 2 = {{answer}} Kästchen."
       - type: vue-component
         id: schraegbild-quader-zeichnen
         component: Schraegbild
@@ -90,6 +92,7 @@ blocks:
             - "Du bist nur nach rechts gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
             - "Du bist nur nach oben gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
             - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
+            - "Das passt nicht zur Tiefe von {d} cm. Eine Tiefenkante läuft schräg: gleich viele Kästchen nach rechts und nach oben, und pro Zentimeter Tiefe zählst du 1 Kästchen."
         examples:
           accepted:
             - { answer: { right: 4, up: 4 }, seed: 1 }
@@ -125,3 +128,5 @@ blocks:
               message: "Du hast die Tiefe wie eine Vorderkante gerechnet (1 cm sind 2 Kästchen). Die Tiefenkante wird halbiert, also nur {{t}} Kästchen.",
             }
         hint: "Eine Kante nach hinten wird auf die halbe Länge verkürzt."
+        steps:
+          - "Pro Zentimeter Tiefe zählst du 1 Kästchen schräg: {{t}} cm sind {{answer}} Kästchen."

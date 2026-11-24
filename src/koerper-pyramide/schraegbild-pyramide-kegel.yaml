@@ -62,6 +62,8 @@ blocks:
               message: "Du hast durch 2 geteilt. Nur die Tiefe wird halbiert, die Höhe zeichnest du in wahrer Länge: 1 cm sind 2 Kästchen.",
             }
         hint: "Die Höhe verläuft senkrecht, also in wahrer Länge. Ein Kästchen ist 0,5 cm lang."
+        steps:
+          - "Die Höhe zeichnest du in wahrer Länge, 1 cm sind 2 Kästchen: 2 · {{h}} = {{answer}} Kästchen."
       - type: vue-component
         id: schraegbild-kegel
         component: Schraegbild
@@ -78,6 +80,7 @@ blocks:
             - "Der Kegel steht gerade: Die Spitze liegt senkrecht über dem Mittelpunkt, nicht seitlich."
             - "Der Kegel steht gerade: Die Spitze liegt senkrecht über dem Mittelpunkt, nicht seitlich."
             - "Du hast die Höhe in Zentimetern gezählt, nicht in Kästchen. Ein Zentimeter sind zwei Kästchen."
+            - "Das passt nicht zur Höhe von {h} cm. Der Kegel steht gerade, also liegt die Spitze nicht seitlich, und pro Zentimeter Höhe zählst du 2 Kästchen nach oben."
         examples:
           accepted:
             - { answer: { right: 0, up: 4 }, seed: 1 }
@@ -100,6 +103,7 @@ blocks:
             - "Du bist nur nach rechts gegangen. Die Spitze liegt auch oberhalb der Grundfläche."
             - "Du bist nur nach oben gegangen. Die Mitte der Grundfläche liegt weiter rechts als die vordere linke Ecke."
             - "Du bist nur halb so weit gegangen. Suche die Mitte der Grundfläche, dort schneiden sich die Diagonalen, und gehe dann so hoch, wie die Pyramide hoch ist."
+            - "Das passt nicht. Die Spitze liegt über der Mitte der Grundfläche: Gehe erst zur Mitte (halbe Breite, halbe Tiefe schräg) und dann so hoch, wie die Pyramide hoch ist, mit 2 Kästchen je Zentimeter."
         examples:
           accepted:
             - { answer: { right: 5, up: 8 }, seed: 1 }

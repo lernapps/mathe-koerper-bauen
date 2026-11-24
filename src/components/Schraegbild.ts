@@ -105,7 +105,8 @@ export function fill(text: string, task: Task, answer?: Answer): string {
 /** The app's message for a wrong answer, from the props: that of its typical mistake, or none. */
 export function reason(task: Task, answer: Answer, props: Props, _lang?: string): string | undefined {
   const index = mistakes(task, props).findIndex((m) => m !== undefined && same(m, answer));
-  const message = index < 0 ? undefined : props.mistakes?.[index];
+  // a wrong answer of no typical mistake gets the general message, the fifth one, which says what to look at
+  const message = index < 0 ? props.mistakes?.[4] : props.mistakes?.[index];
   return message === undefined ? undefined : fill(message, task, answer);
 }
 

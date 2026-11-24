@@ -79,11 +79,11 @@ blocks:
         text: Wenn du die Begriffe sicher kennst, kannst du sie zuordnen. Ordne jedem Begriff die Beschreibung zu.
         pairs:
           - { left: "Senkrecht", right: "bilden einen rechten Winkel" }
-          - { left: "Parallel", right: "überall gleich weit voneinander entfernt" }
-          - { left: "Quadrat", right: "Rechteck mit vier gleich langen Seiten" }
-          - { left: "Durchmesser", right: "geht durch den Mittelpunkt von Rand zu Rand" }
-          - { left: "Fünfeck", right: "Vieleck mit fünf Ecken und fünf Seiten" }
-        explanation: Senkrecht und parallel beschreiben, wie zwei Linien zueinander liegen. Quadrat, Durchmesser und Fünfeck sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
+          - { left: "Parallel", right: "überall gleich weit entfernt" }
+          - { left: "Abstand", right: "senkrecht gemessene Entfernung" }
+          - { left: "Quadrat", right: "Rechteck mit vier gleichen Seiten" }
+          - { left: "Durchmesser", right: "geht durch den Mittelpunkt" }
+        explanation: Senkrecht, parallel und Abstand beschreiben, wie zwei Linien zueinander liegen. Quadrat und Durchmesser sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
       - type: generated
         id: recap-durchmesser
         given:
@@ -101,6 +101,8 @@ blocks:
               message: "Du hast durch 2 geteilt. Der Durchmesser ist doppelt so lang wie der Radius, also mal 2.",
             }
         hint: "Der Durchmesser besteht aus zwei Radien."
+        steps:
+          - "Der Durchmesser ist doppelt so lang wie der Radius: 2 · {{r}} cm = {{answer}} cm."
       - type: text
         text: "Falsch? Dann lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/) und [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)."
   - type: section

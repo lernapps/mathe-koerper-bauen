@@ -95,6 +95,8 @@ blocks:
               message: "Das ist die Länge aller drei Rechtecke zusammen, wenn sie nebeneinander liegen. Gefragt ist ein einzelnes Rechteck.",
             }
         hint: "Das Rechteck hängt an einer Seite des Dreiecks. Wie lang ist diese Seite?"
+        steps:
+          - "Das Rechteck hängt mit einer Seite am Dreieck, und diese Seite ist {{b}} cm lang. Die Höhe {{k}} cm ist die andere Seite des Rechtecks. Gefragt ist die Seite am Dreieck: {{answer}} cm."
       - type: generated
         id: mantel-laenge
         given:
@@ -115,6 +117,8 @@ blocks:
               message: "Dir fehlt das Rechteck an der dritten Seite. Alle drei Rechtecke liegen nebeneinander.",
             }
         hint: "Der Mantel ist so lang wie der Rand der Grundfläche."
+        steps:
+          - "Der Mantel ist so lang wie der Rand des Dreiecks: {{a}} + {{b}} + {{c}} = {{answer}} cm."
       - type: number
         id: netz-fuenfeck
         text: Wie viele Flächen hat das Netz eines Prismas mit einem Fünfeck als Grundfläche?

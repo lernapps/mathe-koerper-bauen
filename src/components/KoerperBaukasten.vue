@@ -62,7 +62,11 @@ function turn(da: number, de: number): void {
 const flat = computed(() => percent.value === 0);
 const isStart = computed(() => percent.value === props.start && azimuth.value === 25 && elevation.value === 30);
 const reason = computed(() =>
-  flat.value ? "Zum Drehen schiebst du den Regler erst nach rechts: Ein flaches Netz dreht sich nicht." : "",
+  flat.value
+    ? "Zum Drehen schiebst du den Regler erst nach rechts: Ein flaches Netz dreht sich nicht."
+    : isStart.value
+      ? "Der Körper steht schon in der Ausgangsstellung."
+      : "",
 );
 function back(): void {
   percent.value = props.start;

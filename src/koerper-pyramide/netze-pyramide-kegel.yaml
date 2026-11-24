@@ -93,6 +93,8 @@ blocks:
               message: "Eine Pyramide hat nur eine Spitze: An jeder Seite der Grundfläche hängt ein Dreieck, mehr nicht.",
             }
         hint: "An jeder Seite der Grundfläche hängt ein Dreieck."
+        steps:
+          - "An jeder der {{n}} Seiten der Grundfläche hängt ein Dreieck, also sind es {{answer}} Dreiecke."
       - type: generated
         id: flaechen-netz-pyramide
         given:
@@ -107,6 +109,8 @@ blocks:
               message: "Das wäre das Netz eines Prismas mit Deckfläche. Die Pyramide hat nur eine Grundfläche.",
             }
         hint: "Zähle die Dreiecke und die Grundfläche."
+        steps:
+          - "{{n}} Dreiecke und die Grundfläche: {{n}} + 1 = {{answer}} Teile."
       - type: generated
         id: rand-grundflaeche
         given:
@@ -125,6 +129,8 @@ blocks:
               message: "Du hast die Zahl der Seiten und die Länge einer Seite addiert. Der Rand ist {{n}} Seiten von je {{a}} cm lang, also malnehmen.",
             }
         hint: "Wie viele Seiten hat der Rand, und wie lang ist jede?"
+        steps:
+          - "{{n}} Seiten von je {{a}} cm: {{n}} · {{a}} = {{answer}} cm."
       - type: single-choice
         id: weltkarte-warum
         text: Warum sind Länder auf einer Weltkarte verzerrt?

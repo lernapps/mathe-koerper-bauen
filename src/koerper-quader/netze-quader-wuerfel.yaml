@@ -158,3 +158,5 @@ blocks:
           - value: "6"
             message: "Ein Quader hat zwar sechs Flächen, aber nur zwei davon haben die Maße {{a}} cm mal {{b}} cm."
         hint: "Welche Fläche liegt im Quader gegenüber? Sie sieht genau so aus."
+        steps:
+          - "Gegenüberliegende Flächen des Quaders sind gleich groß, und hier sind alle drei Maße verschieden: Es sind {{answer}} Flächen mit diesen Maßen."
