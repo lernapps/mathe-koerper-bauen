@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Pyramide, Kegel und Kugel erkennen
+description: Pyramide, Kegel und Kugel beschreiben und Alltagskörper in Grundkörper zerlegen.
+competencies: [grundkoerper-pyramide-kegel-kugel]
+blocks:
+  - type: section
+    id: einstieg
+    title: Drei Körper mit Spitze und ohne
+    blocks:
+      - type: text
+        text: |
+          Wenn du ein Zeltdach, eine Eistüte oder einen Ball beschreiben willst, brauchst du neue Körper. Du kennst Quader, Prisma und Zylinder. Nach dieser Seite beschreibst du Pyramide, Kegel und Kugel. Du erkennst sie auch in Dingen aus dem Alltag,
+          die aus mehreren Körpern zusammengesetzt sind. Schau dir zuerst die drei Körper an.
+      - type: figure
+        image: images/koerper-spitz.svg
+        alt: "Drei Körper im Schrägbild, nummeriert: 1 eine Pyramide mit einem Rechteck als Grundfläche, 2 ein Kegel, 3 eine Kugel mit einem eingezeichneten Äquator."
+        caption: "1 Pyramide, 2 Kegel, 3 Kugel."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: single-choice
+        id: kugel-erkennen
+        text: Welche Nummer hat der Körper ohne Ecke und ohne Kante?
+        options:
+          - text: Nummer 1
+            correct: false
+            info: Nummer 1 hat eine Spitze als Ecke und gerade Kanten.
+          - text: Nummer 2
+            correct: false
+            info: Nummer 2 hat eine Spitze. Das ist eine Ecke.
+          - text: Nummer 3
+            correct: true
+            info: Die Kugel hat nur eine runde Fläche. Darum hat sie weder Ecken noch Kanten.
+        explanation: Nur die Kugel ist überall rund. Pyramide und Kegel laufen in einer Spitze zusammen.
+  - type: section
+    id: erklaerung
+    title: Spitze, Grundfläche, Mantel
+    blocks:
+      - type: text
+        text: "Wenn du einen spitzen Körper benennen willst, schaust du auf Grundfläche und Spitze."
+      - type: definition
+        term: Spitze
+        explanation: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen oder der Mantel zusammenlaufen.
+      - type: definition
+        term: Pyramide
+        explanation: Eine Pyramide hat ein Vieleck als Grundfläche. Die Seitenflächen sind Dreiecke, die in einer Spitze zusammenlaufen.
+      - type: definition
+        term: Kegel
+        explanation: Ein Kegel hat einen Kreis als Grundfläche. Sein gekrümmter Mantel läuft in einer Spitze zusammen.
+      - type: definition
+        term: Kugel
+        explanation: Eine Kugel hat nur eine runde Fläche. Alle Punkte der Fläche sind gleich weit vom Mittelpunkt entfernt.
+      - type: table
+        caption: Pyramide, Kegel und Kugel im Vergleich
+        header: [Körper, Flächen, Kanten, Ecken]
+        rows:
+          - [Pyramide mit Viereck, "5", "8", "5"]
+          - [Kegel, "2", "1 (gekrümmt)", "1"]
+          - [Kugel, "1", "0", "0"]
+      - type: text
+        text: |
+          Wie beim Prisma benennst du die Pyramide nach ihrer Grundfläche: Die Dreiecke der Pyramide bilden ihren Mantel. Mit einem Quadrat als Grundfläche ist es eine quadratische
+          Pyramide, mit einem Dreieck eine Dreieckspyramide. Den Kegel kannst du dir als Pyramide mit sehr vielen Ecken in
+          der Grundfläche vorstellen: Aus dem Vieleck wird ein Kreis.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: koerper-zuordnen
+        text: Ordne jeder Beschreibung den Körper zu.
+        pairs:
+          - { left: "Die Grundfläche ist ein Viereck. Vier Dreiecke laufen in einer Spitze zusammen.", right: Pyramide }
+          - { left: "Die Grundfläche ist ein Kreis. Der runde Mantel läuft in einer Spitze zusammen.", right: Kegel }
+          - { left: "Es gibt nur eine runde Fläche, keine Kante und keine Ecke.", right: Kugel }
+        explanation: Die Grundfläche und die Spitze unterscheiden die Körper. Die Kugel hat weder das eine noch das andere.
+      - type: matching
+        id: alltag-zerlegen
+        text: Aus welchen Grundkörpern besteht der Gegenstand?
+        material:
+          - type: figure
+            image: images/alltag-zerlegen.svg
+            alt: "Zwei Gegenstände: A eine Eistüte, ein Kegel mit der Spitze nach unten und eine Kugel obendrauf. B ein Haus, ein Quader mit einem spitzen Dach darauf."
+            caption: "A Eistüte, B Haus."
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        pairs:
+          - { left: "A: Eistüte", right: "Kegel und Kugel" }
+          - { left: "B: Haus mit spitzem Dach", right: "Quader und Pyramide" }
+        distractors:
+          - Zylinder und Kegel
+        explanation: Zerlege den Gegenstand in Teile, die du kennst. Die Tüte läuft spitz zu, das ist der Kegel, die Eiskugel ist eine Kugel. Das Haus hat vier Wände wie ein Quader und ein Dach, das in einer Spitze endet.
+      - type: generated
+        id: ecken-pyramide
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Ecken hat die Pyramide?"
+        answer: { value: "n + 1", compare: number }
+        mistakes:
+          - { value: "n", message: "Das sind nur die Ecken der Grundfläche. Die Spitze ist noch eine Ecke." }
+          - {
+              value: "2 * n",
+              message: "Das wären die Ecken eines Prismas, mit Grundfläche und Deckfläche. Die Pyramide hat nur eine Grundfläche und oben eine Spitze.",
+            }
+        hint: "Zähle die Ecken der Grundfläche und die Spitze."
+        steps:
+          - "Die Grundfläche hat {{n}} Ecken, dazu kommt die Spitze: {{n}} + 1 = {{answer}} Ecken."
+      - type: generated
+        id: kanten-pyramide
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Kanten hat die Pyramide?"
+        answer: { value: "2 * n", compare: number }
+        mistakes:
+          - {
+              value: "n",
+              message: "Das sind nur die Kanten der Grundfläche. Von jeder Ecke läuft noch eine Kante zur Spitze.",
+            }
+          - {
+              value: "n + 1",
+              message: "{{n}} + 1 ist die Zahl der Ecken oder Flächen. Hier sind die Kanten gefragt: {{n}} am Boden und {{n}} zur Spitze.",
+            }
+        hint: "Zähle die Kanten der Grundfläche und die Kanten, die zur Spitze laufen."
+        steps:
+          - "{{n}} Kanten in der Grundfläche und {{n}} Kanten zur Spitze: {{n}} + {{n}} = {{answer}} Kanten."

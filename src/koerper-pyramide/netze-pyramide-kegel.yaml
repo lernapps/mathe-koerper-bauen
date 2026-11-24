@@ -1,0 +1,152 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Netze von Pyramide und Kegel
+description: Pyramide und Kegel aufklappen und sehen, warum die Kugel kein Netz hat.
+competencies: [netze-schraegbilder-pyramide-kegel]
+blocks:
+  - type: section
+    id: einstieg
+    title: Eine Pyramide aufklappen
+    blocks:
+      - type: text
+        text: |
+          Wenn du ein Zeltdach oder eine Tüte basteln willst, musst du das Netz kennen. Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
+          Schau dir zuerst das Netz einer Pyramide an.
+      - type: figure
+        image: images/aufklappen-pyramide.svg
+        alt: "Links eine Pyramide mit einem Quadrat als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts ihr Netz: ein Quadrat mit einem Dreieck an jeder der vier Seiten."
+        caption: Die Pyramide wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du ihr Netz.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: dreiecke-zaehlen
+        text: Wie viele Dreiecke hat das Netz rechts im Bild?
+        answer: 4
+        tolerance: 0
+        explanation: An jeder der vier Seiten des Quadrats hängt ein Dreieck. Beim Falten laufen ihre Spitzen oben zusammen.
+        mistakes:
+          - answer: 5
+            message: "Fünf Flächen hat das Netz insgesamt, aber eine davon ist das Quadrat. Gefragt sind die Dreiecke."
+  - type: section
+    id: erklaerung
+    title: Dreiecke, Kreisausschnitt, Kugel
+    blocks:
+      - type: text
+        text: |
+          Wenn du das Netz zeichnen willst, überlegst du, welche Flächen an der Grundfläche hängen. Bei einer Pyramide hängt an jeder Seite der Grundfläche ein Dreieck. Hat die Grundfläche n Ecken, sind es n
+          Dreiecke.
+          Beim Kegel ist die Grundfläche ein Kreis. Der Mantel ist ein Kreisausschnitt, ein Stück aus einem großen Kreis
+          wie ein Tortenstück. Der runde Rand des Ausschnitts ist so lang wie der Rand der Grundfläche.
+          Bei der Kugel geht das nicht: Eine Kugel lässt sich nicht flach legen, ohne zu dehnen oder zu reißen.
+      - type: figure
+        image: images/aufklappen-kegel.svg
+        alt: "Links ein Kegel, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: ein Ausschnitt aus einem großen Kreis wie ein Stück Kuchen, an dessen rundem Rand ein kleiner Kreis hängt."
+        caption: "Der Kegel wird aufgeschnitten: Der Mantel wird zum Kreisausschnitt, der Boden bleibt ein Kreis."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: example
+        title: Globus und Weltkarte
+        blocks:
+          - type: text
+            text: |
+              Die Erde ist fast eine Kugel. Eine Weltkarte legt sie flach hin. Dafür muss man die Fläche an manchen Stellen
+              dehnen, darum sehen Länder auf vielen Karten in der Nähe der Pole größer aus, als sie sind. Ein Netz ohne
+              Verzerrung gibt es nicht.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: netz-kegel-waehlen
+        text: Welches Netz gehört zu einem Kegel?
+        material:
+          - type: figure
+            image: images/netz-kegel-auswahl.svg
+            alt: "Drei Netze, A, B und C. A: ein Ausschnitt aus einem großen Kreis, wie ein Stück Kuchen, an dessen rundem Rand ein kleiner Kreis hängt. B: ein Dreieck, an dessen unterer Seite ein Kreis hängt. C: ein schmales Rechteck, an dessen unterem Ende ein Kreis hängt."
+            caption: Drei Netze zur Auswahl.
+            source: eigene Zeichnung
+            licence: CC-BY-4.0
+        options:
+          - text: Netz A
+            correct: true
+            info: Der Mantel des Kegels ist ein Kreisausschnitt, und der kleine Kreis hängt an seinem runden Rand. Dort passen die Ränder zusammen.
+          - text: Netz B
+            correct: false
+            info: Ein Dreieck hat gerade Seiten. Der Mantel eines Kegels ist gekrümmt, mit einem Dreieck würde der Rand des Kreises nicht passen.
+          - text: Netz C
+            correct: false
+            info: "Das Netz hat ein schmales Rechteck. Der Mantel des Kegels läuft aber in einer Spitze zusammen und ist darum kein Rechteck, sondern ein Kreisausschnitt."
+        explanation: Der Kegelmantel ist ein Kreisausschnitt. Der runde Rand des Ausschnitts wird um den Grundkreis gebogen.
+      - type: generated
+        id: dreiecke-pyramide
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Die Grundfläche einer Pyramide hat {{n}} Ecken. Wie viele Dreiecke hat ihr Netz?"
+        answer: { value: "n", compare: number }
+        mistakes:
+          - {
+              value: "n + 1",
+              message: "{{n}} + 1 ist die Zahl aller Flächen. Eine davon ist die Grundfläche und kein Dreieck.",
+            }
+          - {
+              value: "2 * n",
+              message: "Eine Pyramide hat nur eine Spitze: An jeder Seite der Grundfläche hängt ein Dreieck, mehr nicht.",
+            }
+        hint: "An jeder Seite der Grundfläche hängt ein Dreieck."
+        steps:
+          - "An jeder der {{n}} Seiten der Grundfläche hängt ein Dreieck, also sind es {{answer}} Dreiecke."
+      - type: generated
+        id: flaechen-netz-pyramide
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Das Netz einer Pyramide besteht aus der Grundfläche und den Seitenflächen. Die Grundfläche hat {{n}} Ecken. Aus wie vielen Teilen besteht das Netz?"
+        answer: { value: "n + 1", compare: number }
+        mistakes:
+          - { value: "n", message: "Das sind nur die Dreiecke. Die Grundfläche gehört auch zum Netz." }
+          - {
+              value: "n + 2",
+              message: "Das wäre das Netz eines Prismas mit Deckfläche. Die Pyramide hat nur eine Grundfläche.",
+            }
+        hint: "Zähle die Dreiecke und die Grundfläche."
+        steps:
+          - "{{n}} Dreiecke und die Grundfläche: {{n}} + 1 = {{answer}} Teile."
+      - type: generated
+        id: rand-grundflaeche
+        given:
+          n: { int: [5, 9] }
+          a: { int: [3, 8] }
+        task:
+          text: "Die Grundfläche einer Pyramide hat {{n}} gleich lange Seiten von je {{a}} cm. Im Netz hängt an jeder dieser Seiten ein Dreieck. Wie lang ist der Rand der Grundfläche zusammen?"
+        answer: { value: "n * a", compare: number }
+        mistakes:
+          - {
+              value: "a",
+              message: "Das ist nur eine Seite. Der Rand besteht aus allen {{n}} Seiten, an jeder hängt ein Dreieck.",
+            }
+          - {
+              value: "n + a",
+              message: "Du hast die Zahl der Seiten und die Länge einer Seite addiert. Der Rand ist {{n}} Seiten von je {{a}} cm lang, also malnehmen.",
+            }
+        hint: "Wie viele Seiten hat der Rand, und wie lang ist jede?"
+        steps:
+          - "{{n}} Seiten von je {{a}} cm: {{n}} · {{a}} = {{answer}} cm."
+      - type: single-choice
+        id: weltkarte-warum
+        text: Warum sind Länder auf einer Weltkarte verzerrt?
+        options:
+          - text: Eine Kugel lässt sich nicht flach legen, ohne zu dehnen.
+            correct: true
+            info: Die Erde ist eine Kugel. Für die Karte muss man die Fläche an manchen Stellen dehnen oder stauchen.
+          - text: Die Kartenmacher zeichnen ungenau.
+            correct: false
+            info: Auch mit der genauesten Zeichnung bleibt die Verzerrung, weil es für die Kugel kein Netz gibt.
+          - text: Die Erde hat die Form einer Pyramide.
+            correct: false
+            info: Die Erde ist fast eine Kugel. Eine Pyramide hätte Kanten und Ecken, und ihr Netz wäre ohne Verzerrung möglich.
+        explanation: Die Kugel hat als einziger der Grundkörper kein Netz. Jede flache Karte der Erde verzerrt irgendwo.
+      - type: true-false
+        id: kegelmantel-rand
+        text: "Der runde Rand des Kreisausschnitts, der den Mantel eines Kegels bildet, ist so lang wie der Rand des Grundkreises."
+        answer: true
+        explanation: Der Mantel wird um den Grundkreis gebogen. Der runde Rand des Ausschnitts liegt dann genau auf dem Rand der Grundfläche.

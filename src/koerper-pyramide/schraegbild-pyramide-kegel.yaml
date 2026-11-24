@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schrägbilder von Pyramide und Kegel
+description: Pyramide und Kegel auf Kästchenpapier als Schrägbild zeichnen.
+competencies: [netze-schraegbilder-pyramide-kegel]
+blocks:
+  - type: section
+    id: einstieg
+    title: Die Spitze finden
+    blocks:
+      - type: text
+        text: |
+          Wenn du ein Haus mit Spitzdach zeichnen willst, brauchst du die Spitze an der richtigen Stelle. Prisma und Zylinder zeichnest du schon als Schrägbild. Nach dieser Seite zeichnest du Pyramide und Kegel. Das Wichtigste ist die Spitze. Schau dir im
+          Bild die Pyramide an.
+      - type: figure
+        image: images/koerper-spitz.svg
+        alt: "Pyramide, Kegel und Kugel im Schrägbild. Verdeckte Kanten sind gestrichelt."
+        caption: "Pyramide, Kegel und Kugel im Schrägbild. Körper 1 ist die Pyramide."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: gestrichelt-pyramide
+        text: Wie viele Kanten der Pyramide (Nummer 1) sind gestrichelt gezeichnet?
+        answer: 3
+        tolerance: 0
+        explanation: "Die Pyramide hat acht Kanten. Drei davon liegen hinten und sind von vorn verdeckt: zwei in der Grundfläche und eine zur Spitze."
+        mistakes:
+          - answer: 8
+            message: "Acht Kanten hat die Pyramide insgesamt. Gefragt sind nur die gestrichelten."
+  - type: section
+    id: regeln
+    title: Über der Mitte
+    blocks:
+      - type: text
+        text: |
+          Wenn du eine Pyramide oder einen Kegel zeichnest, kommt es auf die Spitze an. Du zeichnest die Grundfläche wie beim Quader: vorn in wahrer Größe, die Tiefe schräg und halbiert. Die Spitze einer
+          geraden Pyramide liegt senkrecht über der Mitte der Grundfläche. Gerade heißt hier: Die Pyramide steht nicht schief. Die Mitte findest du dort, wo sich die beiden
+          Diagonalen der Grundfläche schneiden.
+          Beim Kegel liegt die Spitze senkrecht über dem Mittelpunkt der Grundfläche. Die Grundfläche zeichnest du als
+          Ellipse, wie beim Zylinder.
+      - type: example
+        title: Ein Kegel mit Radius 2 cm und Höhe 3 cm
+        blocks:
+          - type: text
+            text: |
+              Die Ellipse ist 8 Kästchen breit und 4 Kästchen hoch. Die Spitze liegt 3 cm hoch, das sind 6 Kästchen,
+              senkrecht über dem Mittelpunkt der Ellipse. Dann verbindest du die Spitze mit den beiden Rändern der Ellipse.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: hoehe-in-kaestchen
+        given:
+          h: { int: [2, 7] }
+        task:
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Die Pyramide ist {{h}} cm hoch. Wie viele Kästchen hoch zeichnest du sie senkrecht von der Mitte der Grundfläche zur Spitze?"
+        answer: { value: "2 * h", compare: number }
+        mistakes:
+          - { value: "h", message: "Du hast die Zentimeter als Kästchen gezählt. 1 cm sind 2 Kästchen." }
+          - {
+              value: "h / 2",
+              message: "Du hast durch 2 geteilt. Nur die Tiefe wird halbiert, die Höhe zeichnest du in wahrer Länge: 1 cm sind 2 Kästchen.",
+            }
+        hint: "Die Höhe verläuft senkrecht, also in wahrer Länge. Ein Kästchen ist 0,5 cm lang."
+        steps:
+          - "Die Höhe zeichnest du in wahrer Länge, 1 cm sind 2 Kästchen: 2 · {{h}} = {{answer}} Kästchen."
+      - type: vue-component
+        id: schraegbild-kegel
+        component: Schraegbild
+        props:
+          body: kegel
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. 1 cm sind 2 Kästchen. Zeichne das Schrägbild eines Kegels mit dem Radius {w} cm und der Höhe {h} cm. Die Ellipse der Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb des Mittelpunkts der Ellipse?"
+          alt: "Ein Kegel auf Kästchenpapier im Schrägbild."
+          right: Nach rechts
+          up: Nach oben
+          more: mehr
+          less: weniger
+          mistakes:
+            - "Du bist doppelt so hoch gegangen. Ein Zentimeter Höhe sind zwei Kästchen, nicht vier."
+            - "Der Kegel steht gerade: Die Spitze liegt senkrecht über dem Mittelpunkt, nicht seitlich."
+            - "Der Kegel steht gerade: Die Spitze liegt senkrecht über dem Mittelpunkt, nicht seitlich."
+            - "Du hast die Höhe in Zentimetern gezählt, nicht in Kästchen. Ein Zentimeter sind zwei Kästchen."
+            - "Das passt nicht zur Höhe von {h} cm. Der Kegel steht gerade, also liegt die Spitze nicht seitlich, und pro Zentimeter Höhe zählst du 2 Kästchen nach oben."
+        examples:
+          accepted:
+            - { answer: { right: 0, up: 4 }, seed: 1 }
+          rejected:
+            - { answer: { right: 0, up: 0 } }
+            - { answer: { right: 2, up: 4 }, seed: 1 }
+      - type: vue-component
+        id: schraegbild-pyramide
+        component: Schraegbild
+        props:
+          body: pyramide
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild einer Pyramide. Die Grundfläche ist ein Rechteck, vorn {w} cm breit ({W} Kästchen) und {d} cm tief. Die Pyramide ist {h} cm hoch. Die Grundfläche ist schon da. Wie viele Kästchen liegt die Spitze rechts und oberhalb der vorderen linken Ecke?"
+          alt: "Eine Pyramide auf Kästchenpapier im Schrägbild."
+          right: Nach rechts
+          up: Nach oben
+          more: mehr
+          less: weniger
+          mistakes:
+            - "Du bist doppelt so weit gegangen. Die Spitze liegt über der Mitte der Grundfläche, nicht doppelt so weit weg."
+            - "Du bist nur nach rechts gegangen. Die Spitze liegt auch oberhalb der Grundfläche."
+            - "Du bist nur nach oben gegangen. Die Mitte der Grundfläche liegt weiter rechts als die vordere linke Ecke."
+            - "Du bist nur halb so weit gegangen. Suche die Mitte der Grundfläche, dort schneiden sich die Diagonalen, und gehe dann so hoch, wie die Pyramide hoch ist."
+            - "Das passt nicht. Die Spitze liegt über der Mitte der Grundfläche: Gehe erst zur Mitte (halbe Breite, halbe Tiefe schräg) und dann so hoch, wie die Pyramide hoch ist, mit 2 Kästchen je Zentimeter."
+        examples:
+          accepted:
+            - { answer: { right: 5, up: 8 }, seed: 1 }
+          rejected:
+            - { answer: { right: 0, up: 0 } }
+            - { answer: { right: 3, up: 8 }, seed: 1 }
+      - type: true-false
+        id: spitze-ueber-mitte
+        text: "Bei einer geraden Pyramide liegt die Spitze im Schrägbild senkrecht über der Mitte der Grundfläche."
+        answer: true
+        explanation: Eine gerade Pyramide steht gerade. Ihre Spitze liegt über dem Punkt, an dem sich die Diagonalen der Grundfläche schneiden.

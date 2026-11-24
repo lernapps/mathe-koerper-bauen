@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Prisma und Zylinder erkennen
+description: Prismen und Zylinder beschreiben und von anderen Körpern unterscheiden.
+competencies: [grundkoerper-prisma-zylinder]
+blocks:
+  - type: section
+    id: einstieg
+    title: Vier Körper im Vergleich
+    blocks:
+      - type: text
+        text: |
+          Wenn du Dosen, Zelte und Verpackungen ordnen willst, brauchst du ihre Namen. Du kennst Quader und Würfel. Vieleck und Kreis kennst du von den [ebenen Figuren](/koerper-quader/recap/). Nach dieser Seite erkennst du auch Prismen und Zylinder und kannst sie beschreiben.
+          Schau dir zuerst die vier Körper an.
+      - type: figure
+        image: images/koerper-prisma-zylinder.svg
+        alt: "Vier Körper, nummeriert von 1 bis 4: 1 ein Quader, 2 ein Körper mit einem Dreieck als Grundfläche und drei Rechtecken als Seitenflächen, 3 ein Körper mit einem Fünfeck als Grundfläche, 4 ein Zylinder mit zwei Kreisen oben und unten."
+        caption: "Vier Körper: 1 Quader, 2 Prisma mit Dreieck, 3 Prisma mit Fünfeck, 4 Zylinder."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: single-choice
+        id: quader-erkennen
+        text: Welche Nummer hat der Quader im Bild?
+        options:
+          - text: Nummer 1
+            correct: true
+            info: Nummer 1 hat sechs Rechtecke als Flächen. Das ist der Quader.
+          - text: Nummer 2
+            correct: false
+            info: Nummer 2 hat vorn und hinten ein Dreieck. Ein Quader hat nur Rechtecke.
+          - text: Nummer 4
+            correct: false
+            info: Nummer 4 hat oben und unten einen Kreis. Ein Quader hat keine runden Flächen.
+        explanation: Der Quader ist der Körper, dessen sechs Flächen alle Rechtecke sind.
+  - type: section
+    id: erklaerung
+    title: Grundfläche entscheidet
+    blocks:
+      - type: text
+        text: "Wenn du einen Körper benennen willst, schaust du auf seine Grundfläche."
+      - type: definition
+        term: Grundfläche und Deckfläche
+        explanation: Grundfläche und Deckfläche sind die beiden gleichen Flächen an den Enden eines Prismas oder Zylinders, beim stehenden Körper oben und unten.
+      - type: definition
+        term: Prisma
+        explanation: Ein Prisma hat zwei gleiche Vielecke als Grundfläche und Deckfläche. Dazwischen stehen Rechtecke als Seitenflächen.
+      - type: definition
+        term: Zylinder
+        explanation: Ein Zylinder hat zwei gleich große Kreise als Grundfläche und Deckfläche. Dazwischen liegt ein gekrümmter Mantel.
+      - type: table
+        caption: Wie viele Flächen, Kanten und Ecken haben die Körper?
+        header: [Körper, Flächen, Kanten, Ecken]
+        rows:
+          - [Dreiecksprisma, "5", "9", "6"]
+          - [Fünfeckprisma, "7", "15", "10"]
+          - [Zylinder, "3", "2 (gekrümmt)", "0"]
+      - type: text
+        text: |
+          Ein Prisma benennst du nach seiner Grundfläche: Hat sie drei Ecken, ist es ein Dreiecksprisma, bei fünf Ecken ein
+          Fünfeckprisma. Der Quader ist ein Prisma mit einem Rechteck als Grundfläche. Boden und Deckel heißen bei Prisma und Zylinder Grundfläche und Deckfläche.
+          Beim Zylinder ist die Grundfläche ein Kreis. Man kann sich den Zylinder als Prisma mit sehr vielen Ecken
+          vorstellen. Er hat keine Ecken und keine geraden Seitenflächen.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: grundflaeche-zuordnen
+        text: Ordne jeder Grundfläche den Körper zu.
+        pairs:
+          - { left: "Die Grundfläche ist ein Dreieck.", right: Dreiecksprisma }
+          - { left: "Die Grundfläche ist ein Kreis.", right: Zylinder }
+          - { left: "Die Grundfläche ist ein Rechteck.", right: Quader }
+        explanation: Die Grundfläche bestimmt den Namen des Körpers. Zwei gleiche Kreise als Grund- und Deckfläche geben den Zylinder, zwei gleiche Vielecke mit Rechtecken dazwischen ein Prisma.
+      - type: multiple-choice
+        id: welche-prismen
+        text: Welche Körper sind Prismen?
+        options:
+          - text: Ein Quader
+            correct: true
+            info: Der Quader hat ein Rechteck als Grundfläche und Rechtecke als Seitenflächen. Er ist ein Prisma.
+          - text: Ein Körper mit einem Sechseck als Grundfläche und Deckfläche, dazwischen sechs Rechtecke
+            correct: true
+            info: Grundfläche und Deckfläche sind gleiche Vielecke, dazwischen stehen Rechtecke. Das ist ein Sechseckprisma.
+          - text: Ein Zylinder
+            correct: false
+            info: Der Zylinder hat Kreise als Grundfläche. Ein Kreis ist kein Vieleck, darum ist der Zylinder kein Prisma.
+          - text: Eine Dose mit rundem Boden
+            correct: false
+            info: Eine Dose mit rundem Boden ist ein Zylinder. Ihre Grundfläche ist ein Kreis, kein Vieleck.
+        explanation: Ein Prisma hat ein Vieleck als Grundfläche. Hat ein Körper zwei gleiche Kreise als Grund- und Deckfläche, ist er ein Zylinder.
+      - type: generated
+        id: ecken-prisma
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Die Grundfläche eines Prismas hat {{n}} Ecken. Wie viele Ecken hat das Prisma?"
+        answer: { value: "2 * n", compare: number }
+        mistakes:
+          - { value: "n", message: "Das sind nur die Ecken der Grundfläche. Die Deckfläche hat ebenso viele Ecken." }
+          - {
+              value: "n + 2",
+              message: "{{n}} + 2 ist die Zahl der Flächen. Hier sind die Ecken gefragt: Grundfläche und Deckfläche haben je {{n}}.",
+            }
+        hint: "Wie viele Ecken hat die Grundfläche, wie viele die Deckfläche?"
+        steps:
+          - "Die Grundfläche hat {{n}} Ecken, die Deckfläche ebenso viele: 2 · {{n}} = {{answer}} Ecken."
+      - type: generated
+        id: flaechen-prisma
+        given:
+          n: { int: [3, 9] }
+        task:
+          text: "Die Grundfläche eines Prismas hat {{n}} Ecken. Wie viele Flächen hat das Prisma insgesamt?"
+        answer: { value: "n + 2", compare: number }
+        mistakes:
+          - { value: "n", message: "Das sind nur die Seitenflächen. Grundfläche und Deckfläche kommen noch dazu." }
+          - {
+              value: "2 * n",
+              message: "2 · n ist die Zahl der Ecken. Gefragt sind die Flächen: {{n}} Rechtecke und zwei Vielecke.",
+            }
+        hint: "Zähle die Seitenflächen und addiere Grundfläche und Deckfläche."
+        steps:
+          - "{{n}} Rechtecke als Seitenflächen, dazu Grundfläche und Deckfläche: {{n}} + 2 = {{answer}} Flächen."
+      - type: true-false
+        id: zylinder-ecken
+        text: "Ein Zylinder hat keine Ecken."
+        answer: true
+        explanation: Der Zylinder hat Kreise als Grundfläche und Deckfläche. Ein Kreis hat keine Ecken, und der Mantel ist rund. Darum gibt es keine Ecke.

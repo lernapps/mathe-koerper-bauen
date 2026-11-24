@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Prisma und Zylinder
+summary: Aus dem Quader werden Prismen mit anderen Grundflächen, und aus vielen Ecken wird der Zylinder.
+pages: [prisma-zylinder, netze-prisma-zylinder, schraegbild-prisma-zylinder]
+selfAssessment:
+  pages:
+    - exercises:
+        - /koerper-prisma/prisma-zylinder/#ecken-prisma
+        - /koerper-prisma/prisma-zylinder/#flaechen-prisma
+        - /koerper-prisma/netze-prisma-zylinder/#mantel-breite
+    - exercises:
+        - /koerper-prisma/netze-prisma-zylinder/#mantel-laenge
+        - /koerper-prisma/netze-prisma-zylinder/#netz-fuenfeck
+        - /koerper-prisma/schraegbild-prisma-zylinder/#ellipse-breite
+    - exercises:
+        - /koerper-prisma/schraegbild-prisma-zylinder/#schraegbild-prisma
+        - /koerper-prisma/schraegbild-prisma-zylinder/#schraegbild-zylinder

@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das Schrägbild eines Quaders
+description: Einen Quader auf Kästchenpapier als Schrägbild zeichnen.
+competencies: [netze-schraegbilder-modelle]
+blocks:
+  - type: section
+    id: einstieg
+    title: Ein Körper auf Papier
+    blocks:
+      - type: text
+        text: |
+          Wenn du einem anderen zeigen willst, wie ein Körper aussieht, zeichnest du ihn als Schrägbild. Im Netz liegen die Flächen flach nebeneinander. Ein Schrägbild zeigt den Körper dagegen räumlich auf dem Heft, sodass du ihn erkennst.
+          Nach dieser Seite kannst du den Quader als Schrägbild auf Kästchenpapier zeichnen.
+      - type: figure
+        image: images/schraegbild-quader.svg
+        alt: "Schrägbild eines Quaders auf Kästchenpapier: vorn ein Rechteck, dahinter ein gleich großes Rechteck, nach rechts oben versetzt, und vier schräge Kanten dazwischen. Drei Kanten sind gestrichelt."
+        caption: Ein Quader im Schrägbild. Die gestrichelten Kanten sind von vorn nicht zu sehen.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: sichtbare-kanten
+        text: Wie viele Kanten des Quaders im Bild sind durchgezogen gezeichnet?
+        answer: 9
+        tolerance: 0
+        explanation: Der Quader hat zwölf Kanten. Drei davon liegen hinten und sind gestrichelt. Die übrigen neun sind durchgezogen.
+        mistakes:
+          - answer: 12
+            message: "Zwölf Kanten hat der Quader insgesamt. Im Bild sind aber drei davon gestrichelt."
+          - answer: 3
+            message: "Drei Kanten sind gestrichelt. Gefragt sind die durchgezogenen Kanten."
+  - type: section
+    id: regeln
+    title: So zeichnest du es
+    blocks:
+      - type: definition
+        term: Schrägbild
+        explanation: Ein Schrägbild ist die Zeichnung eines Körpers, bei der die Vorderseite in wahrer Größe gezeichnet wird und die Tiefe schräg nach hinten läuft.
+      - type: text
+        text: |
+          Wenn du einen Quader so zeichnen willst, dass man ihn erkennt, gelten feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
+
+          1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
+          2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.
+          3. Sie wird verkürzt: Für jeden Zentimeter Tiefe zählst du nur 1 Kästchen schräg statt 2. Eine Kante von 4 cm zeichnest du über 4 Kästchen, nicht über 8.
+          4. Kanten, die man von vorn nicht sieht, zeichnest du gestrichelt.
+
+          In den Aufgaben zeichnest du mit zwei Zählern: „Nach rechts“ und „Nach oben“ legen fest, wie weit die Rückseite gegenüber der Vorderseite verschoben ist. Die Zeichnung in der Aufgabe zeichnet den Körper dazu.
+      - type: example
+        title: Ein Quader, 3 cm breit, 2 cm hoch, 4 cm tief
+        blocks:
+          - type: text
+            text: |
+              Vorderseite: 3 cm sind 6 Kästchen, 2 cm sind 4 Kästchen. Tiefe: 4 cm werden 4 Kästchen diagonal, also 4
+              Kästchen nach rechts und 4 nach oben. Die Rückseite ist die Vorderseite, um 4 Kästchen nach rechts und 4 nach
+              oben verschoben.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: breite-in-kaestchen
+        given:
+          b: { int: [2, 8] }
+        task:
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Eine Kante des Quaders ist {{b}} cm lang und läuft waagerecht an der Vorderseite. Wie viele Kästchen lang zeichnest du sie?"
+        answer: { value: "2 * b", compare: number }
+        mistakes:
+          - {
+              value: "b",
+              message: "Du hast die Zentimeter als Kästchen gezählt. Ein Kästchen ist nur 0,5 cm lang, 1 cm sind also 2 Kästchen.",
+            }
+          - {
+              value: "b / 2",
+              message: "Du hast durch 2 geteilt. Die Vorderseite wird nicht verkürzt: 1 cm sind 2 Kästchen, also mal 2.",
+            }
+        hint: "Ein Kästchen ist 0,5 cm lang. Wie viele Kästchen sind 1 cm?"
+        steps:
+          - "1 cm sind 2 Kästchen: {{b}} · 2 = {{answer}} Kästchen."
+      - type: vue-component
+        id: schraegbild-quader-zeichnen
+        component: Schraegbild
+        props:
+          body: quader
+          task: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Waagerechte und senkrechte Kanten zeichnest du in wahrer Länge, Tiefenkanten schräg und mit halb so vielen Kästchen. Zeichne das Schrägbild eines Quaders, {w} cm breit, {h} cm hoch und {d} cm tief. Die Vorderseite ist schon da. Wie viele Kästchen liegt die Rückseite rechts und oberhalb der Vorderseite?"
+          alt: "Ein Quader auf Kästchenpapier im Schrägbild."
+          right: Nach rechts
+          up: Nach oben
+          more: mehr
+          less: weniger
+          mistakes:
+            - "Du hast die Tiefenkante doppelt so lang gezeichnet. Die Tiefe wird halbiert: so viele Kästchen, wie die Kante cm lang ist."
+            - "Du bist nur nach rechts gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
+            - "Du bist nur nach oben gegangen. Eine Tiefenkante läuft schräg, also gleich weit nach rechts und nach oben."
+            - "Du bist nur halb so weit gegangen. Eine Tiefenkante von {d} cm ist {d} Kästchen diagonal lang."
+            - "Das passt nicht zur Tiefe von {d} cm. Eine Tiefenkante läuft schräg: gleich viele Kästchen nach rechts und nach oben, und pro Zentimeter Tiefe zählst du 1 Kästchen."
+        examples:
+          accepted:
+            - { answer: { right: 4, up: 4 }, seed: 1 }
+          rejected:
+            - { answer: { right: 0, up: 0 } }
+            - { answer: { right: 1, up: 2 }, seed: 1 }
+      - type: number
+        id: wuerfel-schraegbild
+        text: Ein Würfel hat die Kantenlänge 4 cm. Du zeichnest ihn wie einen Quader als Schrägbild. Um wie viele Kästchen liegt seine Rückseite nach rechts versetzt?
+        answer: 4
+        tolerance: 0
+        explanation: Ein Würfel ist ein Quader mit gleichen Maßen. Seine Tiefe ist 4 cm, also zeichnest du die Tiefenkante schräg über 4 Kästchen. Die Rückseite liegt 4 Kästchen weiter rechts, und ebenso 4 Kästchen höher.
+        mistakes:
+          - answer: 8
+            message: "8 Kästchen sind 4 cm in wahrer Länge. Die Tiefenkante wird verkürzt: Du zählst nur halb so viele Kästchen."
+          - answer: 2
+            message: "Du hast die Tiefe noch einmal halbiert. Pro Zentimeter Tiefe zeichnest du schon 1 Kästchen schräg, bei 4 cm also 4 Kästchen."
+      - type: true-false
+        id: tiefenkante-halbiert
+        text: "Eine Kante des Quaders ist 6 cm tief. Im Schrägbild zeichnest du sie über 12 Kästchen."
+        answer: false
+        explanation: Tiefenkanten werden halbiert. Eine Kante von 6 cm zeichnest du schräg über 6 Kästchen. 12 Kästchen wären die wahre Länge, aber die gilt nur für waagerechte und senkrechte Kanten.
+      - type: generated
+        id: tiefe-in-kaestchen
+        given:
+          t: { int: [2, 9] }
+        task:
+          text: "Auf Kästchenpapier ist 1 Kästchen 0,5 cm lang. Tiefenkanten zeichnest du schräg und zählst nur halb so viele Kästchen wie in wahrer Länge. Der Quader ist {{t}} cm tief. Über wie viele Kästchen läuft die Tiefenkante im Schrägbild, schräg gezählt?"
+        answer: { value: "t", compare: number }
+        mistakes:
+          - {
+              value: "2 * t",
+              message: "Du hast die Tiefe wie eine Vorderkante gerechnet (1 cm sind 2 Kästchen). Die Tiefenkante wird halbiert, also nur {{t}} Kästchen.",
+            }
+        hint: "Eine Kante nach hinten wird auf die halbe Länge verkürzt."
+        steps:
+          - "Pro Zentimeter Tiefe zählst du 1 Kästchen schräg: {{t}} cm sind {{answer}} Kästchen."

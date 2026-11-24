@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/geometrie
+title: Körper bauen, aufklappen und zeichnen
+intro: Du baust Körper, klappst sie zu Netzen auf und zeichnest sie als Schrägbild.
+languages: [de]
+chapters: [koerper-quader, koerper-prisma, koerper-pyramide]

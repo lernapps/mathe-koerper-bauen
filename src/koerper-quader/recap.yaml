@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du für dieses Kapitel
+description: Parallel, senkrecht und ebene Figuren auffrischen und prüfen, ob du bereit bist für Körper.
+recap: [mathematik/parallel-senkrecht-abstand, mathematik/grundfiguren-eben]
+blocks:
+  - type: section
+    id: wofuer
+    title: Wofür diese Seite ist
+    blocks:
+      - type: text
+        text: |
+          Wenn du Körper beschreiben und zeichnen willst, brauchst du die Flächen, aus denen sie bestehen, und das sind
+          ebene Figuren. Du brauchst zwei Bausteine: „Parallelen, Senkrechten und Abstand“ und „Ebene Grundfiguren“. Lies die
+          Begriffe und prüfe dich mit den beiden Aufgaben am Ende.
+  - type: section
+    id: parallel-senkrecht
+    title: Parallelen, Senkrechten und Abstand
+    blocks:
+      - type: text
+        text: "Wenn du Linien beschreiben willst, die sich nie treffen oder im rechten Winkel kreuzen, brauchst du diese Wörter. „Ich kann parallele und senkrechte Geraden zeichnen und Abstände messen.“"
+      - type: definition
+        term: Senkrecht
+        explanation: "Zwei Linien sind **senkrecht** zueinander, wenn sie einen **rechten Winkel** bilden, eine Ecke wie die einer Heftseite. Beispiel: Wand und Boden im Zimmer."
+      - type: definition
+        term: Parallel und Abstand
+        explanation: "Zwei Linien sind **parallel**, wenn sie überall gleich weit voneinander entfernt sind. Dieser **Abstand** wird senkrecht gemessen. Beispiel: Die Linien in deinem Heft sind parallel, ihr Abstand ist 0,5 cm."
+      - type: figure
+        image: images/parallel-senkrecht.svg
+        alt: "Links zwei waagerechte Linien untereinander, parallel, mit einer gestrichelten Linie dazwischen als Abstand. Rechts eine waagerechte und eine senkrechte Linie, die einen rechten Winkel bilden, mit Winkelzeichen."
+        caption: Parallele Linien (links) und senkrechte Linien (rechts).
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: example
+        title: Abstand im Heft
+        blocks:
+          - type: text
+            text: |
+              Zwei Heftlinien haben 0,5 cm Abstand. Vier Linien weiter ist der Abstand zur ersten
+              4 · 0,5 cm = 2 cm. Du misst immer senkrecht von Linie zu Linie.
+  - type: section
+    id: grundfiguren
+    title: Ebene Grundfiguren
+    blocks:
+      - type: text
+        text: "Wenn du die Flächen eines Körpers benennen willst, brauchst du die Namen der ebenen Figuren. „Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.“"
+      - type: figure
+        image: images/ebene-figuren.svg
+        alt: "Fünf ebene Figuren nebeneinander, beschriftet: ein Quadrat, ein Rechteck, ein rechtwinkliges Dreieck, ein Kreis mit Mittelpunkt, Radius r und Durchmesser d, und ein Fünfeck. Rechte Winkel sind mit einem kleinen Winkelzeichen markiert."
+        caption: Die ebenen Grundfiguren. Das kleine Winkelzeichen zeigt einen rechten Winkel.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: definition
+        term: Seite und Ecke
+        explanation: "Eine **Seite** ist eine gerade Strecke am Rand einer ebenen Figur. Eine **Ecke** ist ein Punkt, an dem zwei Seiten zusammenstoßen. Bei Körpern heißen solche Strecken später Kanten."
+      - type: definition
+        term: Quadrat und Rechteck
+        explanation: "Ein **Rechteck** hat vier rechte Winkel. Gegenüberliegende Seiten sind gleich lang und parallel. Beispiel: 5 cm lang und 3 cm breit, also zwei Seiten von 5 cm und zwei von 3 cm. Ein **Quadrat** ist ein besonderes Rechteck: Alle vier Seiten sind gleich lang."
+      - type: definition
+        term: Dreieck
+        explanation: "Ein **Dreieck** hat drei Seiten und drei Ecken."
+      - type: definition
+        term: Kreis
+        explanation: "Ein **Kreis** ist rund. Alle Punkte des **Randes** sind gleich weit vom **Mittelpunkt** entfernt. Die Strecke vom Mittelpunkt zum Rand heißt **Radius**. Der **Durchmesser** geht durch den Mittelpunkt von Rand zu Rand und ist doppelt so lang wie der Radius. Beispiel: Radius 3 cm, Durchmesser 6 cm."
+      - type: definition
+        term: Vieleck
+        explanation: "Ein **Vieleck** ist eine ebene, geschlossene Figur, deren Rand aus lauter geraden Seiten besteht. Dreieck und Viereck sind Vielecke: Ein Viereck hat vier Ecken, ein Fünfeck fünf, ein Sechseck sechs."
+      - type: example
+        title: Ein Fünfeck zählen
+        blocks:
+          - type: text
+            text: |
+              Ein Fünfeck hat 5 Ecken. An jeder Ecke stoßen zwei Seiten zusammen, also hat es auch 5 Seiten.
+  - type: section
+    id: kannst-du-das
+    title: Kannst du das?
+    blocks:
+      - type: matching
+        id: recap-begriffe
+        text: Wenn du die Begriffe sicher kennst, kannst du sie zuordnen. Ordne jedem Begriff die Beschreibung zu.
+        pairs:
+          - { left: "Senkrecht", right: "bilden einen rechten Winkel" }
+          - { left: "Parallel", right: "überall gleich weit entfernt" }
+          - { left: "Abstand", right: "senkrecht gemessene Entfernung" }
+          - { left: "Quadrat", right: "Rechteck mit vier gleichen Seiten" }
+          - { left: "Durchmesser", right: "geht durch den Mittelpunkt" }
+        explanation: Senkrecht, parallel und Abstand beschreiben, wie zwei Linien zueinander liegen. Quadrat und Durchmesser sind Namen für Figuren und Strecken, die du in Körpern wiederfindest.
+      - type: generated
+        id: recap-durchmesser
+        given:
+          r: { int: [6, 19] }
+        task:
+          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist sein Durchmesser in Zentimetern?"
+        answer: { value: "2 * r", compare: number }
+        mistakes:
+          - {
+              value: "r",
+              message: "Das ist der Radius. Der Durchmesser geht durch den Mittelpunkt von Rand zu Rand, er ist doppelt so lang.",
+            }
+          - {
+              value: "r / 2",
+              message: "Du hast durch 2 geteilt. Der Durchmesser ist doppelt so lang wie der Radius, also mal 2.",
+            }
+        hint: "Der Durchmesser besteht aus zwei Radien."
+        steps:
+          - "Der Durchmesser ist doppelt so lang wie der Radius: 2 · {{r}} cm = {{answer}} cm."
+      - type: text
+        text: "Falsch? Dann lies nach: [Parallelen, Senkrechten und Abstand](https://lernapps.net/apps/map/mathematik/c/parallel-senkrecht-abstand/) und [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/)."
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - weißt, was senkrecht, parallel und Abstand bedeuten,
+          - Quadrat, Rechteck, Dreieck, Kreis und Vieleck erkennst und beschreibst,
+          - Seite, Ecke, Radius und Durchmesser kennst.
