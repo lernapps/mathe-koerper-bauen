@@ -43,7 +43,7 @@ Pyramide und Kegel auf Kästchenpapier als Schrägbild zeichnen.
 
 ### Die Spitze finden
 
-Prisma und Zylinder zeichnest du schon als Schrägbild. Nach dieser Seite zeichnest du Pyramide und Kegel. Das Wichtigste ist die Spitze. Schau dir im
+Wenn du ein Haus mit Spitzdach zeichnen willst, brauchst du die Spitze an der richtigen Stelle. Prisma und Zylinder zeichnest du schon als Schrägbild. Nach dieser Seite zeichnest du Pyramide und Kegel. Das Wichtigste ist die Spitze. Schau dir im
 Bild die Pyramide an.
 
 Bild: Pyramide, Kegel und Kugel im Schrägbild. Verdeckte Kanten sind gestrichelt. Bildunterschrift: Pyramide, Kegel und Kugel im Schrägbild. Körper 1 ist die Pyramide.
@@ -52,7 +52,7 @@ Bild: Pyramide, Kegel und Kugel im Schrägbild. Verdeckte Kanten sind gestrichel
 
 ### Über der Mitte
 
-Du zeichnest die Grundfläche wie beim Quader: vorn in wahrer Größe, die Tiefe schräg und halbiert. Die Spitze einer
+Wenn du eine Pyramide oder einen Kegel zeichnest, kommt es auf die Spitze an. Du zeichnest die Grundfläche wie beim Quader: vorn in wahrer Größe, die Tiefe schräg und halbiert. Die Spitze einer
 geraden Pyramide liegt senkrecht über der Mitte der Grundfläche. Gerade heißt hier: Die Pyramide steht nicht schief. Die Mitte findest du dort, wo sich die beiden
 Diagonalen der Grundfläche schneiden.
 Beim Kegel liegt die Spitze senkrecht über dem Mittelpunkt der Grundfläche. Die Grundfläche zeichnest du als

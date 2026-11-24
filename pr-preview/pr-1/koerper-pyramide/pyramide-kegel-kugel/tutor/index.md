@@ -43,7 +43,7 @@ Pyramide, Kegel und Kugel beschreiben und Alltagskörper in Grundkörper zerlege
 
 ### Drei Körper mit Spitze und ohne
 
-Du kennst Quader, Prisma und Zylinder. Nach dieser Seite beschreibst du Pyramide, Kegel und Kugel. Du erkennst sie auch in Dingen aus dem Alltag,
+Wenn du ein Zeltdach, eine Eistüte oder einen Ball beschreiben willst, brauchst du neue Körper. Du kennst Quader, Prisma und Zylinder. Nach dieser Seite beschreibst du Pyramide, Kegel und Kugel. Du erkennst sie auch in Dingen aus dem Alltag,
 die aus mehreren Körpern zusammengesetzt sind. Schau dir zuerst die drei Körper an.
 
 Bild: Drei Körper im Schrägbild, nummeriert: 1 eine Pyramide mit einem Rechteck als Grundfläche, 2 ein Kegel, 3 eine Kugel mit einem eingezeichneten Äquator. Bildunterschrift: 1 Pyramide, 2 Kegel, 3 Kugel.
@@ -51,6 +51,8 @@ Bild: Drei Körper im Schrägbild, nummeriert: 1 eine Pyramide mit einem Rechtec
 - Aufgabe `kugel-erkennen` (unten)
 
 ### Spitze, Grundfläche, Mantel
+
+Wenn du einen spitzen Körper benennen willst, schaust du auf Grundfläche und Spitze.
 
 - **Spitze**: Die Spitze ist die Ecke oben, in der bei Pyramide und Kegel alle Seitenflächen oder der Mantel zusammenlaufen.
 

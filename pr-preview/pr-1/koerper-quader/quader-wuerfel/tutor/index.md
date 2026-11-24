@@ -43,7 +43,7 @@ Flächen, Kanten und Ecken von Quader und Würfel erkennen und zählen.
 
 ### Eine Schachtel genau ansehen
 
-Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
+Wenn du jemandem erklären willst, wie ein Karton aussieht, musst du seine Teile benennen. Nimm einen Schuhkarton in die Hand. Nach dieser Seite kannst du Quader und Würfel beschreiben: mit Flächen,
 Kanten und Ecken. Mit dem Regler klappst du den Körper auf, mit den Knöpfen drehst du ihn. Seine Flächen sind von 1 bis 6 nummeriert.
 
 Interaktiv: Ein Quader, 4 Einheiten lang, 2 breit und 3 hoch. Er hat sechs Rechtecke als Flächen: je zwei gegenüberliegende sind gleich groß. Er hat zwölf Kanten und acht Ecken.
@@ -51,6 +51,8 @@ Interaktiv: Ein Quader, 4 Einheiten lang, 2 breit und 3 hoch. Er hat sechs Recht
 - Aufgabe `form-der-flaechen` (unten)
 
 ### Flächen, Kanten, Ecken
+
+Wenn du einen Körper beschreiben willst, brauchst du Wörter für seine Teile.
 
 - **Quader**: Ein Quader ist ein Körper mit sechs Rechtecken als Flächen. Gegenüberliegende Flächen sind gleich groß.
 

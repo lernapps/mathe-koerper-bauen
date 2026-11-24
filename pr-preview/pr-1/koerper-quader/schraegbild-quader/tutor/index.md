@@ -43,7 +43,7 @@ Einen Quader auf Kästchenpapier als Schrägbild zeichnen.
 
 ### Ein Körper auf Papier
 
-Im Netz liegen die Flächen flach nebeneinander. Ein Schrägbild zeigt den Körper dagegen räumlich auf dem Heft, sodass du ihn erkennst.
+Wenn du einem anderen zeigen willst, wie ein Körper aussieht, zeichnest du ihn als Schrägbild. Im Netz liegen die Flächen flach nebeneinander. Ein Schrägbild zeigt den Körper dagegen räumlich auf dem Heft, sodass du ihn erkennst.
 Nach dieser Seite kannst du den Quader als Schrägbild auf Kästchenpapier zeichnen.
 
 Bild: Schrägbild eines Quaders auf Kästchenpapier: vorn ein Rechteck, dahinter ein gleich großes Rechteck, nach rechts oben versetzt, und vier schräge Kanten dazwischen. Drei Kanten sind gestrichelt. Bildunterschrift: Ein Quader im Schrägbild. Die gestrichelten Kanten sind von vorn nicht zu sehen.
@@ -54,7 +54,7 @@ Bild: Schrägbild eines Quaders auf Kästchenpapier: vorn ein Rechteck, dahinter
 
 - **Schrägbild**: Ein Schrägbild ist die Zeichnung eines Körpers, bei der die Vorderseite in wahrer Größe gezeichnet wird und die Tiefe schräg nach hinten läuft.
 
-Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
+Damit jeder Quader gleich aussieht und räumlich wirkt, gibt es feste Regeln. Auf Kästchenpapier ist ein Kästchen 0,5 cm lang. Es gelten vier Regeln:
 
 1. Die Vorderseite zeichnest du in wahrer Größe. 1 cm sind 2 Kästchen.
 2. Jede Kante nach hinten (Tiefenkante) zeichnest du schräg, als Diagonale durch Kästchen.

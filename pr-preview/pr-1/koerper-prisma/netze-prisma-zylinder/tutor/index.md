@@ -43,7 +43,7 @@ Aus einer Dose oder einem Prisma das Netz finden.
 
 ### Ein Prisma aufklappen
 
-Beim Quader hast du Netze gefaltet. Schneidest du ein Prisma auf, liegt auch ein Netz vor dir. Nach dieser Seite findest und prüfst du das Netz von
+Wenn du eine Dose oder ein Prisma aus Pappe bauen willst, musst du wissen, wie sein Netz aussieht. Beim Quader hast du Netze gefaltet. Schneidest du ein Prisma auf, liegt auch ein Netz vor dir. Nach dieser Seite findest und prüfst du das Netz von
 Prisma und Zylinder. Das Bild zeigt ein Netz.
 
 Bild: Links ein Prisma mit einem rechtwinkligen Dreieck als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts sein Netz: drei Rechtecke nebeneinander, a, b und c genannt, am mittleren Rechteck oben und unten je ein Dreieck. Bildunterschrift: Das Prisma wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du sein Netz.
@@ -52,7 +52,7 @@ Bild: Links ein Prisma mit einem rechtwinkligen Dreieck als Grundfläche, in der
 
 ### Mantel und Deckel
 
-Beim Prisma bilden die Seitenflächen den Mantel: so viele Rechtecke nebeneinander, wie die Grundfläche Ecken
+Wenn du ein Netz zeichnen willst, überlegst du: Welche Flächen bilden den Mantel, welche sind Boden und Deckel? Beim Prisma bilden die Seitenflächen den Mantel: so viele Rechtecke nebeneinander, wie die Grundfläche Ecken
 hat. Zusammen sind sie so lang wie der Rand der Grundfläche. Grundfläche und Deckfläche hängen an den Seiten des
 Mantels, die so lang sind wie ihr Rand.
 Beim Zylinder ist der Mantel ein einziges Rechteck. Eine Seite ist so lang wie der Rand des Kreises, denn

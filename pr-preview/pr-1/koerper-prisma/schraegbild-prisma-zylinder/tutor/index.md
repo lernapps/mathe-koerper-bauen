@@ -43,7 +43,7 @@ Ein Prisma und einen Zylinder auf Kästchenpapier als Schrägbild zeichnen.
 
 ### Gestrichelt und durchgezogen
 
-Du zeichnest Quader schon im Schrägbild, mit schrägen Tiefenkanten. Nach dieser Seite zeichnest du auch ein Prisma und einen Zylinder.
+Wenn du ein Zelt oder eine Dose zeichnen willst, reicht der Quader nicht. Du zeichnest Quader schon im Schrägbild, mit schrägen Tiefenkanten. Nach dieser Seite zeichnest du auch ein Prisma und einen Zylinder.
 Schau dir im Bild die Körper 2 und 4 an.
 
 Bild: Vier Körper im Schrägbild, nummeriert von 1 bis 4: ein Quader, ein Dreiecksprisma, ein Fünfeckprisma und ein Zylinder. Verdeckte Kanten sind gestrichelt. Bildunterschrift: Vier Körper im Schrägbild. Körper 2 ist ein Prisma, Körper 4 ein Zylinder.
@@ -52,7 +52,7 @@ Bild: Vier Körper im Schrägbild, nummeriert von 1 bis 4: ein Quader, ein Dreie
 
 ### Dreieck und Ellipse
 
-Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Das Prisma liegt dabei auf der Seite: Seine Höhe ist im Bild die Tiefe. Die Tiefe zeichnest du wie beim Quader schräg und
+Wenn du ein Prisma oder einen Zylinder zeichnest, brauchst du zwei neue Regeln: eine für die Grundfläche und eine für den Kreis. Beim Prisma zeichnest du die Grundfläche vorn in wahrer Größe. Ein rechtwinkliges Dreieck hat zwei Seiten am rechten Winkel, die Katheten. Das Prisma liegt dabei auf der Seite: Seine Höhe ist im Bild die Tiefe. Die Tiefe zeichnest du wie beim Quader schräg und
 halbiert: so viele Kästchen diagonal, wie die Kante cm lang ist.
 Einen Kreis zeichnest du im Schrägbild als Ellipse. Sie ist so breit wie der Kreis, aber nur halb so hoch.
 Beim Zylinder verschiebst du die Ellipse um die Höhe nach oben. Dann verbindest du die beiden Ränder mit zwei

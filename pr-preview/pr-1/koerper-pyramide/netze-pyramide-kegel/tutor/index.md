@@ -43,7 +43,7 @@ Pyramide und Kegel aufklappen und sehen, warum die Kugel kein Netz hat.
 
 ### Eine Pyramide aufklappen
 
-Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
+Wenn du ein Zeltdach oder eine Tüte basteln willst, musst du das Netz kennen. Prisma und Zylinder hast du aufgeklappt. Nach dieser Seite findest du das Netz von Pyramide und Kegel. Du weißt auch, warum die Kugel kein Netz hat.
 Schau dir zuerst das Netz einer Pyramide an.
 
 Bild: Links eine Pyramide mit einem Quadrat als Grundfläche, in der Mitte ein Pfeil mit der Beschriftung aufschneiden, rechts ihr Netz: ein Quadrat mit einem Dreieck an jeder der vier Seiten. Bildunterschrift: Die Pyramide wird an den Kanten aufgeschnitten und flach gelegt. Rechts siehst du ihr Netz.
@@ -52,7 +52,7 @@ Bild: Links eine Pyramide mit einem Quadrat als Grundfläche, in der Mitte ein P
 
 ### Dreiecke, Kreisausschnitt, Kugel
 
-Bei einer Pyramide hängt an jeder Seite der Grundfläche ein Dreieck. Hat die Grundfläche n Ecken, sind es n
+Wenn du das Netz zeichnen willst, überlegst du, welche Flächen an der Grundfläche hängen. Bei einer Pyramide hängt an jeder Seite der Grundfläche ein Dreieck. Hat die Grundfläche n Ecken, sind es n
 Dreiecke.
 Beim Kegel ist die Grundfläche ein Kreis. Der Mantel ist ein Kreisausschnitt, ein Stück aus einem großen Kreis
 wie ein Tortenstück. Der runde Rand des Ausschnitts ist so lang wie der Rand der Grundfläche.

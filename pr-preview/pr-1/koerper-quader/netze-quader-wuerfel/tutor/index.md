@@ -43,7 +43,7 @@ Eine Schachtel aufschneiden, das Netz erkennen und im Kopf falten.
 
 ### Eine Schachtel aufschneiden
 
-Schneidest du eine Schachtel an den Kanten auf und legst sie flach hin, hast du ein Netz. Auf dieser Seite
+Wenn du aus Pappe eine Schachtel bauen willst, brauchst du ein Netz. Schneidest du eine Schachtel an den Kanten auf und legst sie flach hin, hast du ein Netz. Auf dieser Seite
 lernst du, ein Netz im Kopf zu falten und zu prüfen, ob daraus ein Würfel wird. Schiebe den Regler nach links:
 Der Würfel klappt auf. Mit den Knöpfen drehst du ihn und siehst auch seine Unterseite.
 
@@ -52,6 +52,8 @@ Interaktiv: Ein Würfel, der sich aufklappen lässt. Geschlossen hat er sechs Qu
 - Aufgabe `flaechen-zaehlen` (unten)
 
 ### Was ein Netz ist
+
+Wenn du prüfen willst, ob sich ein Netz zum Würfel faltet, achtest du darauf, welche Flächen aneinanderhängen.
 
 - **Netz**: Ein Netz zeigt alle Flächen eines Körpers flach in einem Stück. Die Flächen hängen an Kanten zusammen.
 
